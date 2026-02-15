@@ -36,7 +36,7 @@ export default function RootLayout({
         
         {/* Componenti universali */}
         <Footer />
-       <CookieReset />
+      {/*  <CookieReset /> */}
        <CookieBanner />
         
       </body>
