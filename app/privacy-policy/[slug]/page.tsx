@@ -1,6 +1,6 @@
 import { PRIVACY_DOCS } from '@/config/privacy';
 import { notFound } from 'next/navigation';
-
+export const runtime = 'edge';
 // Definiamo correttamente il tipo per Next.js 15
 interface PrivacyProps {
   params: Promise<{ slug: string }>;
