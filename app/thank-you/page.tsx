@@ -26,7 +26,7 @@ export default function ThankYouPage() {
       </h1>
       
       <div className={`${style.card} p-8 max-w-lg mb-10`}>
-        <p className={`${style.text} ${style.muted} text-xl leading-relaxed`}>
+        <p className={`${style.text} ${style.mute} text-xl leading-relaxed`}>
           {thankYou.description} <br />
           <span className={`${style.accent} font-bold`}>{thankYou.highlight}</span> {thankYou.subDescription}
         </p>
@@ -61,7 +61,7 @@ export default function ThankYouPage() {
       </div>
 
       <div className="mt-12">
-        <p className={`${style.text} ${style.muted} text-sm uppercase tracking-widest font-bold opacity-60`}>
+        <p className={`${style.text} ${style.mute} text-sm uppercase tracking-widest font-bold opacity-60`}>
           {thankYou.footerNote}
         </p>
       </div>
