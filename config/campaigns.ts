@@ -29,6 +29,8 @@ export const CAMPAIGNS = {
   secondaryLink: "https://instagram.com/yourprofile",
   ctaLabel3: "YOUTUBE CHANNEL",
   ctaLink3: "https://youtube.com/yourchannel",
+  ctaLink4: "https://wa.me/tuonumero", // Aggiungi questo
+  ctaLabel4: "CONTATTACI SU WHATSAPP",   // E questo
   footerNote: "Please check your Spam or Promotions folder if you don't see it.",
 },
   }
