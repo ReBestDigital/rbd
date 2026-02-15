@@ -26,7 +26,7 @@ export default function CookieBanner() {
           <p className="text-white font-bold text-lg mb-1">Privacy & Cookies 🛡️</p>
           <p className="text-white/70 text-sm leading-relaxed">
             We use only essential technical cookies to ensure the site works correctly and to prevent spam. 
-            By clicking "Accept", you agree to our <a href="/privacy-policy/books-v1" className="underline hover:text-[#FF00FF]">Privacy Policy</a>.
+            By clicking "Accept", you agree to our <a href="/privacy-policy/standard-v1" className="underline hover:text-[#FF00FF]">Privacy Policy</a>.
           </p>
         </div>
         <button 

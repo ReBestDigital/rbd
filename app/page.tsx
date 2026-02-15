@@ -73,11 +73,12 @@ export default function HomePage() {
   return (
     <main className={`min-h-screen ${style.bg} flex flex-col items-center justify-center p-6 text-white`}>
       <div className="max-w-xl w-full text-center">
-        {/* LOGO Placeholder */}
+        {/* LOGO Placeholder */}<img src="rebestdigital.svg" alt="ReBest Digital Logo" className="h-16 mx-auto" />
         <div className="mb-8">
+          <img src="rebest.svg" alt="ReBestLogo" className="h-16 mx-auto" />
             {/* Se hai un logo SVG o un'immagine, inseriscila qui */}
             {/* <img src="/path/to/your/logo.svg" alt="ReBest Digital Logo" className="h-16 mx-auto" /> */}
-            <span className={`${style.accent} text-5xl font-extrabold tracking-tight`}>ReBest Digital</span>
+           {/*  <span className={`${style.accent} text-5xl font-extrabold tracking-tight`}>ReBest Digital</span> */}
             <p className="text-xl text-slate-300 mt-2">Innovating the future, together .</p>
         </div>
 
