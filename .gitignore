@@ -42,3 +42,6 @@ next-env.d.ts
 
 #utility
 fast-push.bat
+
+# Cartelle di backup personali
+Backup/
