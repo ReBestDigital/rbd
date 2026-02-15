@@ -78,7 +78,7 @@ export default function HomePage() {
             {/* Se hai un logo SVG o un'immagine, inseriscila qui */}
             {/* <img src="/path/to/your/logo.svg" alt="ReBest Digital Logo" className="h-16 mx-auto" /> */}
             <span className={`${style.accent} text-5xl font-extrabold tracking-tight`}>ReBest Digital</span>
-            <p className="text-xl text-slate-300 mt-2">Innovating the future, together.</p>
+            <p className="text-xl text-slate-300 mt-2">Innovating the future, together .</p>
         </div>
 
         <h1 className={`${style.text} text-5xl md:text-6xl font-extrabold leading-tight mb-6`}>
