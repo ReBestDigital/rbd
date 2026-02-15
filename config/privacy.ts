@@ -1,7 +1,7 @@
 export const PRIVACY_DOCS = {
   // Qui decidi la versione per ogni categoria di pagina
 "standard-v1": {
-    name: "books-v1",
+    name: "standard-v1",
     version: "v1.0_2026_02",
     textContent: `
 Privacy Policy
