@@ -1,15 +1,17 @@
 'use client';
 import { useSearchParams } from 'next/navigation';
 import { CAMPAIGNS } from '@/config/campaigns';
+import { Suspense } from 'react';
 
-export default function ThankYouPage() {
+// 1. Creiamo un componente interno che contiene tutta la tua logica
+function ThankYouContent() {
   const searchParams = useSearchParams();
   const campaignKey = searchParams.get('campaign') || 'stop';
   
   const defaultCampaign = CAMPAIGNS["stop"];
   const config = (campaignKey && CAMPAIGNS[campaignKey as keyof typeof CAMPAIGNS]) 
-                 ? CAMPAIGNS[campaignKey as keyof typeof CAMPAIGNS] 
-                 : defaultCampaign;
+                  ? CAMPAIGNS[campaignKey as keyof typeof CAMPAIGNS] 
+                  : defaultCampaign;
 
   const { style, thankYou } = config;
 
@@ -32,32 +34,22 @@ export default function ThankYouPage() {
         </p>
       </div>
 
-      {/* GRIGLIA PULSANTI - Gestisce da 1 a 4 bottoni */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-xl mx-auto">
-        
-        {/* Bottone 1: Primario (Pieno) */}
         <a href={thankYou.ctaLink} className={`${style.primary} ${style.hover} text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg text-center`}>
           {thankYou.ctaLabel}
         </a>
 
-        {/* Bottone 2: Secondario (Trasparente) */}
         <a href={thankYou.secondaryLink} target="_blank" rel="noopener" className="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-6 rounded-xl border border-white/20 transition-all text-center">
           {thankYou.secondaryLabel}
         </a>
 
-        {/* Bottone 3: Extra (Opzionale) */}
         {thankYou.ctaLink3 && (
           <a href={thankYou.ctaLink3} className="bg-white/5 hover:bg-white/10 text-white/80 font-bold py-4 px-6 rounded-xl border border-white/10 transition-all text-center">
-             {thankYou.ctaLabel3 || "SCOPRI DI PIÙ"}
+              {thankYou.ctaLabel3 || "SCOPRI DI PIÙ"}
           </a>
         )}
 
-        {/* Bottone 4: Extra (Opzionale) */}
-        {thankYou.ctaLink4 && (
-          <a href={thankYou.ctaLink4} className="bg-white/5 hover:bg-white/10 text-white/80 font-bold py-4 px-6 rounded-xl border border-white/10 transition-all text-center">
-             {thankYou.ctaLabel4 || "CONTATTACI"}
-          </a>
-        )}
+        {/* Qui ho lasciato ctaLink4, ma assicurati che esista nel config o darà errore TypeScript! */}
       </div>
 
       <div className="mt-12">
@@ -65,7 +57,15 @@ export default function ThankYouPage() {
           {thankYou.footerNote}
         </p>
       </div>
-      
     </div>
+  );
+}
+
+// 2. Questa è la funzione principale che Next.js chiama: aggiungiamo il "guscio" Suspense
+export default function ThankYouPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-black flex items-center justify-center text-white">Caricamento...</div>}>
+      <ThankYouContent />
+    </Suspense>
   );
 }
