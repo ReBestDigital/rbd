@@ -8,9 +8,10 @@ export async function POST(request: Request) {
   const headerList = await headers();
   
   // RECUPERO IP UNIFICATO (fondamentale per evitare anomalie)
-  const forwarded = headerList.get('x-forwarded-for');
-  const ip = forwarded ? forwarded.split(',')[0].trim() : '127.0.0.1';
+  //const forwarded = headerList.get('x-forwarded-for');
+  //const ip = forwarded ? forwarded.split(',')[0].trim() : '127.0.0.1';
   
+  const ip = headerList.get('x-forwarded-for') || 'anonymous';
   const now = Date.now();
   const userData = ipCache.get(ip);
 
