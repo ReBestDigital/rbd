@@ -7,7 +7,7 @@ export const PRIVACY_DOCS = {
 Privacy Policy
 
 1. Data Controller
-The data controller is [Your Name/Company Name], contactable at [Your Email Address].
+The data controller is Rebest di Busato Alessio, contactable at info@rebestdigital.com.
 
 2. Legal Basis for Processing
 We process your personal data based on:
@@ -29,7 +29,7 @@ We retain your personal data only as long as necessary:
 Your data is processed through Brevo (Sendinblue SAS), a Data Processor based in France (EU). A Data Processing Agreement (DPA) is in place to ensure compliance with GDPR standards. You can view their Privacy Policy here: https://www.brevo.com/legal/privacypolicy/
 
 6. Your Rights (under GDPR)
-You have the right to access, correct, delete, or limit the processing of your data. You also have the right to data portability and to withdraw your consent at any time. To exercise these rights, click the "unsubscribe" link in our emails or contact us at [Your Email Address].
+You have the right to access, correct, delete, or limit the processing of your data. You also have the right to data portability and to withdraw your consent at any time. To exercise these rights, click the "unsubscribe" link in our emails or contact us at info@rebestdigital.com.
 
 7. Right to Lodge a Complaint
 You have the right to lodge a complaint with a supervisory authority (e.g., the Garante Privacy in Italy) if you believe your data is not being handled correctly.
