@@ -115,7 +115,7 @@ export default function HomePage() {
               className={`mt-1.5 h-4 w-4 rounded ${style.check}`}
             />
             <label htmlFor="privacy-home" className={`font-bold text-xs leading-tight ${style.mute} text-left`}>
-              By clicking the button you will receive the {config.leadMagnet} and you agree to receive our newsletter and marketing updates.<br/> 
+              By clicking the button you agree to receive our whitepaper when ready, newsletter and marketing updates.<br/> 
               You can unsubscribe at any time. I have read and agree to the{" "}
               <Link href={`/privacy-policy/${config.legal.name}`} target="_blank" className={`${style.accent} font-medium underline hover:opacity-80`}>
                 Privacy Policy
@@ -129,7 +129,7 @@ export default function HomePage() {
             disabled={loading}
             className={`w-full ${style.primary} ${style.hover} text-white font-bold py-4 rounded-xl shadow-lg transform transition-all active:scale-[0.98] disabled:opacity-70`}
           >
-            {loading ? "SENDING..." : "NOTIFY ME WHEN WE LAUNCH"}
+            {loading ? "SENDING..." : "NOTIFY ME AT THE LAUNCH"}
           </button>
         </form>
 
