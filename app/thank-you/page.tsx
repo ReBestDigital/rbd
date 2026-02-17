@@ -6,9 +6,9 @@ import { Suspense } from 'react';
 // 1. Creiamo un componente interno che contiene tutta la tua logica
 function ThankYouContent() {
   const searchParams = useSearchParams();
-  const campaignKey = searchParams.get('campaign') || 'stop';
+  const campaignKey = searchParams.get('campaign') || 'home';
   
-  const defaultCampaign = CAMPAIGNS["stop"];
+  const defaultCampaign = CAMPAIGNS["home"];
   const config = (campaignKey && CAMPAIGNS[campaignKey as keyof typeof CAMPAIGNS]) 
                   ? CAMPAIGNS[campaignKey as keyof typeof CAMPAIGNS] 
                   : defaultCampaign;
@@ -43,12 +43,16 @@ function ThankYouContent() {
           {thankYou.secondaryLabel}
         </a>
 
-        {thankYou.ctaLink3 && (
+      {/*   {thankYou.ctaLink3 && (
           <a href={thankYou.ctaLink3} className="bg-white/5 hover:bg-white/10 text-white/80 font-bold py-4 px-6 rounded-xl border border-white/10 transition-all text-center">
               {thankYou.ctaLabel3 || "SCOPRI DI PIÙ"}
           </a>
         )}
-
+         {thankYou.ctaLink4 && (
+          <a href={thankYou.ctaLink4} className="bg-white/5 hover:bg-white/10 text-white/80 font-bold py-4 px-6 rounded-xl border border-white/10 transition-all text-center">
+              {thankYou.ctaLabel4 || "SCOPRI DI PIÙ"}
+          </a>
+        )} */}
         {/* Qui ho lasciato ctaLink4, ma assicurati che esista nel config o darà errore TypeScript! */}
       </div>
 
