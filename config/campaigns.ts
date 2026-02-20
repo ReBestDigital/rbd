@@ -2,7 +2,6 @@ import { BRAND_STYLES } from './branding';
 import { PRIVACY_DOCS } from './privacy';
 import { SOCIALS } from './socials';
 
-
 export const CAMPAIGNS = {
   // Stop Being invisible , campagna del libro
   "stop": {
@@ -21,21 +20,21 @@ export const CAMPAIGNS = {
   icon: "🚀",
   title: "Confirmation Received!",
   description: "Thank you for confirming your email.",
-  highlight: "Your book excerpt",
+  highlight: "Your infographic",
   subDescription: "is on its way to your inbox.",
-  ctaLabel: "VISIT WEBSITE",
+ ctaLabel: "Here you can find the roadmap",
   ctaLink: SOCIALS["rebest-digital"].site,
-  secondaryLabel: "INSTAGRAM",
+  secondaryLabel: "ReBest Instagram",
   secondaryLink: SOCIALS["rebest-digital"].instagram,
-  ctaLabel3: "YOUTUBE CHANNEL",
+  ctaLabel3: "You tube secret playlist",
   ctaLink3: "https://youtube.com/yourchannel",
   ctaLink4: "https://wa.me/tuonumero", // Aggiungi questo
-  ctaLabel4: "CONTATTACI SU WHATSAPP",   // E questo
-  footerNote: "Please check your Spam or Promotions folder if you don't see it.",
+  ctaLabel4: "Facebook Vault",   // E questo
+  footerNote: "Please check your Spam or Promotions folder if you don't see the mail with the download link.",
 }
 },
   
-   // Stop Being invisible , campagna del libro
+   // home , è nella home ma non prende i testi da qui per ora 
   "home": {
     id: "home",
     title: "Own your Business, stop paying for someone else growth...",
@@ -51,18 +50,18 @@ export const CAMPAIGNS = {
     thankYou: {
   icon: "🚀",
   title: "Confirmation Received!",
-  description: "Thank you for confirming your email.",
+  description: "Thank you for subscribe to our Newsletter.",
   highlight: "Our white paper",
   subDescription: "is on its way to your inbox.",
-  ctaLabel: "VISIT WEBSITE",
+  ctaLabel: "Here you can find the roadmap",
   ctaLink: SOCIALS["rebest-digital"].site,
-  secondaryLabel: "ReBest EcoSystem",
+  secondaryLabel: "ReBest Instagram",
   secondaryLink: SOCIALS["rebest-digital"].instagram,
-  ctaLabel3: "YOUTUBE CHANNEL",
+  ctaLabel3: "You tube secret playlist",
   ctaLink3: "https://youtube.com/yourchannel",
   ctaLink4: "https://wa.me/tuonumero", // Aggiungi questo
-  ctaLabel4: "CONTATTACI SU WHATSAPP",   // E questo
-  footerNote: "Please check your Spam or Promotions folder if you don't see it.",
+  ctaLabel4: "Facebook Vault",   // E questo
+  footerNote: "Please check your Spam or Promotions folder if you don't see the mail with the download link.",
 },
 },
 };
