@@ -7,7 +7,7 @@ export default function Footer() {
         
         {/* Dati Aziendali Obbligatori */}
         <div className="mb-6 text-sm text-white/60 space-y-1">
-          <p className="font-bold text-white/80 tracking-widest">ReBest Digital di Busato Alessio</p>
+          <p className="font-bold text-white/80 tracking-widest">ReBest di Busato Alessio</p>
           <p>Registered Office: Via Cappellaro 39, 13816 Sagliano Micca (BI), Italy</p>
           <p>VAT Number: IT 02837450028</p>
           <p>Contact: <a href="mailto:info@rebestdigital.com" className="hover:text-[#FF00FF]">info@rebestdigital.com</a></p>
