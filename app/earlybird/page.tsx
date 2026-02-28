@@ -11,36 +11,20 @@ export default function ComparazionePage() {
 
   return (
     <main className={`min-h-screen ${style.bg} flex flex-col items-center p-6 text-white font-sans`}>
-      <div className="max-w-3xl w-full text-center mt-10">
+      <div className="max-w-5xl w-full text-center mt-10">
         <img src="ReBestEcosystem.svg" alt="ReBest Logo" className="h-30 mx-auto mb-6" />
         <p className="text-4xl text-slate-100 font-extrabold mb-4">
           Everything you need to dominate the real estate market.
         </p>
-        <h1 className={`${style.text} text-xl md:text-xl font-extrabold mb-4  tracking-tight mb-6`}>
+        <h1 className={`${style.text} text-xl md:text-xl font-extrabold mb-8  tracking-tight mb-6`}>
           Click "Details" Button to see every Feature Detailed
         </h1>
         
-         <div className="max-w-4xl mx-auto text-center mb-6 px-4">
+  <div className="max-w-4xl mx-auto text-center mb-6 px-4">
   <h2 className="text-3xl md:text-4xl text-[#ff00ff] font-extrabold uppercase tracking-widest mb-4">
     Early Bird Access — Limited Time Offer
   </h2>
-  <h1 className="text-xl md:text-7xl font-black text-white mb-8 leading-tight">
-    Don't just buy templates.<br/>
-    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00ff] to-violet-600">
-      Build a Real Estate Marketing Empire.
-    </span>
-  </h1>
-  
-  <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-    We analyzed every single step of a Top Producer's workflow and built a full-scale 
-    solution. From the first touchpoint to the final closing, we’ve got you covered.
-    <br/><br/>
-    <span className="text-white font-bold italic">Scroll down to witness the full "Firepower" of the ReBest Digital Ecosystem.</span> 
-    We listed every single asset because we want you to see the massive scale of what you’re 
-    getting for less than 10% of a single small commission.
-  </p>
-
-  <div className="flex flex-col md:flex-row items-center justify-center gap-6 bg-slate-900/50 p-8 rounded-3xl border border-fuchsia-500/20 shadow-[0_0_50px_rgba(234,88,12,0.1)]">
+  <div className="mb-8 flex flex-col md:flex-row items-center justify-center gap-6 bg-slate-900/50 p-8 rounded-3xl border border-fuchsia-500/20 shadow-[0_0_50px_rgba(234,88,12,0.1)]">
     <div className="text-left">
       <div className="text-slate-400 line-through text-lg">Real Value: €3,490+</div>
       <div className="text-white text-3xl font-black">Early Bird: €399</div>
@@ -51,6 +35,23 @@ export default function ComparazionePage() {
       <div className="text-slate-200 text-sm italic">Lifetime access, Exclusive Bonuses, and all future updates included.</div>
     </div>
   </div>
+  <h1 className="text-3xl md:text-6xl font-black text-white mb-8 leading-tight">
+    Don't just buy templates.<br/>
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00ff] to-violet-600">
+      Build a Real Estate Marketing Empire.
+    </span>
+  </h1>
+  
+  <p className="text-xl text-slate-300 mb-10 leading-relaxed">
+    We analyzed every single step of a Top Real estate Agent's workflow and built a full-scale 
+    solution. From the first touchpoint to the final closing, we’ve got you covered.
+    <br/><br/>
+    <span className="text-white font-bold italic">Here you can see the group of features . By clicking Details button you ll witness the full "Firepower" of the ReBest Digital Ecosystem. </span> 
+     We listed every single asset because we want you to see the massive scale of what you’re 
+    getting for less than 10% of a single small commission.
+  </p>
+
+  
 </div>
 
 {/* Tabella */}
