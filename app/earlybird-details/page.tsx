@@ -20,6 +20,38 @@ export default function ComparazionePage() {
           Early Bird Feature Detailed
         </h1>
         
+         <div className="max-w-4xl mx-auto text-center mb-16 px-4">
+  <h2 className="text-[#ff00ff] font-black uppercase tracking-widest mb-4">
+    Early Bird Access — Limited Time Offer
+  </h2>
+  <h1 className="text-5xl md:text-7xl font-black text-white mb-8 leading-tight">
+    Don't just buy templates.<br/>
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00ff] to-violet-600">
+      Build a Real Estate Marketing Empire.
+    </span>
+  </h1>
+  
+  <p className="text-xl text-slate-300 mb-10 leading-relaxed">
+    We analyzed every single step of a Top Producer's workflow and built a full-scale 
+    solution. From the first touchpoint to the final closing, we’ve got you covered.
+    <br/><br/>
+    <span className="text-white font-bold italic">Scroll down to witness the full "Firepower" of the ReBest Digital Ecosystem.</span> 
+    We listed every single asset because we want you to see the massive scale of what you’re 
+    getting for less than 10% of a single small commission.
+  </p>
+
+  <div className="flex flex-col md:flex-row items-center justify-center gap-6 bg-slate-900/50 p-8 rounded-3xl border border-fuchsia-500/20 shadow-[0_0_50px_rgba(234,88,12,0.1)]">
+    <div className="text-left">
+      <div className="text-slate-400 line-through text-lg">Real Value: €3,490+</div>
+      <div className="text-white text-3xl font-black">Early Bird: €399</div>
+    </div>
+    <div className="h-px md:h-12 w-full md:w-px bg-slate-700"></div>
+    <div className="text-left">
+      <div className="text-[#ff00ff] font-bold uppercase text-xs tracking-tighter italic">Early Bird Advantage:</div>
+      <div className="text-slate-200 text-sm italic">Lifetime access, Exclusive Bonuses, and all future updates included.</div>
+    </div>
+  </div>
+</div>
 
         <div className="overflow-x-auto rounded-3xl border border-white/10 shadow-2xl bg-slate-900/40 backdrop-blur-md">
           <table className="w-full border-collapse">
