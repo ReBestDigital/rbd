@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
+import StrategySection from '@/components/strategySection'; 
 
 const CAMPAIGN_ID = "bird"; 
 
@@ -59,11 +60,12 @@ export default function LandingPage() {
   };
 
   return (
-    <main className={`relative min-h-screen ${style.bg} flex items-center justify-center p-6 pb-32`}>
+    // Rimosso flex items-center per permettere lo scroll naturale verso il basso
+    <main className={`relative min-h-screen ${style.bg} p-6 pb-32`}>
       
       {/* STICKY BUTTONS BAR */}
-      <div className="fixed top-1 left-0 right-0 z-50 flex justify-center px-6">
-        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/20 backdrop-blur-md p-3 rounded-2xl border border-white/10 shadow-2xl">
+      <div className="fixed bottom-4 left-0 right-0 z-50 flex justify-center px-6">
+        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
             href="/checkout-early-bird" 
             className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
@@ -71,7 +73,7 @@ export default function LandingPage() {
             🔥 Buy Early Bird (Save 80%)
           </Link>
           <Link 
-            href="/ecosystem-features" 
+            href="/earlybird-feature" 
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
             📦 Browse All 80+ Features
@@ -79,7 +81,9 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      {/* SEZIONE 1: HERO (Due Colonne) */}
+      <div className="max-w-5xl mx-auto pt-10 md:pt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
         {/* Preview Immagine */}
         <div className="relative aspect-[3/4] bg-slate-100 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center border border-slate-200">
           {config.image ? (
@@ -91,7 +95,7 @@ export default function LandingPage() {
 
         {/* Contenuto Form */}
         <div className="flex flex-col">
-          <h1 className={`${style.text} text-4xl font-bold mb-4`}>
+          <h1 className={`${style.text} text-4xl font-bold mb-4 uppercase tracking-tighter`}>
             {config.title}
           </h1>
           <p className="font-bold text-lg text-slate-200 mb-6">
@@ -132,6 +136,12 @@ export default function LandingPage() {
           </form>
         </div>
       </div>
+
+      {/* SEZIONE 2: STRATEGIA (Colonna Singola fluida che contiene le sue 3 colonne) */}
+      <div className="mt-20">
+        <StrategySection style={style} />
+      </div>
+      
     </main>
   );
 }

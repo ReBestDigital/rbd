@@ -72,7 +72,7 @@ export const CAMPAIGNS = {
     image: "/earlySellpage1.jpg", 
     style: BRAND_STYLES["dark-magenta"], 
     legal: PRIVACY_DOCS["standard-v1"],  
-    brevoListId: 3,
+    brevoListId: 2,
     brevotemplateId : 8 ,
     thankYou: {
         icon: "🦅",
