@@ -73,7 +73,7 @@ export const CAMPAIGNS = {
     style: BRAND_STYLES["dark-magenta"], 
     legal: PRIVACY_DOCS["standard-v1"],  
     brevoListId: 2,
-    brevotemplateId : 8 ,
+    brevotemplateId: 8 ,
     thankYou: {
         icon: "🦅",
         title: "The Vision of an Eagle, the Timing of an Early Bird!",

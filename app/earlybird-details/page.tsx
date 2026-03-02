@@ -32,7 +32,7 @@ export default function ComparazionePage() {
   </h1>
   
   <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-    We analyzed every single step of a Top Producer's workflow and built a full-scale 
+    We analyzed every single step of Top Real Estate Agent's workflow and built a full-scale 
     solution. From the first touchpoint to the final closing, we’ve got you covered.
     <br/><br/>
     <span className="text-white font-bold italic">Scroll down to witness the full "Firepower" of the ReBest Digital Ecosystem.</span> 
@@ -42,7 +42,7 @@ export default function ComparazionePage() {
 
   <div className="flex flex-col md:flex-row items-center justify-center gap-6 bg-slate-900/50 p-8 rounded-3xl border border-fuchsia-500/20 shadow-[0_0_50px_rgba(234,88,12,0.1)]">
     <div className="text-left">
-      <div className="text-slate-400 line-through text-lg">Real Value: €3,490+</div>
+      <div className="text-slate-400 line-through text-lg">Real Value: €1,490+</div>
       <div className="text-white text-3xl font-black">Early Bird: €399</div>
     </div>
     <div className="h-px md:h-12 w-full md:w-px bg-slate-700"></div>

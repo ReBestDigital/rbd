@@ -64,7 +64,7 @@ export default function LandingPage() {
     <main className={`relative min-h-screen ${style.bg} p-6 pb-32`}>
       
       {/* STICKY BUTTONS BAR */}
-      <div className="fixed bottom-4 left-0 right-0 z-50 flex justify-center px-6">
+      <div className="fixed bottom-2 left-0 right-0 z-50 flex justify-center px-6">
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
             href="/checkout-early-bird" 
@@ -82,7 +82,7 @@ export default function LandingPage() {
       </div>
 
       {/* SEZIONE 1: HERO (Due Colonne) */}
-      <div className="max-w-5xl mx-auto pt-10 md:pt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-5xl mx-auto pt-10 md:pt-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Preview Immagine */}
         <div className="relative aspect-[3/4] bg-slate-100 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center border border-slate-200">
