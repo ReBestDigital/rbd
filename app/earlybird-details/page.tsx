@@ -2,7 +2,7 @@
 import React from 'react';
 import { CAMPAIGNS } from '@/config/campaigns';
 import { PRICING_CONFIG, PLAN_PRICES } from './config/pricing';
-
+import Link from 'next/link';
 const HOME_CAMPAIGN_ID = "stop";
 
 export default function ComparazionePage() {
@@ -11,6 +11,25 @@ export default function ComparazionePage() {
 
   return (
     <main className={`min-h-screen ${style.bg} flex flex-col items-center p-6 text-white font-sans`}>
+
+ {/* STICKY BUTTONS BAR */}
+      <div className="fixed bottom-2 left-0 right-0 z-50 flex justify-center px-6">
+        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
+          <Link 
+            href="/checkout-early-bird" 
+            className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
+          >
+            🔥 Buy Early Bird
+          </Link>
+          <Link 
+            href="/earlybirda" 
+            className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
+          >
+            📦 Back 
+          </Link>
+        </div>
+      </div>
+
       <div className="max-w-6xl w-full text-center mt-10">
         <img src="ReBestEcosystem.svg" alt="ReBest Logo" className="h-25 mx-auto mb-4" />
         <p className="text-2xl text-slate-300 mb-6">
