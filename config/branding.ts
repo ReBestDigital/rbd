@@ -2,12 +2,13 @@ export const BRAND_STYLES = {
    "dark-magenta": {
     primary: "bg-[#FF00FF]",      // Il fucsia acceso della copertina
     hover: "hover:bg-[#D400D4]",   // Un fucsia leggermente più scuro per l'effetto al passaggio del mouse
-    accent: "text-[#Ff00FF]",      // Testo accentato fucsia
+    accent: "text-[#ff00FF]",      // Testo accentato fucsia
     check:"accent-[#ff00ff] border-[#ff00ff]",
     text: "text-white",           // <--- NUOVO: Testo principale bianco
     mute: "text-slate-200",      // <--- NUOVO: Testo secondario grigio chiaro
     bg: "bg-slate-900",            // Sfondo quasi nero come la parte sinistra della copertina
-    card: "rounded-2xl shadow-2xl border border-slate-800 bg-slate-900" // Card scura per far risaltare il testo bianco
+    card: "rounded-2xl shadow-2xl border border-slate-800 bg-slate-900", // Card scura per far risaltare il testo bianco
+    color:"#ff00ff"
  },
   "modern-blue": {
     primary: "bg-blue-600",

@@ -66,7 +66,7 @@ export default function LandingPage() {
 
   return (
     <main className={`min-h-screen ${style.bg} flex items-center justify-center p-6`}>
-       <div className=""><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-4 border-b-8 border-fuchsia-500 md:pb-4 pb-4`}>
+       <div className= "max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4`} style={{ borderColor: style.color || '#FFffFF' }}>
                 {config.title}
               </h1>       
       <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 ">
@@ -87,7 +87,7 @@ export default function LandingPage() {
           
           {submitted ? (
             /* --- MESSAGGIO DI SUCCESSO (Appare solo dopo l'invio) --- */
-            <div className="bg-white/10 p-8 rounded-2xl border border-fuchsia-500 shadow-[0_0_20px_rgba(255,0,255,0.2)] animate-pulse-slow">
+            <div className="bg-white/10 p-8 rounded-2xl border shadow-[0_0_20px_rgba(255,0,255,0.2)] animate-pulse-slow" style={{ borderColor: style.color || '#FF00FF' }}>
               <h2 className="text-3xl font-bold text-white mb-4 italic">Check your inbox! 🚀</h2>
               <p className="text-lg text-slate-200">
                 We have sent a confirmation email to <strong>{email}</strong>.<br /><br />
@@ -104,9 +104,7 @@ export default function LandingPage() {
             /* --- LAYOUT ORIGINALE --- */
             <>
               
-              <h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-4 border-b-8 border-fuchsia-500 md:pb-4 pb-4`}>
-                {config.title}
-              </h1>
+        
               <p className="text-xl text-slate-200 mb-4">
                 {config.subtitle}
               </p>
@@ -115,7 +113,7 @@ export default function LandingPage() {
                  <b>Even though you have already received the links to the secret playlists and the dedicated Facebook groups in your purchase PDF,</b> we are asking for one small additional step. 
               </p >
 
-              <div className="text-lg text-slate-100 mb-4 border-l-8 border-fuchsia-500 md:pl-12 pl-4">
+              <div className="text-lg text-slate-100 mb-4 border-l-8 md:pl-12 pl-4" style={{ borderColor: style.color || '#FF00FF' }}>
                 <p className="mb-4">
                   We value our clients' privacy, so we have decided to adopt a double opt-in registration, even though it might add a little friction.
                 </p>

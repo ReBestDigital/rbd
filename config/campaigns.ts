@@ -101,14 +101,14 @@ export const CAMPAIGNS = {
 // after purcase early bird
 "birdafter": {
     id: "birdafter",
-    title: "Congratulations! You ve just secured your unfair advantage.",
+    title: "Congratulations! You ve just secured your Real Estate unfair advantage. Your PDF contains all the Templates link.",
     
     // Sottotitolo che spiega il "perché" dell'azione richiesta e il vantaggio Early Bird
     subtitle: "With this strategic move, you have armed yourself with everything you need to compete against Digital newcomers and reclaim your dominance in your local market—both on the street and in the digital landscape.",
     
     leadMagnet: "The Early Bird Activation",
     buttonLabel: "ACTIVATE MY EARLY BIRD STATUS",
-    image: "/earlySellpage1.jpg", 
+    image: "/EarlyBirdGreatJob.jpg", 
     style: BRAND_STYLES["dark-magenta"], 
     
     // Testo legale per la "parte piccola" sotto il form
@@ -130,12 +130,11 @@ export const CAMPAIGNS = {
         ctaLink3: SOCIALS["rebest-digital"].YTStrategicalNblmPRIVATE,
         ctaLabel4: "YT 7-Days Preview P-list",
         ctaLink4: "https://www.youtube.com/playlist?list=PLVCnprZcthXp01g95LsAdtgPp0ffvyX4r",
-        footerNote: "IMPORTANT: A confirmation email with the button for confirm has been sent. Check your Spam folder if you don't see it and move us to 'Primary'. If you wish you can Reply with : I m an early bird :) to decrease the possibility our mail go to Spam!",
-    }
+        footerNote: "EARLY BIRD NOTICE: Our bonus channels are currently under construction, which is why you secured such a competitive advantage. We expect them to be 80% complete by April 30, 2026. If you joined at this very early stage, content may be limited at first." }
 },
 "birdafter1": { //obsoleto , pensavo ci fosse bisogno di un altro passaggio
     id: "birdafter",
-    title: "Congratulations! You ve just secured your unfair advantage.",
+    title: "Congratulations! You ve just secured your Real Estate unfair advantage.",
     
     // Sottotitolo che spiega il "perché" dell'azione richiesta e il vantaggio Early Bird
     subtitle: "With this strategic move, you have armed yourself with everything you need to compete against Digital New-comers and reclaim your dominance in your local market—both on the street and in the digital landscape.",

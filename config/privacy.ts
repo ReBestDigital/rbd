@@ -2,7 +2,7 @@ export const PRIVACY_DOCS = {
   // Qui decidi la versione per ogni categoria di pagina
 "standard-v1": {
     name: "standard-v1",
-    version: "v1.0_2026_02",
+    version: "v1.0_2026_03",
     textContent: `
 Privacy Policy
 
@@ -36,6 +36,18 @@ You have the right to lodge a complaint with a supervisory authority (e.g., the 
 
 8. PROOF OF INTEGRITY
 This document is protected by a digital SHA-256 Hash. Every subscription is linked to the specific fingerprint of the text accepted at that moment.
+
+9. INTERACTION WITH EXTERNAL PLATFORMS AND SOCIAL NETWORKS
+
+This website may direct users, via hyperlinks, to external platforms for the enjoyment of multimedia content or the purchase of products. Specifically:
+
+Social Media: Users may be redirected to YouTube, Facebook, Instagram, and TikTok. Any interaction and information acquired by these platforms are subject to the user's privacy settings for each respective social network.
+
+E-commerce and Payments: For the sale of digital or physical products, this site redirects users to the Gumroad platform. In this case, the processing of personal data related to payments and economic transactions occurs directly on Gumroad's servers, which acts as an independent Data Controller.
+
+Please note: The Owner of this website does not install profiling cookies, tracking pixels, or analytical tools (such as Google Analytics) to monitor user behavior. Once you leave this website via the aforementioned links, data processing falls under the exclusive responsibility of the respective third-party platforms.
+
+Last Updated: March 7, 2026
 `
 },
   "standard-v2": {
@@ -43,7 +55,7 @@ This document is protected by a digital SHA-256 Hash. Every subscription is link
     version: "v2.1_2026_03",
     textContent: `
 
-    PRIVACY POLICY - VERSION 1.0 (Feb 2026)
+    PRIVACY POLICY - VERSION 1.0 (Mar 2026)
 
 1222. DATA CONTROLLER
 The data controller is [Il Tuo Nome/Società], contactable at [Tua Email].
