@@ -34,7 +34,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
     try {
       // Usiamo il testo reale della privacy per l'hash di integrità
-      const privacyHash = await generateHash((config.legal as any).textContent);
+      const privacyHash = await generateHash(config.legal.textContent );
       const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

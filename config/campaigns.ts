@@ -112,8 +112,7 @@ export const CAMPAIGNS = {
     style: BRAND_STYLES["dark-magenta"], 
     
     // Testo legale per la "parte piccola" sotto il form
-    legal: "Notice: By confirming, you agree to subscribe to the ReBest Digital Newsletter and provide specific consent to use your email for ecosystem updates, secret templates, and private group access. After your Double Opt-in confirmation, you'll reach the Private Vault. Unsubscribe at any time.",
-    
+    legal: PRIVACY_DOCS["standard-v1"], 
     brevoListId: 7,
     brevotemplateId: 14,
     
@@ -146,9 +145,7 @@ export const CAMPAIGNS = {
     image: "/earlySellpage1.jpg", 
     style: BRAND_STYLES["dark-magenta"], 
     
-    // Testo legale per la "parte piccola" sotto il form
-    legal: "Notice: By confirming, you agree to subscribe to the ReBest Digital Newsletter and provide specific consent to use your email for ecosystem updates, secret templates, and private group access. After your Double Opt-in confirmation, you'll reach the Private Vault. Unsubscribe at any time.",
-    
+    legal: PRIVACY_DOCS["standard-v1"], 
     brevoListId: 7,
     brevotemplateId: 14,
     
