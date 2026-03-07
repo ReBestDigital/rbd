@@ -36,22 +36,22 @@ function ThankYouContent() {
        
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-xl mx-auto ">
          {thankYou.ctaLink && (
-          <a href={thankYou.ctaLink} className={`${style.primary} ${style.hover} text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg text-center`}>
+          <a href={thankYou.ctaLink} target="_blank" rel="noopener noreferrer" className={`${style.primary} ${style.hover} text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg text-center`}>
           {thankYou.ctaLabel}
         </a>
        )} 
        {thankYou.secondaryLink && (
-        <a href={thankYou.secondaryLink} target="_blank" rel="noopener" className="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-6 rounded-xl border border-white/20 transition-all text-center">
+        <a href={thankYou.secondaryLink} target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-6 rounded-xl border border-white/20 transition-all text-center">
           {thankYou.secondaryLabel}
         </a>
         )}
          {thankYou.ctaLink3 && (
-          <a href={thankYou.ctaLink3} className="bg-white/5 hover:bg-white/10 text-white/80 font-bold py-4 px-6 rounded-xl border border-white/10 transition-all text-center">
-              {thankYou.ctaLabel3 || "SCOPRI DI PIÙ"}
+          <a href={thankYou.ctaLink3} target="_blank" rel="noopener noreferrer" className="bg-white/5 hover:bg-white/10 text-white/80 font-bold py-4 px-6 rounded-xl border border-white/10 transition-all text-center">
+              {thankYou.ctaLabel3 || ""}
           </a>
         )}
          {thankYou.ctaLink4 && (
-          <a href={thankYou.ctaLink4} className="bg-white/5 hover:bg-white/10 text-white/80 font-bold py-4 px-6 rounded-xl border border-white/10 transition-all text-center">
+          <a href={thankYou.ctaLink4} target="_blank" rel="noopener noreferrer" className="bg-white/5 hover:bg-white/10 text-white/80 font-bold py-4 px-6 rounded-xl border border-white/10 transition-all text-center">
               {thankYou.ctaLabel4 || "SCOPRI DI PIÙ"}
           </a>
         )} 

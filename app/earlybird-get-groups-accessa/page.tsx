@@ -66,17 +66,22 @@ export default function LandingPage() {
 
   return (
     <main className={`min-h-screen ${style.bg} flex items-center justify-center p-6`}>
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
+       <div className=""><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-4 border-b-8 border-fuchsia-500 md:pb-4 pb-4`}>
+                {config.title}
+              </h1>       
+      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 ">
+         
         {/* Preview Immagine Dinamica */}
         <div className="relative aspect-[3/4] bg-slate-100 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center border border-slate-200">
+         
           {config.image ? (
             <img src={config.image} alt="Book Cover Preview" className="object-cover w-full h-full" />
           ) : (
             <span className="text-slate-400 font-medium italic">BOOK PREVIEW</span>
           )}
+          
         </div>
-
+        
         {/* Contenuto Form */}
         <div className="flex flex-col">
           
@@ -98,10 +103,10 @@ export default function LandingPage() {
           ) : (
             /* --- LAYOUT ORIGINALE --- */
             <>
+              
               <h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-4 border-b-8 border-fuchsia-500 md:pb-4 pb-4`}>
                 {config.title}
               </h1>
-              
               <p className="text-xl text-slate-200 mb-4">
                 {config.subtitle}
               </p>
@@ -132,7 +137,7 @@ export default function LandingPage() {
                     type="email"
                     placeholder="Enter your best email"
                     required
-                    className="w-full px-4 py-4 rounded-xl border border-slate-200 text-slate-900 focus:ring-2 focus:ring-fuchsia-500 outline-none transition-all"
+                    className="w-full px-4 py-4 rounded-xl border border-slate-200 text-slate-100 focus:ring-2 focus:ring-fuchsia-500 outline-none transition-all"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -149,7 +154,7 @@ export default function LandingPage() {
                   <label htmlFor="privacy" className={`font-bold text-xs leading-tight ${style.mute}`}>
                     By clicking the button you will receive the {config.leadMagnet} and you agree to receive our newsletter and marketing updates.<br/> 
                     You can unsubscribe at any time. I have read and agree to the{" "}
-                    <Link href={`/privacy-policy/${config.legal.name}`} target="_blank" className={`${style.accent} font-medium underline hover:opacity-80`}>
+                    <Link href={`/privacy-policy/${config.legal.name}`} target="_blank" rel="noopener noreferrer" className={`${style.accent} font-medium underline hover:opacity-80`}>
                       Privacy Policy
                     </Link>.
                     I understand my data will be processed according to GDPR.
@@ -171,7 +176,7 @@ export default function LandingPage() {
             We value your privacy. Unsubscribe with one click at any time. Your information is secure. We only use trusted partners (like Brevo) to manage your data and we never sell it to third parties.
           </p>
         </div>
-      </div>
+      </div></div>
     </main>
   );
 }
