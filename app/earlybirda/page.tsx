@@ -67,13 +67,13 @@ export default function LandingPage() {
       <div className="fixed bottom-2 left-0 right-0 z-50 flex justify-center px-6">
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
-            href="/checkout-early-bird" 
+            href="https://rebestdigital.gumroad.com/l/ixtfn" target="_blank" rel="noopener noreferrer"
             className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
           >
             🔥 Buy Early Bird (Save 80%)
           </Link>
           <Link 
-            href="/earlybird-feature" 
+            href="/earlybird-feature" target="_blank" rel="noopener noreferrer"
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
             📦 Browse Features
