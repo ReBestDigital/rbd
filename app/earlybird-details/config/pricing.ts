@@ -1,3 +1,4 @@
+const fineeb = '30/04/2026'
 export interface PlanFeature {
   feature: string;
   description?: string;
@@ -45,12 +46,12 @@ export const PRICING_CONFIG: PlanFeature[] = [
   { feature: "Cod: LM002 | Neighborhood Guide", description: "Lead Magnet ideal for open houses", earlyBird: { active: true, status: 'completo' }, full: { active: true, status: 'completo' }, start: { active: true, status: 'completo' } },
   { feature: "Cod: LM003 | Homebuyer Checklist", description: "Lead Magnet for open house and social", earlyBird: { active: true, status: 'completo' }, full: { active: true, status: 'completo' }, start: { active: true, status: 'completo' } },
   { feature: "Cod: LM004 | HomeSeller Checklist", description: "Lead Magnet for open house and social", earlyBird: { active: true, status: 'completo' }, full: { active: true, status: 'completo' }, start: { active: true, status: 'completo' } },
-  { feature: "Cod: LM005 | ??? Lead Magnet 5 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo',date :'25/03/2026' }, full: { active: true, status: 'in_arrivo' ,date :'25/03/2026'}, start: { active: false, status: 'completo' } },
-  { feature: "Cod: LM006 | ??? Lead Magnet 6 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo',date :'25/03/2026' }, full: { active: true, status: 'in_arrivo',date :'25/03/2026' }, start: { active: false, status: 'completo' } },
-  { feature: "Cod: LM007 | ??? Lead Magnet 7 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo' ,date :'25/03/2026'}, full: { active: true, status: 'in_arrivo' ,date :'25/03/2026'}, start: { active: false, status: 'completo' } },
-  { feature: "Cod: LM008 | ??? Lead Magnet 8 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo' ,date :'25/03/2026'}, full: { active: true, status: 'in_arrivo' ,date :'25/03/2026'}, start: { active: false, status: 'completo' } },
-  { feature: "Cod: LM009 | ??? Lead Magnet 9 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo',date :'25/03/2026' }, full: { active: false, status: 'completo' }, start: { active: false, status: 'completo' } },
-  { feature: "Cod: LM010 | ??? Lead Magnet 10 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo' ,date :'25/03/2026'}, full: { active: false, status: 'completo' }, start: { active: false, status: 'completo' } },
+  { feature: "Cod: LM005 | ??? Lead Magnet 5 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo',date : fineeb }, full: { active: true, status: 'in_arrivo' ,date :fineeb}, start: { active: false, status: 'completo' } },
+  { feature: "Cod: LM006 | ??? Lead Magnet 6 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo',date :fineeb }, full: { active: true, status: 'in_arrivo',date :fineeb }, start: { active: false, status: 'completo' } },
+  { feature: "Cod: LM007 | ??? Lead Magnet 7 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo' ,date :fineeb}, full: { active: true, status: 'in_arrivo' ,date :fineeb}, start: { active: false, status: 'completo' } },
+  { feature: "Cod: LM008 | ??? Lead Magnet 8 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo' ,date :fineeb}, full: { active: true, status: 'in_arrivo' ,date :fineeb}, start: { active: false, status: 'completo' } },
+  { feature: "Cod: LM009 | ??? Lead Magnet 9 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo',date :fineeb }, full: { active: false, status: 'completo' }, start: { active: false, status: 'completo' } },
+  { feature: "Cod: LM010 | ??? Lead Magnet 10 ???", description: "You ll find out soon  :)", earlyBird: { active: true, status: 'in_arrivo' ,date :fineeb}, full: { active: false, status: 'completo' }, start: { active: false, status: 'completo' } },
 
   /* OPEN HOUSE */
   { feature: "Section: Open House Assets", isHeader: true },

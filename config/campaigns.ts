@@ -9,6 +9,9 @@ export const CAMPAIGNS = {
     id: "stop",
     title: "Own your Business, stop paying for someone else growth...",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
+    text1 : "",
+    text2bold : "",
+    text3border : "",
     leadMagnet: "the Infographics",
     buttonLabel: "Get the infographics in your inbox!",
     image: "/CopertinaDefinitivaPerKindle.jpg", // Percorso della copertina
@@ -41,6 +44,9 @@ export const CAMPAIGNS = {
     title: "Dominate Your Real Estate Market for 1/5 of the Price. Timing pays off", 
     // Spieghiamo chiaramente il valore dell'operazione Early Bird
     subtitle: "Stop overpaying for generic, elegant tools. Secure the ReBest Digital Ecosystem now and start to dominate your Area with our Ecosystem. Not ready yet? Download our Professional Homebuyer Checklist to witness the quality that will set you apart from every competitor.", 
+    text1 : "Ciao",
+    text2bold : "ghmfghmdfgh",
+    text3border : "Ciao",
     leadMagnet: "the Homebuyer Checklist",
     buttonLabel: "Get the Checklist & Reveal the Ecosystem",
     image: "/earlySellpage1.jpg", 
@@ -73,6 +79,9 @@ export const CAMPAIGNS = {
     id: "bird1",
     title: "Own your Business, stop paying for someone else growth...",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
+     text1 : "",
+    text2bold : "",
+    text3border : "",
     leadMagnet: "the Infographics",
     buttonLabel: "Get the infographics in your inbox!",
     image: "/earlySellpage1.jpg", // Percorso della copertina
@@ -105,7 +114,9 @@ export const CAMPAIGNS = {
     
     // Sottotitolo che spiega il "perché" dell'azione richiesta e il vantaggio Early Bird
     subtitle: "With this strategic move, you have armed yourself with everything you need to compete against Digital newcomers and reclaim your dominance in your local market—both on the street and in the digital landscape.",
-    
+     text1 : "",
+    text2bold : "",
+    text3border : "",
     leadMagnet: "The Early Bird Activation",
     buttonLabel: "ACTIVATE MY EARLY BIRD STATUS",
     image: "/EarlyBirdGreatJob.jpg", 
@@ -138,7 +149,9 @@ export const CAMPAIGNS = {
     
     // Sottotitolo che spiega il "perché" dell'azione richiesta e il vantaggio Early Bird
     subtitle: "With this strategic move, you have armed yourself with everything you need to compete against Digital New-comers and reclaim your dominance in your local market—both on the street and in the digital landscape.",
-    
+     text1 : "",
+    text2bold : "",
+    text3border : "",
     leadMagnet: "The Early Bird Activation",
     buttonLabel: "ACTIVATE MY EARLY BIRD STATUS",
     image: "/earlySellpage1.jpg", 
@@ -170,6 +183,9 @@ export const CAMPAIGNS = {
     id: "homebuyercl",
     title: "Own your Business, stop paying for someone else growth...",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
+     text1 : "",
+    text2bold : "",
+    text3border : "",
     leadMagnet: "the Infographics",
     buttonLabel: "Get the infographics in your inbox!",
     image: "/CopertinaDefinitivaPerKindle.jpg", // Percorso della copertina
@@ -200,6 +216,9 @@ export const CAMPAIGNS = {
     id: "home",
     title: "Own your Business, stop paying for someone else growth...",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
+     text1 : "",
+    text2bold : "",
+    text3border : "",
     leadMagnet: "the Infographics",
     buttonLabel: "Get the infographics in your inbox!",
     image: "/CopertinaDefinitivaPerKindle.jpg", // Percorso della copertina

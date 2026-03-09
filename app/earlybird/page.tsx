@@ -65,6 +65,9 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   return (
     <main className={`min-h-screen ${style.bg} flex items-center justify-center p-6`}>
+      <div className= "max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4`} style={{ borderColor: style.color || '#FFffFF' }}>
+                {config.title}
+              </h1>    
       <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Preview Immagine Dinamica */}
@@ -78,7 +81,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
         {/* Contenuto Form */}
         <div className="flex flex-col">
-          <h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-4`}>
+          <h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-4 border-b-8 pb-4 md:pt-6 `} style={{ borderColor: style.color || '#FFffFF' }}>
             {config.title}
           </h1>
           <p className="font-bold text-lg text-slate-200 mb-4">
@@ -129,6 +132,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             We value your privacy. Unsubscribe with one click at any time. Your information is secure. We only use trusted partners (like Brevo) to manage your data and we never sell it to third parties.
           </p>
         </div>
+      </div>
       </div>
     </main>
   );

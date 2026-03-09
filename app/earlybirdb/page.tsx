@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
 
-const CAMPAIGN_ID = "birdafter";
+const CAMPAIGN_ID = "bird";
 
 const generateHash = async (text: string) => {
   const msgUint8 = new TextEncoder().encode(text);
@@ -108,20 +108,23 @@ export default function LandingPage() {
               <p className="text-xl text-slate-200 mb-4">
                 {config.subtitle}
               </p>
-
-              <p className="font-bold text-lg text-slate-100 mb-4">
-                 <b>Even though you have already received the links to the secret playlists and the dedicated Facebook groups in your purchase PDF,</b> we are asking for one small additional step. 
+              {config.text1 && (
+              <p className="text-lg text-slate-100 mb-4">
+                 {config.text1}
               </p >
-
-              <div className="text-lg text-slate-100 mb-4 border-l-8 md:pl-12 pl-4" style={{ borderColor: style.color || '#FF00FF' }}>
+              )}
+             {config.text2bold && (
+              <p className="font-bold text-lg text-slate-100 mb-4">
+                 <b>{config.text2bold}</b> 
+              </p >
+              )}
+             {config.text3border && (
+               <div className="text-lg text-slate-100 mb-4 border-l-8 md:pl-12 pl-4" style={{ borderColor: style.color || '#FF00FF' }}>
                 <p className="mb-4">
-                  We value our clients' privacy, so we have decided to adopt a double opt-in registration, even though it might add a little friction.
-                </p>
-                <p>
-                  Please enter your email address below. This will allow us to send you real-time updates as soon as new videos are released—which you will receive in early access—and notify you about exclusive materials shared in the Facebook group or uploaded to the YouTube playlists. Our goal is to ensure you can fully leverage your competitive advantage. By signing up via this link, you will receive our updates regarding these events. You can, of course, unsubscribe at any time.
-                </p>
+                {config.text3border}
+                 </p>
               </div>
-
+              )}
               {/* Box Errore (se presente) */}
               {error && (
                 <div className="bg-red-500/20 border border-red-500 text-red-200 p-3 rounded-lg mb-4 text-sm font-bold">
