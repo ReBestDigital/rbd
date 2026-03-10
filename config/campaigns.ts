@@ -41,18 +41,18 @@ export const CAMPAIGNS = {
 "bird": {
     id: "bird",
     // Focus sul dominio del mercato e sull'investimento intelligente
-    title: "Dominate Your Real Estate Market for 1/5 of the Price. Timing pays off", 
+    title: "Dominate Your Real Estate Market for 1/5 of the Price. Timing pays off! Take advantage of the Early bird Price!", 
     // Spieghiamo chiaramente il valore dell'operazione Early Bird
-    subtitle: "Stop overpaying for generic, elegant tools. Secure the ReBest Digital Ecosystem now and start to dominate your Area with our Ecosystem. Not ready yet? Download our Professional Homebuyer Checklist to witness the quality that will set you apart from every competitor.", 
-    text1 : "Ciao",
-    text2bold : "ghmfghmdfgh",
-    text3border : "Ciao",
+    subtitle: "Stop overpaying for generic, elegant marketing tools. Secure the ReBest Digital Ecosystem now and start to dominate your Area.", 
+    text1 : "Transform your Real Estate Agency local presence and Stop relying on generic web agencies. Get 80+ strategic marketing assets—from high-conversion newsletters to lead magnets and social systems—designed to establish your authority and secure consistent listings. ",
+    text2bold : "Early Bird access: Get our ecosystem worth at least 5x your investment—less than 10% of your smallest commission.",
+    text3border : " Not ready yet? Download our Professional Homebuyer Checklist (that you can use as lead magnet) to witness the ReBest Digital quality that will set you apart from every competitor. ... a Free Valuation attracts window shoppers. A Homebuyer Checklist attracts action-takers...",
     leadMagnet: "the Homebuyer Checklist",
-    buttonLabel: "Get the Checklist & Reveal the Ecosystem",
+    buttonLabel: "Get the Checklist & Taste the Ecosystem",
     image: "/earlySellpage1.jpg", 
     style: BRAND_STYLES["dark-magenta"], 
     legal: PRIVACY_DOCS["standard-v1"],  
-    brevoListId: 9,
+    brevoListId: 10, 
     brevotemplateId: 8 ,
     thankYou: {
         icon: "🦅",

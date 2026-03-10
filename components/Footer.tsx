@@ -26,9 +26,9 @@ export default function Footer() {
           >
             Brevo Privacy
           </a>
-          <p className="text-white/20">© 2026 All Rights Reserved</p>
+          <p className="text-white/20">© 2026 All Rights Reserved</p> 
         </div>
-
+       <br /><br /><br /><br />
       </div>
     </footer>
   );

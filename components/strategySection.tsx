@@ -16,7 +16,7 @@ export default function StrategySection({ style }: StrategySectionProps) {
           <h3 className="text-white text-xl font-bold mb-3 uppercase tracking-tight text-left">The "Portal Slavery" Trap</h3>
           <p className={`${style.mute} text-sm leading-relaxed text-left`}>
             Most agents work for the portals, not for themselves. You pay to list properties that attract leads you don't own. 
-            The <strong>ReBest Ecosystem</strong> flips the script: it gives you the magnets to intercept sellers 
+            The <strong>ReBest Digital Ecosystem</strong> flips the script: it gives you the magnets to intercept sellers 
             <em> before</em> they even think about a portal. Stop renting your visibility; start building your own digital empire.
           </p>
         </div>
