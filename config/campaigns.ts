@@ -239,7 +239,7 @@ export const CAMPAIGNS = {
         subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine: 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer.",
         // CTA 1: Spinge verso la suite completa dei 12 mesi + 20 bonus
         ctaLabel: "View the Full 360° Arsenal",
-        ctaLink: RBDLINKS["rebest-digital"].suiteDetails, 
+        ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
         // CTA 2: Social per l'autorità
         secondaryLabel: "Join the Revolution on IG",
         secondaryLink: SOCIALS["rebest-digital"].instagram,
