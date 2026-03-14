@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
 
-const CAMPAIGN_ID = "stop"; // Cambia questo per cambiare campagna
+const CAMPAIGN_ID = "book"; // Cambia questo per cambiare campagna
 
 const generateHash = async (text: string) => {
   const msgUint8 = new TextEncoder().encode(text);                           // Converte il testo in bit

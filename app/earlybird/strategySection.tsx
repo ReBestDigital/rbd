@@ -42,7 +42,7 @@ export default function StrategySection({ style }: StrategySectionProps) {
             It builds trust <em>before</em> the first meeting, turning cold leads into exclusive listings.
           </p>
           <div className={`p-4 rounded-xl bg-white/5 border border-dashed border-white/20 text-left`}>
-            <p className="text-xs text-white italic">
+            <p className="text-s text-white italic">
               <strong>Want proof?</strong> Don't just take our word for it. Scroll back up and enter your email 
               to download the <strong>Homebuyer Checklist</strong> for free. Experience the ReBest quality 
               and see how this single strategic asset can change your listing game today.

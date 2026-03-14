@@ -1,12 +1,13 @@
 import { BRAND_STYLES } from './branding';
 import { PRIVACY_DOCS } from './privacy';
 import { SOCIALS } from './socials';
+import { RBDLINKS } from './rbdlinks';
 
 export const CAMPAIGNS = {
   // ************************          PRODOTTI           *************************
   // Stop Being invisible , campagna del libro
-  "stop": {
-    id: "stop",
+  "book": {
+    id: "book",
     title: "Own your Business, stop paying for someone else growth...",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
     text1 : "",
@@ -39,6 +40,7 @@ export const CAMPAIGNS = {
 },
 
 "bird": {
+    //used in earlybird page
     id: "bird",
     // Focus sul dominio del mercato e sull'investimento intelligente
     title: "Dominate Your Real Estate Market for 1/5 of the Price. Timing pays off! Take advantage of the Early bird Price!", 
@@ -58,23 +60,24 @@ export const CAMPAIGNS = {
         icon: "🦅",
         title: "The Vision of an Eagle, the Timing of an Early Bird!",
         description: "You've just taken the first step to escape the portals' slavery. Your high-end checklist is being delivered.",
-        highlight: "500% Value Gain Secured",
-        subDescription: "While you wait for the email, discover the full arsenal of 80+ strategic assets waiting for you in the Early Bird vault.",
+        highlight: "Seecure you 500% Value Gain, Wake up as an Early Bird",
+        subDescription: "While you wait for the email, discover the full arsenal of 80+ strategic assets waiting for you in the Early Bird vault click teh button below.",
         // CTA 1: Spinge forte sulla vendita/roadmap dell'ecosistema
-        ctaLabel: "View the Early Bird Arsenal (5x Value)",
-        ctaLink: SOCIALS["rebest-digital"].site, 
+        ctaLabel: "View the Early Bird Arsenal(5xValue)",
+        ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
         // CTA 2: Social per l'autorità
         secondaryLabel: "Join the Revolution on IG",
         secondaryLink: SOCIALS["rebest-digital"].instagram,
         // CTA 3: Video per mostrare il "dietro le quinte"
         ctaLabel3: "Watch the Strategy in Action",
-        ctaLink3: "https://youtube.com/yourchannel",
+        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
         // CTA 4: Gruppo FB per il "social proof"
-        ctaLabel4: "Enter the Facebook Vault",   
-        ctaLink4: "https://facebook.com/groups/tuogruppo", 
-        footerNote: "Check your Spam folder if the Checklist doesn't arrive in 2 minutes. Don't let the 'Digital New-Comers' win.",
+        ctaLabel4: "Facebook Page",   
+        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+        footerNote: "Check your Spam folder if the Checklist link doesn't arrive in 2 minutes. Don't let the 'Digital New-Comers' win.",
     }
 },
+
 "bird1": {
     id: "bird1",
     title: "Own your Business, stop paying for someone else growth...",
@@ -108,6 +111,7 @@ export const CAMPAIGNS = {
 }
 },
 // after purcase early bird
+//usata in earlybird-get-groups-access
 "birdafter": {
     id: "birdafter",
     title: "Congratulations! You ve just secured your Real Estate unfair advantage. Your PDF contains all the Templates link.",
@@ -143,7 +147,7 @@ export const CAMPAIGNS = {
         ctaLink4: "https://www.youtube.com/playlist?list=PLVCnprZcthXp01g95LsAdtgPp0ffvyX4r",
         footerNote: "EARLY BIRD NOTICE: Our bonus channels are currently under construction, which is why you secured such a competitive advantage. We expect them to be 80% complete by April 30, 2026. If you joined at this very early stage, content may be limited at first." }
 },
-"birdafter1": { //obsoleto , pensavo ci fosse bisogno di un altro passaggio
+"birdafter1": { //OBSOLETO, pensavo ci fosse bisogno di un altro passaggio
     id: "birdafter",
     title: "Congratulations! You ve just secured your Real Estate unfair advantage.",
     
@@ -179,7 +183,7 @@ export const CAMPAIGNS = {
     }
 },
 // ************************           LEAD MAGNETS           *************************
-  "homebuyercl": { // Lead Magnet Compratori
+  "homebuyercl": { // Lead Magnet Compratori è usato nella homebuyer checklist 
     id: "homebuyercl",
     title: "Own your Business, stop paying for someone else growth...",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
@@ -209,6 +213,44 @@ export const CAMPAIGNS = {
   ctaLabel4: "Facebook Vault",   // E questo
   footerNote: "Please check your Spam or Promotions folder if you don't see the mail with the download link.",
 }
+},
+"homesellercl": {
+    // Landing page dedicata alla Lead Generation per Agenti (Lead Magnet: Homeowner Checklist)
+    id: "homeseller",
+    // Focus sul posizionamento come esperto e sulla cattura di incarichi di qualità
+    title: "Stop Chasing Real Estate Tourists. Start Attracting Serious Home Sellers with Strategic Authority.", 
+    // Spieghiamo il valore della risorsa rispetto alla concorrenza generica
+    subtitle: "A 'Free Valuation' attracts window shoppers. A 'Professional Home Seller Checklist' attracts action-takers ready for a premium sale.", 
+    text1 : "Transform your Real Estate Agency's authority. Get a taste of our 360° Content Engine—80+ strategic assets, from high-conversion newsletters to expert-built lead magnets, designed to secure consistent listings and dominate your area.",
+    text2bold : "You will receive in your inbox (after confirming your subscription to our newsletter via the first email you receive) the download link to the PDF of the tool used in our Premium Ecosystem: the HomeSeller Checklist.",
+    text3border : "Witness the ReBest Digital quality that sets you apart from every 'real estate digital newcomer'. Our templates are not just beautiful—they are technically optimized and strategically engineered for your growth.",
+    leadMagnet: "the Home Seller Checklist",
+    buttonLabel: "Get Our Checklist & Start Dominating",
+    image: "/homeseller-checklist-preview.jpg", 
+    style: BRAND_STYLES["dark-magenta"], 
+    legal: PRIVACY_DOCS["standard-v1"],  
+    brevoListId: 11, 
+    brevotemplateId: 15 ,
+    thankYou: {
+        icon: "📈",
+        title: "Your Path to Market Leadership Starts Now!",
+        description: "You've just taken the first step to escape generic marketing. Your high-end Home Seller Checklist is being delivered to your inbox.",
+        highlight: "Position yourself as the Expert, not just another Agent.",
+        subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine: 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer.",
+        // CTA 1: Spinge verso la suite completa dei 12 mesi + 20 bonus
+        ctaLabel: "View the Full 360° Arsenal",
+        ctaLink: RBDLINKS["rebest-digital"].suiteDetails, 
+        // CTA 2: Social per l'autorità
+        secondaryLabel: "Join the Revolution on IG",
+        secondaryLink: SOCIALS["rebest-digital"].instagram,
+        // CTA 3: Video per mostrare la superiorità tecnica (decomponibilità e mobile-responsive)
+        ctaLabel3: "Watch the Strategy in Action",
+        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
+        // CTA 4: Gruppo FB per il "social proof"
+        ctaLabel4: "Facebook Page",   
+        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+        footerNote: "Check your Spam folder if the link doesn't arrive in 2 minutes. Don't let your competitors win the digital game.",
+    }
 },
 // ************************           FUNZIONAMENTO SITO            *************************
    // home , è nella home ma non prende i testi da qui per ora 

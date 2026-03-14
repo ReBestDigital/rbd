@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
-import StrategySection from '@/app/earlybird/strategySection'; 
+import StrategySection from './strategySection'; 
 
-const CAMPAIGN_ID = "bird";
+const CAMPAIGN_ID = "homesellercl";
 
 const generateHash = async (text: string) => {
   const msgUint8 = new TextEncoder().encode(text);
@@ -93,10 +93,10 @@ export default function LandingPage() {
          
         {/* Preview Immagine Dinamica */}
        
-        <div className=" relative aspect-[3/4] bg-slate-100 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center border border-slate-200">
+        <div className=" relative aspect-[11/16] bg-slate-100 rounded-2xl shadow-1xl overflow-hidden flex items-top  justify-center border border-slate-200">
          
           {config.image ? (
-            <img src={config.image} alt="Early bird Preview" className="object-cover w-full h-full" />
+            <img src={config.image} alt="Early bird Preview" className="object-cover  w-full h-full" />
           ) : (
             <span className="text-slate-400 font-medium italic">BOOK PREVIEW</span>
           )}
