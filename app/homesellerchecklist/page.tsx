@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
 import StrategySection from './strategySection'; 
 
-const CAMPAIGN_ID = "homesellercl";
+const CAMPAIGN_ID = "homesellerchl";
 
 const generateHash = async (text: string) => {
   const msgUint8 = new TextEncoder().encode(text);
@@ -80,7 +80,7 @@ export default function LandingPage() {
             href="/earlybird-feature" target="_blank" rel="noopener noreferrer"
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
-            📦 Browse Features
+            📦 Browse Early B Features
           </Link>
         </div>
       </div> 

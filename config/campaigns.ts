@@ -246,15 +246,15 @@ export const CAMPAIGNS = {
   footerNote: "Please check your Spam or Promotions folder if you don't see the mail with the download link.",
 }
 },
-"homesellercl": {
+"homesellerchl": {
     // Landing page dedicata alla Lead Generation per Agenti (Lead Magnet: Homeowner Checklist)
-    id: "homeseller",
+    id: "homesellerchl",
     // Focus sul posizionamento come esperto e sulla cattura di incarichi di qualità
     title: "Stop Chasing Real Estate Tourists. Start Attracting Serious Home Sellers with Strategic Authority.", 
     // Spieghiamo il valore della risorsa rispetto alla concorrenza generica
-    subtitle: "A 'Free Valuation' attracts window shoppers. A 'Professional Home Seller Checklist' attracts action-takers ready for a premium sale.", 
+    subtitle: "A 'Free Home Valuation' attracts window shoppers. A 'Professional Home Seller Checklist' attracts action-takers ready for a premium sale.", 
     text1 : "Transform your Real Estate Agency's authority. Get a taste of our 360° Content Engine—80+ strategic assets, from high-conversion newsletters to expert-built lead magnets, designed to secure consistent listings and dominate your area.",
-    text2bold : "You will receive in your inbox (after confirming your subscription to our newsletter via the first email you receive) the download link to the PDF of the tool used in our Premium Ecosystem: the HomeSeller Checklist.",
+    text2bold : "You will receive in your inbox (after confirming your subscription to our newsletter via the first email you receive) the link to download the non-customizable PDF version of the tool used in our Premium Ecosystem: the Checklist for Real Estate Sellers.",
     text3border : "Witness the ReBest Digital quality that sets you apart from every 'real estate digital newcomer'. Our templates are not just beautiful—they are technically optimized and strategically engineered for your growth.",
     leadMagnet: "the Home Seller Checklist",
     buttonLabel: "Get Our Checklist & Start Dominating",
@@ -266,22 +266,22 @@ export const CAMPAIGNS = {
     thankYou: {
         icon: "📈",
         title: "Your Path to Market Leadership Starts Now!",
-        description: "You've just taken the first step to escape generic marketing. Your high-end Home Seller Checklist is being delivered to your inbox.",
+        description: "You've just taken the first step to escape generic marketing. Your high-end, Home Seller Checklist PDF link, is being delivered to your inbox.",
         highlight: "Position yourself as the Expert, not just another Agent.",
-        subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine: 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer.",
+        subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine AKA Rebest Digital Ecosystem: 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer.",
         // CTA 1: Spinge verso la suite completa dei 12 mesi + 20 bonus
-        ctaLabel: "View the Full 360° Arsenal",
+        ctaLabel: "View the Early Bird Arsenal(5xValue)",
         ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
         // CTA 2: Social per l'autorità
-        secondaryLabel: "Join the Revolution on IG",
+        secondaryLabel: "Join Us on IG",
         secondaryLink: SOCIALS["rebest-digital"].instagram,
-        // CTA 3: Video per mostrare la superiorità tecnica (decomponibilità e mobile-responsive)
+        // CTA 3: Video per mostrare il "dietro le quinte"
         ctaLabel3: "Watch the Strategy in Action",
         ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
         // CTA 4: Gruppo FB per il "social proof"
         ctaLabel4: "Facebook Page",   
         ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
-        footerNote: "Check your Spam folder if the link doesn't arrive in 2 minutes. Don't let your competitors win the digital game.",
+        footerNote: "Check your Spam folder if the link doesn't arrive in 2 minutes. Don't let your competitors win the digital game. Please note: this is a non-customizable PDF version.",
     }
 },
 // ************************           FUNZIONAMENTO SITO            *************************

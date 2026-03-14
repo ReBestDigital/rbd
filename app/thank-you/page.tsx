@@ -2,7 +2,7 @@
 import { useSearchParams } from 'next/navigation';
 import { CAMPAIGNS } from '@/config/campaigns';
 import { Suspense } from 'react';
-
+import Link from 'next/link';
 // 1. Creiamo un componente interno che contiene tutta la tua logica
 function ThankYouContent() {
   const searchParams = useSearchParams();
@@ -17,7 +17,23 @@ function ThankYouContent() {
 
   return (
     <div className={`${style.bg} min-h-screen flex flex-col items-center justify-center p-6  text-center  `}>
-      
+       {/* STICKY BUTTONS BAR */}
+      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}>
+        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
+          <Link 
+            href="https://rebestdigital.gumroad.com/l/ixtfn" target="_blank" rel="noopener noreferrer"
+            className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
+          >
+            🔥 Buy Early Bird (Save 80%)
+          </Link>
+          <Link 
+            href="/earlybird-feature" target="_blank" rel="noopener noreferrer"
+            className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
+          >
+            📦 Browse Features
+          </Link>
+        </div>
+      </div> 
       {/* Icona o Elemento Visivo */}
       <div className={`${style.primary} w-20 h-20 rounded-full flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(255,0,255,0.4)] animate-bounce`}>
         <span className="text-white text-4xl">{thankYou.icon || "🚀"}</span>
