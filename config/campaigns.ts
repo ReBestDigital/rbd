@@ -228,8 +228,8 @@ export const CAMPAIGNS = {
     image: "/home-buyers-checklist-preview.jpg", // Percorso della copertina
     style: BRAND_STYLES["dark-magenta"], // Collega lo stile
     legal: PRIVACY_DOCS["standard-v1"],  // Collega la privacy
-    brevoListId: 3,
-    brevotemplateId : 8 ,
+    brevoListId: 10,
+    brevotemplateId : 15 ,
     thankYou: {
   icon: "🏠",
         title: "You've just taken the first step to escape generic marketing.",
