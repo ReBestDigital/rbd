@@ -236,7 +236,7 @@ export const CAMPAIGNS = {
         description: "Your high-end, Professional Homebuyer Checklist PDF link is being delivered to your inbox.",
         highlight: "Qualify your leads like a pro. Stop being just another Agent.",
         subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine (ReBest Digital Ecosystem): 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer. Note: you will receive a non-customizable PDF version; the fully customizable version with instructions is inside the ReBest ecosystem. Stop chasing, start attracting.",
-        ctaLabel: "View the Early Bird Arsenal(5xValue)",
+        ctaLabel: "View the Early Bird Offer(5xValue)",
         ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
         // CTA 2: Social per l'autorità
         secondaryLabel: "Join Us on IG",
@@ -286,6 +286,44 @@ export const CAMPAIGNS = {
         ctaLabel4: "Facebook Page",   
         ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
         footerNote: "Check your Spam folder if the link doesn't arrive in 2 minutes. Don't let your competitors win the digital game. Please note: this is a non-customizable PDF version.",
+    }
+},
+"reciprocity": {
+    // Landing page dedicata alla strategia "The Reciprocity Engine"
+    id: "reciprocity",
+    // Focus sulla visibilità e l'autorità come soluzione alla "povertà" di risultati
+    title: "Stop Being a Real Estate Digital Tenant. Start own your business. Apply the Reciprocity Engine.", 
+    // Spostamento dalla dipendenza dai portali alla sovranità dei dati
+    subtitle: "Portals own your audience and usually you own the Invoice. To escape this, you need a transition from a 'Solicitor' begging for listings to the 'Expert Advisor' who dominates the district.", 
+    text1 : "The market doesn t pay the best agent; it pays the most visible authority. Most agencies are trapped in 'passive hope', renting their business from portals instead of owning their database. This infographic reveals the map of 'The Reciprocity Engine'—the psychological blueprint to stop asking for listings and start creating 'psychological debt' through tangible value. Inside, you will find a roadmap to solve these gaps on your own. Use this logic to build your authority manually, or discover how our plug-and-play assets Ecosystem can do the heavy lifting.",
+    text2bold : "Download 'The Reciprocity Engine'  PDF to learn how to transition from a seller chaser to a Reliable Authority.",
+    text3border : "Stop working IN your business and start working ON your authority. Stop Asking , start giving and become the only logical choice in your area.",
+    leadMagnet: "The Reciprocity Engine Guide",
+    buttonLabel: "Get the Reciprocity Engine Infographic",
+    image: "/reciprocity-engine-preview.jpg", 
+    style: BRAND_STYLES["dark-magenta"], 
+    legal: PRIVACY_DOCS["standard-v1"],  
+    brevoListId: 13, 
+    brevotemplateId: 15 ,
+    thankYou: {
+        icon: "🧠",
+        title: "You've Just Triggered the Reciprocity Engine!",
+        description: "Your guide to the Psychology of Value and Data Sovereignty is flying to your inbox.",
+        highlight: "Success is not a roll of the dice; it is a matter of engineering.",
+        subDescription: "While you read how to arm your defenses and bypass the 'Solicitor Alarm', see the full 360° Real Estate Content Engine in action. The guide shows you the logic; our Early Bird Ecosystem gives you the weapons (12 months of strategy + 80 assets) to dominate immediately.",
+        // CTA 1: Spinge verso l'ecosistema completo
+        ctaLabel: "Claim Your Strategic Advantage (Early Bird)",
+        ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
+        // CTA 2: Social
+        secondaryLabel: "Join the Advisor Community on IG",
+        secondaryLink: SOCIALS["rebest-digital"].instagram,
+        // CTA 3: Video
+        ctaLabel3: "Watch the Reciprocity Logic in Action",
+        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
+        // CTA 4: Social Proof
+        ctaLabel4: "Facebook Authority Group",   
+        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+        footerNote: "Check your Spam folder if the link doesn't arrive in 2 minutes. Remember: Attention is fleeting, but Data is permanent.",
     }
 },
 // ************************           FUNZIONAMENTO SITO            *************************
