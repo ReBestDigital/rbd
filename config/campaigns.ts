@@ -217,34 +217,38 @@ export const CAMPAIGNS = {
 // ************************           LEAD MAGNETS           *************************
   "homebuyercl": { // Lead Magnet Compratori è usato nella homebuyer checklist 
     id: "homebuyercl",
-    title: "Own your Business, stop paying for someone else growth...",
-    subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
-     text1 : "",
-    text2bold : "",
-    text3border : "",
-    leadMagnet: "the Infographics",
-    buttonLabel: "Get the infographics in your inbox!",
-    image: "/CopertinaDefinitivaPerKindle.jpg", // Percorso della copertina
+  title: "Stop Chasing Real Estate Tourists. Start Attracting Serious Homebuyers with Strategic Authority.", 
+    // Differenziazione tra curiosi e acquirenti qualificati
+    subtitle: "A 'Generic Property Alert' attracts window shoppers. A 'Professional Homebuyer Checklist' filters for action-takers ready to commit.", 
+    text1 : "Transform your Real Estate Agency's authority. Get a taste of our 360° Content Engine—80+ strategic assets designed to secure consistent listings and dominate your area. Unlike random social posts that vanish in seconds, this checklist is a high-performance filtering tool. While your competitors are posting noise, you will be providing a strategic roadmap that targets the specific anxieties of serious buyers. This is how you stop chasing tourists and start attracting closers.",
+    text2bold : "You will receive in your inbox (after confirming your subscription via the first email) the link to download the non-customizable multi-page PDF version of the tool used in our Premium Ecosystem: the Professional Homebuyer Checklist.",
+    text3border : "Witness the ReBest Digital quality that sets you apart from every 'real estate digital newcomer'. Our templates are not just beautiful—they are technically optimized and strategically engineered for your growth.",
+    leadMagnet: "the Professional Homebuyer Checklist",
+    buttonLabel: "Get the Buyer Checklist & Start Dominating",
+    image: "/home-buyers-checklist-preview.jpg", // Percorso della copertina
     style: BRAND_STYLES["dark-magenta"], // Collega lo stile
     legal: PRIVACY_DOCS["standard-v1"],  // Collega la privacy
     brevoListId: 3,
     brevotemplateId : 8 ,
     thankYou: {
-  icon: "🚀",
-  title: "Confirmation Received!",
-  description: "Thank you for confirming your email.",
-  highlight: "Your infographic",
-  subDescription: "is on its way to your inbox.",
- ctaLabel: "Here you can find the roadmap",
-  ctaLink: SOCIALS["rebest-digital"].site,
-  secondaryLabel: "ReBest Instagram",
-  secondaryLink: SOCIALS["rebest-digital"].instagram,
-  ctaLabel3: "You tube secret playlist",
-  ctaLink3: "https://youtube.com/yourchannel",
-  ctaLink4: "https://wa.me/tuonumero", // Aggiungi questo
-  ctaLabel4: "Facebook Vault",   // E questo
-  footerNote: "Please check your Spam or Promotions folder if you don't see the mail with the download link.",
-}
+  icon: "🏠",
+        title: "You've just taken the first step to escape generic marketing.",
+        description: "Your high-end, Professional Homebuyer Checklist PDF link is being delivered to your inbox.",
+        highlight: "Qualify your leads like a pro. Stop being just another Agent.",
+        subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine (ReBest Digital Ecosystem): 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer. Note: you will receive a non-customizable PDF version; the fully customizable version with instructions is inside the ReBest ecosystem. Stop chasing, start attracting.",
+        ctaLabel: "View the Early Bird Arsenal(5xValue)",
+        ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
+        // CTA 2: Social per l'autorità
+        secondaryLabel: "Join Us on IG",
+        secondaryLink: SOCIALS["rebest-digital"].instagram,
+        // CTA 3: Video per mostrare il "dietro le quinte"
+        ctaLabel3: "Watch the Strategy in Action",
+        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
+        // CTA 4: Gruppo FB per il "social proof"
+        ctaLabel4: "Facebook Page",   
+        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+        footerNote: "Check your Spam folder if the link doesn't arrive in 2 minutes. Don't let your competitors win the digital game. Please note: this is a non-customizable PDF version.",
+  }
 },
 "homesellerchl": {
     // Landing page dedicata alla Lead Generation per Agenti (Lead Magnet: Homeowner Checklist)
@@ -254,7 +258,7 @@ export const CAMPAIGNS = {
     // Spieghiamo il valore della risorsa rispetto alla concorrenza generica
     subtitle: "A 'Free Home Valuation' attracts window shoppers. A 'Professional Home Seller Checklist' attracts action-takers ready for a premium sale.", 
     text1 : "Transform your Real Estate Agency's authority. Get a taste of our 360° Content Engine—80+ strategic assets, from high-conversion newsletters to expert-built lead magnets, designed to secure consistent listings and dominate your area.",
-    text2bold : "You will receive in your inbox (after confirming your subscription to our newsletter via the first email you receive) the link to download the non-customizable PDF version of the tool used in our Premium Ecosystem: the Checklist for Real Estate Sellers.",
+    text2bold : "You will receive in your inbox (after confirming your subscription to our newsletter via the first email you receive) the link to download the non-customizable multi-page PDF version of the tool used in our Premium Ecosystem: the Checklist for Real Estate Sellers.",
     text3border : "Witness the ReBest Digital quality that sets you apart from every 'real estate digital newcomer'. Our templates are not just beautiful—they are technically optimized and strategically engineered for your growth.",
     leadMagnet: "the Home Seller Checklist",
     buttonLabel: "Get Our Checklist & Start Dominating",
@@ -265,10 +269,10 @@ export const CAMPAIGNS = {
     brevotemplateId: 15 ,
     thankYou: {
         icon: "📈",
-        title: "Your Path to Market Leadership Starts Now!",
-        description: "You've just taken the first step to escape generic marketing. Your high-end, Home Seller Checklist PDF link, is being delivered to your inbox.",
+        title: "You've just taken the first step to escape generic marketing.",
+        description: " Your high-end, Home Seller Checklist PDF link, is being delivered to your inbox.",
         highlight: "Position yourself as the Expert, not just another Agent.",
-        subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine AKA Rebest Digital Ecosystem: 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer.",
+        subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine AKA Rebest Digital Ecosystem: 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer. Please note that you will receive a non-customizable PDF version of the checklist; the complete, customizable version with instructions is available within the ReBest digital ecosystem. Stop chasing , start actracting." ,
         // CTA 1: Spinge verso la suite completa dei 12 mesi + 20 bonus
         ctaLabel: "View the Early Bird Arsenal(5xValue)",
         ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
