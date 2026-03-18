@@ -87,10 +87,10 @@ export default function ComparazionePage() {
                 <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-opacity-60 text-sm md:text-base ">START Pack</th>
               </tr>
               <tr className="border-b border-white/5 bg-black/20">
-                <td className="p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
-                <td className={`p-4 text-center font-black text-2xl ${style.accent}`}>{PLAN_PRICES.earlyBird}</td>
-                <td className="p-4 text-center font-bold text-2xl text-white">{PLAN_PRICES.full}</td>
-                <td className="p-4 text-center font-bold text-2xl text-white/60">{PLAN_PRICES.start}</td>
+                <td className="p-2  md:p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
+                <td className={`p-2  md:p-4 text-center font-black text-2xl ${style.accent} text-sm md:text-base`}>{PLAN_PRICES.earlyBird}</td>
+                <td className="p-2  md:p-4 text-center font-bold text-2xl text-white text-sm md:text-base">{PLAN_PRICES.full}</td>
+                <td className="p-2  md:p-4 text-center font-bold text-2xl text-white/60 text-sm md:text-base">{PLAN_PRICES.start}</td>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
@@ -98,7 +98,7 @@ export default function ComparazionePage() {
                 if (item.isHeader) {
                   return (
                     <tr key={index} className="bg-white/5">
-                      <td colSpan={4} className="p-3 md:p-4 pl-2 md:pl-6 text-left font-black text-lg tracking-[0.2em] text-slate-400 uppercase border-y border-white/10">
+                      <td colSpan={4} className="p-3 md:p-4 pl-2 md:pl-6 text-left font-black text-lg tracking-[0.1em] md:tracking-[0.2em] text-slate-400 uppercase border-y border-white/10">
                         {item.feature}
                       </td>
                     </tr>
