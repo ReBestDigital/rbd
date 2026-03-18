@@ -5,9 +5,40 @@ import { RBDLINKS } from './rbdlinks';
 
 export const CAMPAIGNS = {
   // ************************          PRODOTTI           *************************
+ "book": {
+    "id": "book",
+    "title": "Break the 'Real Estate Pushy Agent' Cycle. Stop Asking, Start Giving: The Blueprint to start Attracting clients",
+  "subtitle": "Download 'The Reciprocity Engine' free PDF to master the DIY foundations of value-based Real Estate attraction. This guide offers a strategic preview of the full Real Estate protocol found in our book, 'STOP BEING INVISIBLE!'—the complete operational course designed to help you dominate your territory.",
+  "text1" : "Being the 'best-kept secret' in your neighborhood is a strategic failure. This free infographic provides your immediate DIY roadmap to stop 'chasing' and start 'attracting' prospects by providing tangible value first.",
+"text2bold" : "The 'Reciprocity Engine' PDF helps you solve the initial attraction problem, but the book is the complete 'Applied Strategic Marketing Course'. It reveals the technical processes and triggers needed to build a dominant, recognized authority in your specific territory.",
+"text3border" : "Inside the book, you don't just get theory; you get the 'cement' for your business: the 50+ Attraction Script Library, the automated 'Marketing Conveyor Belt' blueprints, and the exact workflows to transform raw attention into exclusive listings. Download the free PDF now to discover our vision; the full strategic protocol awaits you inside the book.",
+"leadMagnet": "The Reciprocity Engine Infographic",
+"buttonLabel": "Get 'The Reciprocity Engine' PDF & Discover our Strategy",
+ "image": "/CopertinaDefinitivaPerKindle.jpg", 
+    "style": BRAND_STYLES["dark-magenta"], 
+    "legal": PRIVACY_DOCS["standard-v1"],  
+    "brevoListId": 3,
+    "brevotemplateId" : 15 ,
+    "thankYou": {
+      "icon": "🚀",
+      "title": "Start with Reciprocity Engine then get our book!",
+      "description": "Check your inbox. You now have the DIY guide to stop being a 'Digital Tenant' and start building your own 'Fortress of Trust'.",
+      "highlight": "The Reciprocity Engine Infographic",
+      "subDescription": "is on its way. Ready for the full strategic protocol? The book is waiting for you below. If you want everything you need at once explore The ReBest Digital Ecosystem and Start Dominating your Area.",
+      "ctaLabel": "Get the book!",
+      "ctaLink": RBDLINKS["rebest-digital"].stopbeinginvisibleAmazon,
+      "secondaryLabel": "Discover the full Ecosystem",
+      "secondaryLink":RBDLINKS["rebest-digital"].rebestdigitalEcosystem,
+      "ctaLabel3": "ReBest Digital Facebook",
+      "ctaLink3": SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+      "ctaLink4":  SOCIALS["rebest-digital"].instagram, 
+      "ctaLabel4": "ReBest Digital Instagram",   
+      "footerNote": "If the Engine hasn't landed in your inbox, check Spam. Don't let your authority remain invisible!"
+    }
+},
   // Stop Being invisible , campagna del libro
-  "book": {
-    id: "book",
+  "book2": {
+    id: "book2",
     title: "Own your Business, stop paying for someone else growth...",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
     text1 : "",
@@ -20,7 +51,7 @@ export const CAMPAIGNS = {
     style: BRAND_STYLES["dark-magenta"], // Collega lo stile
     legal: PRIVACY_DOCS["standard-v1"],  // Collega la privacy
     brevoListId: 3,
-    brevotemplateId : 8 ,
+    brevotemplateId : 15 ,
     thankYou: {
   icon: "🚀",
   title: "Confirmation Received!",
@@ -87,13 +118,13 @@ export const CAMPAIGNS = {
     style: BRAND_STYLES["dark-magenta"], 
     legal: PRIVACY_DOCS["standard-v1"],  
     brevoListId: 10, 
-    brevotemplateId: 8 ,
+    brevotemplateId: 15 ,
     thankYou: {
         icon: "🦅",
         title: "The Vision of an Eagle, the Timing of an Early Bird!",
         description: "You've just taken the first step to escape the portals' slavery. Your high-end checklist is being delivered.",
         highlight: "Seecure you 500% Value Gain, Wake up as an Early Bird",
-        subDescription: "While you wait for the email, discover the full arsenal of 80+ strategic assets waiting for you in the Early Bird vault click teh button below.",
+        subDescription: "While you wait for the e-mail with the homebuyer checklist, discover the full arsenal of 80+ strategic assets that is waiting for you in the Early Bird vault, click the button below.",
         // CTA 1: Spinge forte sulla vendita/roadmap dell'ecosistema
         ctaLabel: "View the Early Bird Arsenal(5xValue)",
         ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
@@ -161,7 +192,7 @@ export const CAMPAIGNS = {
     // Testo legale per la "parte piccola" sotto il form
     legal: PRIVACY_DOCS["standard-v1"], 
     brevoListId: 7,
-    brevotemplateId: 14,
+    brevotemplateId: 15,
     
     thankYou: {
         icon: "🦅",
@@ -179,41 +210,7 @@ export const CAMPAIGNS = {
         ctaLink4: "https://www.youtube.com/playlist?list=PLVCnprZcthXp01g95LsAdtgPp0ffvyX4r",
         footerNote: "EARLY BIRD NOTICE: Our bonus channels are currently under construction, which is why you secured such a competitive advantage. We expect them to be 80% complete by April 30, 2026. If you joined at this very early stage, content may be limited at first." }
 },
-"birdafter1": { //OBSOLETO, pensavo ci fosse bisogno di un altro passaggio
-    id: "birdafter",
-    title: "Congratulations! You ve just secured your Real Estate unfair advantage.",
-    
-    // Sottotitolo che spiega il "perché" dell'azione richiesta e il vantaggio Early Bird
-    subtitle: "With this strategic move, you have armed yourself with everything you need to compete against Digital New-comers and reclaim your dominance in your local market—both on the street and in the digital landscape.",
-     text1 : "",
-    text2bold : "",
-    text3border : "",
-    leadMagnet: "The Early Bird Activation",
-    buttonLabel: "ACTIVATE MY EARLY BIRD STATUS",
-    image: "/earlySellpage1.jpg", 
-    style: BRAND_STYLES["dark-magenta"], 
-    
-    legal: PRIVACY_DOCS["standard-v1"], 
-    brevoListId: 7,
-    brevotemplateId: 14,
-    
-    thankYou: {
-        icon: "🦅",
-        title: "Welcome to the Early Bird program. Last-Action required: check your e-mail for double opt-in. ",
-        description: "We value our clients privacy so we decided to adopt a double opt-in registration. We need you to confirm by clicking the button in the very last email you received from us , to record Your explicit consent. Since You are already officially a ReBest Early Bird member we add here some buttons as shortcut for your early-bird benefits.",
-        highlight: "Access the Vault",
-        subDescription: "Below you will find the direct links to your PRIVATE groups! Start dominating your area.",
-        ctaLabel: "YT Templates DrillDown",
-        ctaLink: SOCIALS["rebest-digital"].YTdrildownTempatesPRIVATE,
-        secondaryLabel: "FB ReBest Digital Ecosystem",
-        secondaryLink: SOCIALS["rebest-digital"].facebookRBDecosystemPRIVATE,
-        ctaLabel3: "Strategical Nblm discussions",
-        ctaLink3: SOCIALS["rebest-digital"].YTStrategicalNblmPRIVATE,
-        ctaLabel4: "YT 7-Days Preview P-list",
-        ctaLink4: "https://www.youtube.com/playlist?list=PLVCnprZcthXp01g95LsAdtgPp0ffvyX4r",
-        footerNote: "IMPORTANT: A confirmation email with the button for confirm has been sent. Check your Spam folder if you don't see it and move us to 'Primary'. If you wish you can Reply with : I m an early bird :) to decrease the possibility our mail go to Spam!",
-    }
-},
+
 // ************************           LEAD MAGNETS           *************************
   "homebuyercl": { // Lead Magnet Compratori è usato nella homebuyer checklist 
     id: "homebuyercl",

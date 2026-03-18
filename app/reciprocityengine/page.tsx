@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
 import StrategySection from './strategySection'; 
-
+import FloatingNav from '@/components/FloatingNav';
 const CAMPAIGN_ID = "reciprocity";
 
 const generateHash = async (text: string) => {
@@ -204,6 +204,7 @@ export default function LandingPage() {
               <StrategySection style={style} />
             </div>
        </div>
+       <FloatingNav text="Find out Early Bird offer 🚀" targetUrl="/earlybird" />
     </main>
   );
 }

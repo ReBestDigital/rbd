@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Master the Real Estate Market", // Puoi personalizzarlo qui
-  description: "Download the definitive guide to real estate investing",
+  title: "Real Estate Market, start to own your business! ", // Puoi personalizzarlo qui
+  description: "Find out why real estate Agents are Digital Tenant",
 };
 
 export default function RootLayout({
@@ -36,7 +36,7 @@ export default function RootLayout({
         
         {/* Componenti universali */}
         <Footer />
-        <CookieReset /> 
+       {/*  <CookieReset />  */}
        <CookieBanner />
         
       </body>

@@ -53,7 +53,7 @@ function ThankYouContent() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-xl mx-auto ">
          {thankYou.ctaLink && (
           <a href={thankYou.ctaLink} target="_blank" rel="noopener noreferrer" className={`${style.primary} ${style.hover} text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg text-center`}>
-          {thankYou.ctaLabel}
+          <strong>{thankYou.ctaLabel}</strong>
         </a>
        )} 
        {thankYou.secondaryLink && (
