@@ -3,6 +3,7 @@ import React from 'react';
 import { CAMPAIGNS } from '@/config/campaigns';
 import { PRICING_CONFIG, PLAN_PRICES } from './config/pricing';
 import Link from 'next/link';
+import { RBDLINKS } from '@/config/rbdlinks';
 const HOME_CAMPAIGN_ID = "stop";
 
 export default function ComparazionePage() {
@@ -16,16 +17,17 @@ export default function ComparazionePage() {
       <div className="fixed bottom-2 left-0 right-0 z-50 flex justify-center px-6">
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
-            href="/checkout-early-bird" 
+            href={RBDLINKS["rebest-digital"].earlybirdBuyGumroad} 
             className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
           >
             🔥 Buy Early Bird 
           </Link>
           <Link 
-            href="/earlybird-details" 
+           
+            href= {RBDLINKS["rebest-digital"].earlybirdDetails}
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
-            📦 Browse All 80+ Features
+            📦 Details (All 80+ Features)
           </Link>
         </div>
       </div>
@@ -79,13 +81,13 @@ export default function ComparazionePage() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="border-b border-white/10 bg-white/5">
-                <th className="p-6 text-left text-slate-300 font-bold uppercase text-xs tracking-widest">Product / Service</th>
+                <th className="p-6 text-left text-slate-200 font-bold uppercase text-lg tracking-widest">Product / Service</th>
                 <th className={`p-6 text-center ${style.accent} font-black`}>EARLY BIRD</th>
                 <th className="p-6 text-center text-slate-200 font-bold">FULL PRICE <br></br>after 2025/03/23</th>
                 <th className="p-6 text-center text-slate-200 font-bold text-opacity-60">START Pack</th>
               </tr>
               <tr className="border-b border-white/5 bg-black/20">
-                <td className="p-4 text-left font-bold text-slate-500 italic text-sm">Investment</td>
+                <td className="p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
                 <td className={`p-4 text-center font-black text-2xl ${style.accent}`}>{PLAN_PRICES.earlyBird}</td>
                 <td className="p-4 text-center font-bold text-2xl text-white">{PLAN_PRICES.full}</td>
                 <td className="p-4 text-center font-bold text-2xl text-white/60">{PLAN_PRICES.start}</td>
@@ -96,7 +98,7 @@ export default function ComparazionePage() {
                 if (item.isHeader) {
                   return (
                     <tr key={index} className="bg-white/5">
-                      <td colSpan={4} className="p-3 pl-6 text-left font-black text-[10px] tracking-[0.2em] text-slate-500 uppercase border-y border-white/10">
+                      <td colSpan={4} className="p-3 md:p-4 pl-2 md:pl-6 text-left font-black text-lg tracking-[0.2em] text-slate-400 uppercase border-y border-white/10">
                         {item.feature}
                       </td>
                     </tr>
@@ -105,8 +107,8 @@ export default function ComparazionePage() {
 
                 return (
                   <tr key={index} className="hover:bg-white/5 transition-all group">
-                    <td className="p-5 pl-10 text-left flex items-center gap-2">
-                      <span className={`text-sm md:text-base font-medium ${style.text}`}>{item.feature}</span>
+                    <td className="p-3 pl-3 md:pl-8  text-left flex items-center gap-2">
+                      <span className={`text-sm md:text-lg font-medium ${style.text}`}>{item.feature}</span>
                       
                       {/* TOOLTIP LOGIC */}
                       {item.description && (
@@ -121,13 +123,13 @@ export default function ComparazionePage() {
                     </td>
                     
                     {[item.earlyBird, item.full, item.start].map((plan, i) => (
-                      <td key={i} className="p-4 text-center">
+                      <td key={i} className="text-center">
                         {plan?.status === 'in_arrivo' ? (
                           <div className="flex flex-col items-center">
-                            <span className="text-[9px] font-black text-orange-400 uppercase tracking-tighter bg-orange-400/20 px-2 py-0.5 rounded-full">
+                            <span className="text-[10px]  font-black text-orange-400 uppercase tracking-tighter bg-orange-400/20 px-2 py-0.5 rounded-full">
                               Coming Soon
                             </span>
-                            <span className="text-[9px] text-slate-500 mt-1">{plan.date}</span>
+                            <span className="text-[10px] text-slate-400 mt-1">{plan.date}</span>
                           </div>
                         ) : plan?.active ? (
                           <span className={`${style.accent} text-2xl drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]`}>✦</span>
