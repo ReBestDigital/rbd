@@ -11,7 +11,7 @@ export default function ComparazionePage() {
   const { style } = config;
 
   return (
-    <main className={`min-h-screen ${style.bg} flex flex-col items-center p-6 text-white font-sans`}>
+    <main className={`min-h-screen ${style.bg} flex flex-col items-center p-1 md:p-6 text-white font-sans`}>
 
 {/* STICKY BUTTONS BAR */}
       <div className="fixed bottom-2 left-0 right-0 z-50 flex justify-center px-6">
@@ -81,10 +81,10 @@ export default function ComparazionePage() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="border-b border-white/10 bg-white/5">
-                <th className="p-6 text-left text-slate-200 font-bold uppercase text-lg tracking-widest">Product / Service</th>
-                <th className={`p-6 text-center ${style.accent} font-black`}>EARLY BIRD</th>
-                <th className="p-6 text-center text-slate-200 font-bold">FULL PRICE <br></br>after 2025/03/23</th>
-                <th className="p-6 text-center text-slate-200 font-bold text-opacity-60">START Pack</th>
+                <th className="p-2  md:p-6 text-left text-slate-200 font-bold uppercase text-base md:text-lg tracking-widest">Product / Service</th>
+                <th className={`p-2 md:p-6 text-center ${style.accent} font-black text-sm md:text-base `}>EARLY BIRD</th>
+                <th className="p-2 md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/04/30</th>
+                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-opacity-60 text-sm md:text-base ">START Pack</th>
               </tr>
               <tr className="border-b border-white/5 bg-black/20">
                 <td className="p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
