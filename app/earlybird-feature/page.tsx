@@ -35,42 +35,60 @@ export default function ComparazionePage() {
 
       <div className="max-w-5xl w-full text-center mt-10">
         <img src="ReBestEcosystem.svg" alt="ReBest Logo" className="h-30 mx-auto mb-6" />
-        <p className="text-4xl text-slate-100 font-extrabold mb-4">
+        <p className="p-2 md:p-4 text-5xl text-slate-100 font-extrabold mb-4 border-b-8 border-t-8 border-[#ff00ff]">
           Everything you need to dominate the real estate market.
         </p>
         <h1 className={`${style.text} text-xl md:text-xl font-extrabold mb-8  tracking-tight mb-6`}>
-          Click "Details" Button to see every Feature Detailed
+         Stop overpaying for generic, elegant marketing tools. <br />Stop relying on generic web agency.
         </h1>
         
   <div className="max-w-4xl mx-auto text-center mb-6 px-4">
-  <h2 className="text-3xl md:text-4xl text-[#ff00ff] font-extrabold uppercase tracking-widest mb-4">
-    Early Bird Access — Limited Time Offer
-  </h2>
-  <div className="mb-8 flex flex-col md:flex-row items-center justify-center gap-6 bg-slate-900/50 p-8 rounded-3xl border border-fuchsia-500/20 shadow-[0_0_50px_rgba(234,88,12,0.1)]">
-    <div className="text-left">
-      <div className="text-slate-400 line-through text-lg">Real Value: €3,490+</div>
-      <div className="text-white text-3xl font-black">Early Bird: €399</div>
-    </div>
-    <div className="h-px md:h-12 w-full md:w-px bg-slate-700"></div>
-    <div className="text-left">
-      <div className="text-[#ff00ff] font-bold uppercase text-xs tracking-tighter italic">Early Bird Advantage:</div>
-      <div className="text-slate-200 text-sm italic">Lifetime access, Exclusive Bonuses, and all future updates included.</div>
-    </div>
-  </div>
-  <h1 className="text-3xl md:text-6xl font-black text-white mb-8 leading-tight">
+  
+   <h1 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight">
     Don't just buy templates.<br/>
     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00ff] to-violet-600">
       Build a Real Estate Marketing Empire.
     </span>
   </h1>
-  
-  <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-    We analyzed every single step of a Top Real estate Agent's workflow and built a full-scale 
+
+ <h2 className="text-2xl md:text-3xl text-[#ffffff] font-extrabold uppercase tracking-widest mb-4">
+    Early Bird Access — Limited Time Offer
+  </h2>
+ {/* 3. THE OFFER BOX - Design compatto e tecnico per la conversione */}
+  <div className="max-w-3xl mx-auto mb-12 bg-slate-900/80 p-6 md:p-8 rounded-3xl border border-fuchsia-500/30 backdrop-blur-sm shadow-[0_0_40px_rgba(255,0,255,0.1)]">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+      
+      {/* Prezzi */}
+      <div className="text-center md:text-left">
+        <span className="text-[#ff00ff] text-xs font-bold uppercase tracking-[0.2em] block mb-2">
+          Limited Early Bird Access
+        </span>
+        <div className="flex items-baseline justify-center md:justify-start gap-3">
+          <span className="text-white text-5xl font-black">€399</span>
+          <span className="text-slate-500 line-through text-lg">€1,490+</span>
+        </div>
+      </div>
+
+      {/* Divisore */}
+      <div className="hidden md:block h-16 w-px bg-slate-700/50"></div>
+
+      {/* Vantaggi rapidi */}
+      <div className="text-center md:text-left flex-1">
+        <ul className="text-slate-300 text-sm space-y-1 inline-block text-left">
+          <li className="flex items-center gap-2">✅ Lifetime Access</li>
+          <li className="flex items-center gap-2">✅ Exclusive Bonuses</li>
+          <li className="flex items-center gap-2">✅ All Future Updates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p className="text-xl text-slate-100 mb-10 leading-relaxed border-l-8  border-[#ff00ff] pl-8">
+    We analyzed every single step of Top Real estate Agent's workflow and built a full-scale 
     solution. From the first touchpoint to the final closing, we’ve got you covered.
     <br/><br/>
-    <span className="text-white font-bold italic">Here you can see the group of features . By clicking Details button you ll witness the full "Firepower" of the ReBest Digital Ecosystem. </span> 
-     We listed every single asset because we want you to see the massive scale of what you’re 
-    getting for less than 10% of a single small commission.
+    Here you can see the group of features . By clicking Details button you ll witness the full "Firepower" of the ReBest Digital Ecosystem. 
+     there we listed every single asset because we want you to see the massive scale of what you’re 
+    getting for <strong>less than 10% of a your single small commission.</strong>
   </p>
 
   
@@ -88,9 +106,9 @@ export default function ComparazionePage() {
               </tr>
               <tr className="border-b border-white/5 bg-black/20">
                 <td className="p-2  md:p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
-                <td className={`p-2  md:p-4 text-center font-black text-2xl ${style.accent} text-sm md:text-base`}>{PLAN_PRICES.earlyBird}</td>
-                <td className="p-2  md:p-4 text-center font-bold text-2xl text-white text-sm md:text-base">{PLAN_PRICES.full}</td>
-                <td className="p-2  md:p-4 text-center font-bold text-2xl text-white/60 text-sm md:text-base">{PLAN_PRICES.start}</td>
+                <td className={`p-2  md:p-4 text-center font-black text-2xl ${style.accent} text-sm md:text-2xl`}>{PLAN_PRICES.earlyBird}</td>
+                <td className="p-2  md:p-4 text-center font-bold text-2xl text-white text-sm md:text-xl">{PLAN_PRICES.full}</td>
+                <td className="p-2  md:p-4 text-center font-bold text-2xl text-white/60 text-sm md:text-xl">{PLAN_PRICES.start}</td>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
