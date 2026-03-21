@@ -39,7 +39,7 @@ export const CAMPAIGNS = {
   // Stop Being invisible , campagna del libro
   "book2": {
     id: "book2",
-    title: "Own your Business, stop paying for someone else growth...",
+    title: "Own your Business, stop paying for someone else growth.",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
     text1 : "",
     text2bold : "",
@@ -71,7 +71,7 @@ export const CAMPAIGNS = {
 },
 "stop": {
     id: "stop",
-    title: "Own your Business, stop paying for someone else growth...",
+    title: "Own your Business, stop paying for someone else growth.",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
     text1 : "",
     text2bold : "",
@@ -111,7 +111,45 @@ export const CAMPAIGNS = {
     subtitle: "Stop overpaying for generic, elegant marketing tools. Secure the ReBest Digital Ecosystem now and start to dominate your Area.", 
     text1 : "Transform your Real Estate Agency local presence and Stop relying on generic web agencies. Get 80+ strategic marketing assets—from high-conversion newsletters to lead magnets and social systems—designed to establish your authority and secure consistent listings. ",
     text2bold : "Early Bird access: Get our ecosystem worth at least 5x your investment—less than 10% of your smallest commission.",
-    text3border : " Not ready yet? Download our Professional Homebuyer Checklist (that you can use as lead magnet) to witness the ReBest Digital quality that will set you apart from every competitor. ... a Free Valuation attracts window shoppers. A Homebuyer Checklist attracts action-takers...",
+    text3border : " Not ready yet? Download our Professional Homebuyer Checklist (that you can use as lead magnet) to witness the ReBest Digital quality that will set you apart from every competitor, a Free Valuation attracts window shoppers. A Homebuyer Checklist attracts action-takers.",
+    leadMagnet: "the Homebuyer Checklist",
+    buttonLabel: "Get the Checklist & Taste the Ecosystem",
+    image: "/earlySellpage1.jpg", 
+    style: BRAND_STYLES["dark-magenta"], 
+    legal: PRIVACY_DOCS["standard-v1"],  
+    brevoListId: 10, 
+    brevotemplateId: 15 ,
+    thankYou: {
+        icon: "🦅",
+        title: "The Vision of an Eagle, the Timing of an Early Bird!",
+        description: "You've just taken the first step to escape the portals' slavery. Your high-end checklist is being delivered.",
+        highlight: "Seecure you 500% Value Gain, Wake up as an Early Bird",
+        subDescription: "While you wait for the e-mail with the homebuyer checklist, discover the full arsenal of 80+ strategic assets that is waiting for you in the Early Bird vault, click the button below.",
+        // CTA 1: Spinge forte sulla vendita/roadmap dell'ecosistema
+        ctaLabel: "View the Early Bird Arsenal(5xValue)",
+        ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
+        // CTA 2: Social per l'autorità
+        secondaryLabel: "Join the Revolution on IG",
+        secondaryLink: SOCIALS["rebest-digital"].instagram,
+        // CTA 3: Video per mostrare il "dietro le quinte"
+        ctaLabel3: "Watch the Strategy in Action",
+        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
+        // CTA 4: Gruppo FB per il "social proof"
+        ctaLabel4: "Facebook Page",   
+        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+        footerNote: "Check your Spam folder if the Checklist link doesn't arrive in 2 minutes. Don't let the 'Digital New-Comers' win.",
+    }
+},
+"homebird": {
+    //used in earlybird page
+    id: "homebird",
+    // Focus sul dominio del mercato e sull'investimento intelligente
+    title: "ReBest Digital Ecosystem (the ultimate marketing machine for real estate agents) Stop renting your growth from portals. Start owning your market.", 
+    // Spieghiamo chiaramente il valore dell'operazione Early Bird
+    subtitle: "Welcome to the ReBest Digital Ecosystem: Your Complete Real Estate Marketing Machine.", 
+    text1 : "The real estate market is changing. Agencies that rely solely on monotonous elegance or expensive portal subscriptions are losing ground to digital-first competitors. The ReBest Digital Ecosystem was built to solve this problem, providing you with a strategic, automated, and ready-to-use marketing engine. ",
+    text2bold : "This is not just a collection of templates; it is a comprehensive strategic system designed to position you as the undisputed leader in your local area.",
+    text3border : "Transform your Real Estate Agency local presence with the ReBest Digital Ecosystem.Stop relying on real estate portals. Get 80+ strategic marketing assets—from high-conversion newsletters to lead magnets and social systems—designed to establish your authority and secure consistent listings. Early Bird access: Get an ecosystem worth at least 5x your investment—less than 10% of your smallest commission.",
     leadMagnet: "the Homebuyer Checklist",
     buttonLabel: "Get the Checklist & Taste the Ecosystem",
     image: "/earlySellpage1.jpg", 
@@ -143,7 +181,7 @@ export const CAMPAIGNS = {
 
 "bird1": {
     id: "bird1",
-    title: "Own your Business, stop paying for someone else growth...",
+    title: "Own your Business, stop paying for someone else growth.",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
      text1 : "",
     text2bold : "",
@@ -327,7 +365,7 @@ export const CAMPAIGNS = {
    // home , è nella home ma non prende i testi da qui per ora 
   "home": {
     id: "home",
-    title: "Own your Business, stop paying for someone else growth...",
+    title: "Own your Business, stop paying for someone else growth.",
     subtitle: "Our book explain how to do it. Download the Infographics to escape the portals slavery.",
      text1 : "",
     text2bold : "",

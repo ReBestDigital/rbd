@@ -4,6 +4,8 @@ import { CAMPAIGNS } from '@/config/campaigns';
 import { PRICING_CONFIG, PLAN_PRICES } from './config/pricing';
 import Link from 'next/link';
 import { RBDLINKS } from '@/config/rbdlinks';
+import SEOAdvantages from './DetailedSEOAdvantages'; 
+import FAQSection1 from '@/components/FAQSection1';
 const HOME_CAMPAIGN_ID = "stop";
 
 export default function ComparazionePage() {
@@ -17,7 +19,7 @@ export default function ComparazionePage() {
       <div className="fixed bottom-2 left-0 right-0 z-50 flex justify-center px-6">
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
-             href={RBDLINKS["rebest-digital"].earlybirdBuyGumroad} 
+             href={RBDLINKS["rebest-digital"].earlybirdBuyGumroad} target="_blank" rel="noopener noreferrer"
             className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
           >
             🔥 Buy Early Bird
@@ -42,7 +44,7 @@ export default function ComparazionePage() {
         
   <div className="max-w-4xl mx-auto text-center mb-6 px-4">
   
-   <h1 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight">
+   <h1 className="text-4xl md:text-5xl font-black text-white mb-8 leading-tight">
     Don't just buy templates.<br/>
     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00ff] to-violet-600">
       Build a Real Estate Marketing Empire.
@@ -50,7 +52,7 @@ export default function ComparazionePage() {
   </h1>
 
  <h2 className="text-2xl md:text-3xl text-[#ffffff] font-extrabold uppercase tracking-widest mb-4">
-    Early Bird Access — Limited Time Offer
+    Early Bird Access — Limited Time Offer <br /> Expires April 30, 2026
   </h2>
  {/* 3. THE OFFER BOX - Design compatto e tecnico per la conversione */}
   <div className="max-w-3xl mx-auto mb-12 bg-slate-900/80 p-6 md:p-8 rounded-3xl border border-fuchsia-500/30 backdrop-blur-sm shadow-[0_0_40px_rgba(255,0,255,0.1)]">
@@ -158,6 +160,12 @@ export default function ComparazionePage() {
             </tbody>
           </table>
         </div>
+                            <div className="mt-20">
+                              <SEOAdvantages style={style} />
+                            </div>
+                            <div className="mt-20">
+                                    <FAQSection1 style={style} />
+                             </div>
       </div>
     </main>
   );

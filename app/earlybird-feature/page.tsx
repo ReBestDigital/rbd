@@ -4,6 +4,8 @@ import { CAMPAIGNS } from '@/config/campaigns';
 import { PRICING_CONFIG, PLAN_PRICES } from './config/pricing';
 import Link from 'next/link';
 import { RBDLINKS } from '@/config/rbdlinks';
+import SEOAdvantages from './strategySection'; 
+import FAQSection from '@/components/FAQSection';
 const HOME_CAMPAIGN_ID = "stop";
 
 export default function ComparazionePage() {
@@ -17,14 +19,14 @@ export default function ComparazionePage() {
       <div className="fixed bottom-2 left-0 right-0 z-50 flex justify-center px-6">
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
-            href={RBDLINKS["rebest-digital"].earlybirdBuyGumroad} 
+            href={RBDLINKS["rebest-digital"].earlybirdBuyGumroad} target="_blank" rel="noopener noreferrer"
             className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
           >
             🔥 Buy Early Bird 
           </Link>
           <Link 
            
-            href= {RBDLINKS["rebest-digital"].earlybirdDetails}
+            href= {RBDLINKS["rebest-digital"].earlybirdDetails} 
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
             📦 Details (All 80+ Features)
@@ -44,7 +46,7 @@ export default function ComparazionePage() {
         
   <div className="max-w-4xl mx-auto text-center mb-6 px-4">
   
-   <h1 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight">
+   <h1 className="text-4xl md:text-5xl font-black text-white mb-8 leading-tight">
     Don't just buy templates.<br/>
     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00ff] to-violet-600">
       Build a Real Estate Marketing Empire.
@@ -162,6 +164,12 @@ export default function ComparazionePage() {
             </tbody>
           </table>
         </div>
+                    <div className="mt-20">
+                      <SEOAdvantages style={style} />
+                    </div>
+                    <div className="mt-20">
+                      <FAQSection style={style} />
+                    </div>
       </div>
     </main>
   );
