@@ -24,6 +24,7 @@ export default function LandingPage() {
 
   const config = CAMPAIGNS[CAMPAIGN_ID as keyof typeof CAMPAIGNS];
   const { style } = config;
+  const consentText = "By clicking the button you will receive " + config.leadMagnet + " and you agree to receive our newsletter and marketing updates. You can unsubscribe at any time. I have read and agree to the Privacy Policy [https://www.rebestdigital.com/privacy-policy/" + `${config.legal.name}`+ " ]. I understand my data will be processed according to GDPR."
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -45,6 +46,7 @@ export default function LandingPage() {
           email, 
           source: config.id,
           privacy_version: config.legal.version,
+          consent_text: consentText,
           privacy_hash: privacyHash,
           title_campaign : config.title,
           brevoListId : config.brevoListId,

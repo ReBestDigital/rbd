@@ -80,7 +80,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         {/* Contenuto Form */}
         <div className="flex flex-col">
           <h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-4`}>
-            {config.title}
+           Metti a posto anche consent inviato a brevo  {config.title}
           </h1>
           <p className="font-bold text-lg text-slate-200 mb-4">
             {config.subtitle}

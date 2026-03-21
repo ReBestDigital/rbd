@@ -28,7 +28,7 @@ export default function LandingPage() {
   const { style } = config;
   
   
-  const consentText = "By clicking the button you will receive the" + config.leadMagnet + "and you agree to receive our newsletter and marketing updates.<br/> You can unsubscribe at any time. I have read and agree to the Privacy Policy [https://www.rebestdigital.com//privacy-policy/" + `${config.legal.name}`+ " ]. I understand my data will be processed according to GDPR."
+  const consentText = "By clicking the button you will receive " + config.leadMagnet + " and you agree to receive our newsletter and marketing updates. You can unsubscribe at any time. I have read and agree to the Privacy Policy [https://www.rebestdigital.com/privacy-policy/" + `${config.legal.name}`+ " ]. I understand my data will be processed according to GDPR."
 
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -185,7 +185,7 @@ export default function LandingPage() {
                   />
                 
                   <label htmlFor="privacy" className={`font-bold text-xs leading-tight ${style.mute}`}>
-                    By clicking the button you will receive the {config.leadMagnet} and you agree to receive our newsletter and marketing updates.<br/> 
+                    By clicking the button you will receive {config.leadMagnet} and you agree to receive our newsletter and marketing updates.<br/> 
                     You can unsubscribe at any time. I have read and agree to the{" "}
                     <Link href={`/privacy-policy/${config.legal.name}`} target="_blank" rel="noopener noreferrer" className={`${style.accent} font-medium underline hover:opacity-80`}>
                       Privacy Policy

@@ -18,7 +18,7 @@ export async function POST(request: Request) {
   // 2. Logica di blocco (Rate Limiting)
   if (userData) {
     // 600.000 ms = 10 minuti
-    if (now - userData.lastRequest < 600000 && userData.count >= 3) {
+    if (now - userData.lastRequest < 600000 && userData.count >= 13) {
       return NextResponse.json(
         { error: 'Troppi tentativi. Riprova tra 10 minuti.' }, 
         { status: 429 }
