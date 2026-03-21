@@ -99,11 +99,11 @@ export default function ComparazionePage() {
               <tr className="border-b border-white/10 bg-white/5">
                 <th className="p-2  md:p-6 text-left text-slate-300 font-bold uppercase text-sm md:text-base  tracking-widest">Product / Service</th>
                 <th className={`p-2  md:p-6 text-center ${style.accent} font-black text-sm md:text-base `}>EARLY BIRD</th>
-                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2025/03/23</th>
+                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/04/30</th>
                 <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-opacity-60 text-sm md:text-base ">START Pack</th>
               </tr>
               <tr className="border-b border-white/5 bg-black/20">
-                <td className="p-2  md:p-4 text-left font-bold text-slate-500 italic text-lg">Investment</td>
+                <td className="p-2  md:p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
                 <td className={`p-2  md:p-4 text-center font-black text-2xl ${style.accent} text-sm md:text-2xl`}>{PLAN_PRICES.earlyBird}</td>
                 <td className="p-2  md:p-4 text-center font-bold text-2xl text-white text-sm md:text-xl">{PLAN_PRICES.full}</td>
                 <td className="p-2  md:p-4 text-center font-bold text-2xl text-white/60 text-sm md:text-xl">{PLAN_PRICES.start}</td>
@@ -123,7 +123,7 @@ export default function ComparazionePage() {
 
                 return (
                   <tr key={index} className="hover:bg-white/5 transition-all group">
-                   <td className="p-3 pl-3 md:pl-8  text-left flex items-center gap-2">
+                   <td className="p-3 pl-2 md:pl-8  text-left flex items-center gap-2">
                       <span className={`text-sm md:text-lg font-medium ${style.text}`}>{item.feature}</span>
                       
                       {/* TOOLTIP LOGIC */}

@@ -31,7 +31,7 @@ export async function POST(request: Request) {
 
   try {
     const body = await request.json();
-    const { email, source, privacy_version, privacy_hash, title_campaign, brevoListId, brevotemplateId } = body;
+    const { email, source, privacy_version, consent_text, privacy_hash, title_campaign, brevoListId, brevotemplateId } = body;
 
     if (!email) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
@@ -61,7 +61,8 @@ export async function POST(request: Request) {
           'IP_ADDRESS': ip,
           'SOURCE': source || 'generic_site',
           'PRIVACY_VERSION': privacy_version || 'v1.0',
-          'CONSENT_TEXT': 'Accepted newsletter and commercial info',
+          'CONSENT_TEXT': consent_text,
+          'CONSENT_DATE':  new Date().toISOString().split('T')[0],
           'PRIVACY_HASH': privacy_hash,
           'INSCRIPTION_CAMPAIGN_TITLE': title_campaign,
         },

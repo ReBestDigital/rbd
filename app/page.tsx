@@ -7,7 +7,6 @@ import StrategySection from './homeconfig/strategySection';
 import EcosystemDetails from './homeconfig/EcosystemDetails';
 import EssentialFAQ from '@/app/homeconfig/FAQSection2';
 import OperationalSEOAdvantages from './homeconfig/DetailedSEOAdvantages';
-
 const CAMPAIGN_ID = "homebird";
 
 const generateHash = async (text: string) => {
@@ -27,6 +26,10 @@ export default function LandingPage() {
 
   const config = CAMPAIGNS[CAMPAIGN_ID as keyof typeof CAMPAIGNS];
   const { style } = config;
+  
+  
+  const consentText = "By clicking the button you will receive the" + config.leadMagnet + "and you agree to receive our newsletter and marketing updates.<br/> You can unsubscribe at any time. I have read and agree to the Privacy Policy [https://www.rebestdigital.com//privacy-policy/" + `${config.legal.name}`+ " ]. I understand my data will be processed according to GDPR."
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,6 +51,7 @@ export default function LandingPage() {
           email, 
           source: config.id,
           privacy_version: config.legal.version,
+          consent_text: consentText,
           privacy_hash: privacyHash,
           title_campaign : config.title,
           brevoListId : config.brevoListId,
@@ -87,12 +91,12 @@ export default function LandingPage() {
           </Link>
         </div>
       </div> 
-       <div className= "max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4`} style={{ borderColor: style.color || '#FFffFF' }}>
-        <div className= "pb-4"><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover max-w-100 " />
+       <div className= "max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-1`} style={{ borderColor: style.color || '#FFffFF' }}>
+        <div className= "pb-4 "><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover max-w-100 " />
         {/* <div><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover  w-full" /> */}
         </div>        {config.title}
               </h1>       
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 ">
+      <div className="px-6 max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 ">
          
         {/* Preview Immagine Dinamica */}
        
@@ -179,6 +183,7 @@ export default function LandingPage() {
                     onChange={(e) => setAgreed(e.target.checked)}
                     className={`mt-1.5 h-4 w-4 rounded ${style.check}`}
                   />
+                
                   <label htmlFor="privacy" className={`font-bold text-xs leading-tight ${style.mute}`}>
                     By clicking the button you will receive the {config.leadMagnet} and you agree to receive our newsletter and marketing updates.<br/> 
                     You can unsubscribe at any time. I have read and agree to the{" "}

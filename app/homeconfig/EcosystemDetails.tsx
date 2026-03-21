@@ -9,7 +9,7 @@ interface EcosystemDetailsProps {
 
 export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
   return (
-    <section className="max-w-6xl mx-auto py-10 px-6 space-y-32">
+    <section className="max-w-6xl mx-auto py-4 px-6 space-y-32">
       <h2 className={`${style.text} text-2xl mb-6 border-b-4 border-t-4 pb-6 pt-6`}style={{ borderColor: style.color || '#FFffFF' }}><strong> We don't build "pretty" files. We build functional business tools.</strong> Every layout and headline in this ecosystem is designed to distance you from the "Digital New-Comers" and build a bridge of trust between you and the property seller.</h2>
       {/* SECTION 1: IS THIS FOR YOU? (Immagine a Destra) */}
       <div className="flex flex-col md:flex-row items-center gap-12 pt-6">
@@ -27,7 +27,7 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
           </ul>
           </div>
         </div>
-        <div className="flex-1 order-1 md:order-2  aspect-square rounded-2xl bg-white/5  border border-white/10 flex items-center  italic text-white/20"  style={{  overflow: 'hidden' }} >
+        <div className="flex-1 order-1 md:order-2  aspect-square rounded-2xl bg-white/5  border border-white/10 flex italic text-white/20"  style={{  overflow: 'hidden' }} >
           <Image
            src={img1}
            alt="early-bird-first-page"
@@ -37,7 +37,7 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
 
       {/* SECTION 2: WHAT'S INSIDE? (Immagine a Sinistra) */}
       <div className="flex flex-col md:flex-row items-center gap-12">
-        <div className="flex-1 w-full aspect-square bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center italic text-white/20"style={{overflow: 'hidden'}}>
+        <div className="flex-1 w-full aspect-square bg-white/5 rounded-2xl border border-white/10 flex items-center  italic text-white/20"style={{overflow: 'hidden'}}>
            <Image
            src={img2}
            alt="early-bird-products" />
