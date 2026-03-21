@@ -130,18 +130,18 @@ export const PRICING_CONFIG: PlanFeature[] = [
   /* CATEGORIA: EARLY BIRD BONUSES */
   { feature: "Exclusive Early Bird Benefits", isHeader: true },
   {
-    feature: "Private Facebook Community Access Free Templates and Discout for new products",
+    feature: "Private Facebook Community Access with Strategies, infographics, Free Residential Templates and Discounts for new products",
     description: "Cod: FB001 => Lifetime Access to ReBest Digital Ecosystem Private Facebook Group + Extreme Discounts.",
     earlyBird: { active: true, status: 'completo' },
     full: { active: false, status: 'completo' },
     start: { active: false, status: 'completo' }
   },
   {
-    feature: "Strategic Masterclass and tecnical video in a Private Playlist",
-    description: "Cod: YT001 => Lifetime Access to private YouTube playlist with technical and strategic guides.",
+    feature: "ReBest Digital Ecosystem Strategic and technical videos and podcasts in a private YouTube playlist.",
+    description: "Cod: YT001 => Lifetime Access to a private YouTube playlist with technical and strategic guides generated from our secret project files.",
     earlyBird: { active: true, status: 'completo' },
     full: { active: false, status: 'completo' },
     start: { active: false, status: 'completo' }
   },
-  { feature: "Life Time 48h Early Access to ReBest Digital Ecosystem youtube public Tecnical and Strategical video", description: "Early access to the you tube videos we are going to publish", earlyBird: { active: true, status: 'completo' }, full: { active: false, status: 'completo' }, start: { active: false, status: 'completo' } }
+  { feature: "Lifetime Early Access: Get all public technical and strategic videos 7 days before everyone else.", description: "Early access to the you tube videos we are going to publish", earlyBird: { active: true, status: 'completo' }, full: { active: false, status: 'completo' }, start: { active: false, status: 'completo' } }
 ];

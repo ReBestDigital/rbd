@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface FAQSectionProps {
@@ -31,7 +32,7 @@ export default function FAQSection({ style }: FAQSectionProps) {
   return (
     <section className="max-w-4xl mx-auto py-24 px-6 border-t border-white/10">
       <h2 className="text-white text-3xl font-black mb-12 text-center uppercase tracking-tighter border-b-2 border-t-2 pb-6 pt-6" style={{ borderColor: style.color || '#FFffFF' }}>
-        Frequently Asked <span className={style.text}>Questions</span>
+        Frequently Asked <span className={style.text}>Questions FAQ</span>
       </h2>
 
       <div className="space-y-6">
@@ -50,7 +51,18 @@ export default function FAQSection({ style }: FAQSectionProps) {
           </div>
         ))}
       </div>
-
+{/* Link strategico alle altre FAQ/Dettagli */}
+      <div className="text-center mt-4">
+        <p className={`${style.mute} text-xs mb-4 italic`}>
+          Have more technical questions about licenses or specific assets?
+        </p>
+        <Link 
+          href="/earlybird-details" 
+          className="text-white/60 hover:text-white text-sm font-bold uppercase tracking-widest border-b border-white/20 pb-1 transition-all"
+        >
+          View Detailed Technical FAQ & Asset List →
+        </Link>
+      </div>
       {/* SEO Tip: Schema Markup (JSON-LD) invisibile per i motori di ricerca */}
       <script
         type="application/ld+json"

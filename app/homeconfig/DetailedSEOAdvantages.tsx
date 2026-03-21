@@ -16,15 +16,19 @@ export default function OperationalSEOAdvantages({ style }: SEOAdvantagesProps) 
     },
     {
       title: "Hyper-Local Digital 'Farming'",
-      text: "Dominate a specific neighborhood or district. Use our <strong>local market infographics</strong> and social templates to become the 'Mayor' of your target area, making it impossible for competitors to enter."
+      text: "Dominate a specific neighborhood or district. Use our <strong>local market lead magnet</strong> and social templates to become the 'Mayor' of your target area, making it impossible for competitors to enter."
     },
     {
       title: "Psychological Anchor Pricing Tools",
-      text: "Help your sellers understand the market without the friction. Use our <strong>strategic pricing templates</strong> to visually demonstrate market trends, making the 'correct price' conversation smooth and professional."
+      text: "Help your sellers understand the market without the friction. Use our <strong>strategic Seller Accountability File </strong> to demonstrate the 'correct price' conversation smooth and professional."
     },
-    {
+    /* {
       title: "Automated Referral Generation",
       text: "Turn your past clients into an active sales force. Our <strong>referral-focused newsletter sequences</strong> are designed to prompt satisfied customers to recommend you to their network automatically."
+    }, */
+    {
+      title: "Automated Lead Generation",
+      text: "Turn your post on socials into an active sales force. Our <strong>Comment to DM focused Strategy</strong> are designed to give to customers instead of ask, building immediate trust."
     },
     {
       title: "High-Impact 'Open House' Systems",
@@ -32,7 +36,7 @@ export default function OperationalSEOAdvantages({ style }: SEOAdvantagesProps) 
     },
     {
       title: "Strategic Storytelling for Listings",
-      text: "Stop selling bricks and mortar; start selling a lifestyle. Our <strong>property description frameworks</strong> use storytelling techniques that trigger emotional responses from buyers, leading to faster sales."
+      text: "Stop selling bricks and mortar; start selling a lifestyle. Our <strong> Neighborhood Guide </strong> use hyper localisation to+ trigger emotional responses from buyers, leading to faster sales."
     },
     {
       title: "Reduced Cost-Per-Acquisition (CPA)",

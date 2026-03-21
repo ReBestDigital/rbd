@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface FAQSectionProps {
@@ -8,11 +9,11 @@ export default function DetailedFAQSection({ style }: FAQSectionProps) {
   const faqs = [
     {
       question: "What exclusive bonuses do I get with the Early Bird access?",
-      answer: "By joining now, you secure <strong>exclusive lifetime access</strong> to our Private Facebook Vault and private YouTube training channels. Please note: in the near future, these resources will transition to a <strong>paid monthly subscription</strong>. Early Bird members are 'grandfathered' in and will never pay extra."
+      answer: "By joining now, you secure <strong>exclusive lifetime access</strong> to our Private Facebook Vault and private YouTube Strategic channels. Please note: in the near future, these resources will transition to a <strong>paid monthly subscription</strong>. Early Bird members are 'grandfathered' in and will never pay extra."
     },
     {
       question: "Are there step-by-step instructions for the assets?",
-      answer: "Yes. Every single template and strategy comes with its own <strong>dedicated manual</strong>. We don't just give you the 'what', we give you the 'how' and 'why' through 10+ detailed guides and a private video playlist included in the Early Bird package."
+      answer: "Yes. Every single template and strategy comes with its own <strong>dedicated manual</strong>. We don't just give you the 'what', we give you the 'how' and 'why' through detailed guides and a private video playlist included in the Early Bird package."
     },
     {
       question: "I have a real estate group with multiple offices. Can we all use it?",
@@ -24,7 +25,7 @@ export default function DetailedFAQSection({ style }: FAQSectionProps) {
     },
     {
       question: "Will I get new updates and future templates?",
-      answer: "Early Bird members get <strong>7-day early access</strong> to all new tools, infographics, and templates we add to the ecosystem. You will always stay one step ahead of the competition who will have to wait—and eventually pay—for these updates."
+      answer: "Early Bird members get <strong>7-day early access</strong> to all new you tube new public videos, free new Residential infographics, and Residential templates we add to the ecosystem. You will always stay one step ahead of the competition who will have to wait—and eventually pay—for these updates."
     },
     {
       question: "Can I fully customize the branding and colors?",
@@ -36,7 +37,7 @@ export default function DetailedFAQSection({ style }: FAQSectionProps) {
     },
     {
       question: "What happens if I miss the Early Bird window?",
-      answer: "Once the Early Bird phase ends, the price will increase significantly to reflect the full market value ($1,500+), and the <strong>Facebook Vault and Video Training</strong> will likely move to a recurring monthly fee model."
+      answer: "Once the Early Bird phase ends, the price will increase significantly to reflect the full market value ($1,500+), and the <strong>Facebook Vault and Secret YouTube playlist</strong> will likely move to a recurring monthly fee model."
     },
     {
       question: "Is this suitable for solo agents or only large teams?",
@@ -70,7 +71,17 @@ export default function DetailedFAQSection({ style }: FAQSectionProps) {
           </div>
         ))}
       </div>
-
+       <div className="text-center mt-4">
+        <p className={`${style.mute} text-xs mb-4 italic`}>
+          Have more questions about Rebest Digital Ecosystem?
+        </p>
+        <Link 
+          href="/" 
+          className="text-white/60 hover:text-white text-sm font-bold uppercase tracking-widest border-b border-white/20 pb-1 transition-all"
+        >
+          View The Ecosystem main page →
+        </Link>
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

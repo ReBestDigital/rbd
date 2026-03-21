@@ -38,7 +38,7 @@ export default function ComparazionePage() {
       <div className="max-w-5xl w-full text-center mt-10">
         <img src="ReBestEcosystem.svg" alt="ReBest Logo" className="h-30 mx-auto mb-6" />
         <p className="p-2 md:p-4 text-5xl text-slate-100 font-extrabold mb-4 border-b-8 border-t-8 border-[#ff00ff]">
-          Everything you need to dominate the real estate market.
+          Everything you need to dominate the real estate market. (features)
         </p>
         <h1 className={`${style.text} text-xl md:text-xl font-extrabold mb-8  tracking-tight mb-6`}>
          Stop overpaying for generic, elegant marketing tools. <br />Stop relying on generic web agency.
@@ -54,7 +54,7 @@ export default function ComparazionePage() {
   </h1>
 
  <h2 className="text-2xl md:text-3xl text-[#ffffff] font-extrabold uppercase tracking-widest mb-4">
-    Early Bird Access — Limited Time Offer
+    Early Bird Access — Limited Time Offer <br /> Expires 30 April 2026
   </h2>
  {/* 3. THE OFFER BOX - Design compatto e tecnico per la conversione */}
   <div className="max-w-3xl mx-auto mb-12 bg-slate-900/80 p-6 md:p-8 rounded-3xl border border-fuchsia-500/30 backdrop-blur-sm shadow-[0_0_40px_rgba(255,0,255,0.1)]">
@@ -62,7 +62,7 @@ export default function ComparazionePage() {
       
       {/* Prezzi */}
       <div className="text-center md:text-left">
-        <span className="text-[#ff00ff] text-xs font-bold uppercase tracking-[0.2em] block mb-2">
+        <span className="text-[#ff00ff] text-sm font-extrabold uppercase tracking-[0.15em] block mb-2">
           Limited Early Bird Access
         </span>
         <div className="flex items-baseline justify-center md:justify-start gap-3">
@@ -77,9 +77,9 @@ export default function ComparazionePage() {
       {/* Vantaggi rapidi */}
       <div className="text-center md:text-left flex-1">
         <ul className="text-slate-300 text-sm space-y-1 inline-block text-left">
-          <li className="flex items-center gap-2">✅ Lifetime Access</li>
-          <li className="flex items-center gap-2">✅ Exclusive Bonuses</li>
-          <li className="flex items-center gap-2">✅ All Future Updates</li>
+          <li className="flex items-center gap-2">✅ Lifetime Access to Fb Vault and YT Strategic playlist</li>
+          <li className="flex items-center gap-2">✅ Exclusive Bonuses and discounts</li>
+          <li className="flex items-center gap-2">✅ All Future Residential Updates and templates</li>
         </ul>
       </div>
     </div>
@@ -89,7 +89,7 @@ export default function ComparazionePage() {
     solution. From the first touchpoint to the final closing, we’ve got you covered.
     <br/><br/>
     Here you can see the group of features . By clicking Details button you ll witness the full "Firepower" of the ReBest Digital Ecosystem. 
-     there we listed every single asset because we want you to see the massive scale of what you’re 
+     There we listed every single asset because we want you to see the massive scale of what you’re 
     getting for <strong>less than 10% of a your single small commission.</strong>
   </p>
 

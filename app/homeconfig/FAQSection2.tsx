@@ -29,7 +29,7 @@ export default function EssentialFAQ({ style }: FAQProps) {
     },
     {
       question: "What are the Early Bird exclusive bonuses?",
-      answer: "You get <strong>Lifetime Access to the Private Facebook Vault</strong> and our private Video Strategy Playlist. These are high-value resources that will be restricted or paid-only for future customers."
+      answer: "You get <strong>Lifetime Access to the Private Facebook Vault, new templates for free, 10 Lead Magnets 2 only for Early birds</strong> and our private Video Strategy Playlist. These are high-value resources that will be restricted or paid-only for future customers."
     },
     {
       question: "Is there support if I get stuck?",
@@ -55,17 +55,17 @@ export default function EssentialFAQ({ style }: FAQProps) {
           </div>
         ))}
       </div>
-
+        
       {/* Link strategico alle altre FAQ/Dettagli */}
-      <div className="text-center">
+      <div className="text-center mt-4">
         <p className={`${style.mute} text-xs mb-4 italic`}>
-          Have more technical questions about licenses or specific assets?
+          Have more questions about the assets?
         </p>
         <Link 
           href="/earlybird-feature" 
           className="text-white/60 hover:text-white text-sm font-bold uppercase tracking-widest border-b border-white/20 pb-1 transition-all"
         >
-          View Detailed Technical FAQ & Asset List →
+          View Other FAQ & Feature List →
         </Link>
       </div>
 

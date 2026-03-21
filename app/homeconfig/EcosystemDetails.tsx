@@ -1,5 +1,8 @@
 import React from 'react';
-
+import Image from 'next/image'
+import img1 from '../../public/GraficheHomeEarlybird.jpg'
+import img2 from '../../public/1GraficheHomeEarlybird.jpg'
+import img3 from '../../public/2GraficheHomeEarlybird.jpg'
 interface EcosystemDetailsProps {
   style: any;
 }
@@ -24,15 +27,20 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
           </ul>
           </div>
         </div>
-        <div className="flex-1 order-1 md:order-2 w-full aspect-video bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center italic text-white/20">
-          [Image: Professional vs Digital Newcomer]
+        <div className="flex-1 order-1 md:order-2  aspect-square rounded-2xl bg-white/5  border border-white/10 flex items-center  italic text-white/20"  style={{  overflow: 'hidden' }} >
+          <Image
+           src={img1}
+           alt="early-bird-first-page"
+           />
         </div>
       </div>
 
       {/* SECTION 2: WHAT'S INSIDE? (Immagine a Sinistra) */}
       <div className="flex flex-col md:flex-row items-center gap-12">
-        <div className="flex-1 w-full aspect-square bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center italic text-white/20">
-          [Image: 80+ Assets Showcase]
+        <div className="flex-1 w-full aspect-square bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center italic text-white/20"style={{overflow: 'hidden'}}>
+           <Image
+           src={img2}
+           alt="early-bird-products" />
         </div>
         <div className="flex-1">
           <h2 className={`${style.text} text-3xl font-black mb-6 uppercase`}>🏗️ What’s Inside?</h2>
@@ -52,7 +60,7 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
       {/* SECTION 3: EARLY BIRD PRIVILEGES (Immagine a Destra) */}
       <div className="flex flex-col md:flex-row items-center gap-12">
         <div className="flex-1 order-2 md:order-1">
-          <h2 className={`${style.text} text-3xl font-black mb-6 uppercase`}>💎 Early Bird Privileges</h2>
+          <h2 className={`${style.text} text-3xl font-black mb-10 uppercase`}>💎Early Bird Privileges</h2>
           <div className="border-l-1 md:pl-12 pl-4" style={{ borderColor: style.color || '#FF00FF' }}>
             <ul className="space-y-4 text-base text-white/80">
               <li className="flex gap-2"><span>•</span><span><strong>Lifetime Access:</strong> Private FB ReBest Ecosystem Group with new free templates, infographics, and exclusive discounts.</span></li>
@@ -61,8 +69,10 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
             </ul>
         </div>
         </div>
-        <div className="flex-1 order-1 md:order-2 w-full aspect-video bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center italic text-white/20">
-          [Image: Early Bird Bonus Badge]
+        <div className="flex-1 order-1 md:order-2 w-full   aspect-square rounded-2xl bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center italic text-white/20" style={{  overflow: 'hidden' }} >
+         <Image
+           src={img3}
+           alt="early-bird-products" />
         </div>
       </div>
 
@@ -81,7 +91,7 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
           <div className="bg-red-500/5 p-8 rounded-2xl border border-red-500/20">
             <h3 className="text-red-100 font-bold mb-4 uppercase  border-b-1 md:pb-3 pb-1" style={{ borderColor: style.color || '#FF00FF' }}>⚖️ Earnings Disclaimer</h3>
             <p className="text-sm text-red-100/100 leading-tight">
-              Success in Real Estate depends on local market conditions, your execution, and consistency. These assets are<strong> tools, not guarantees </strong>. You are responsible for your own business decisions.Marketing is a complex ecosystem: Success in Real Estate depends on a multitude of variables beyond our control. The ReBest Digital Ecosystem provides high-quality strategic tools, templates, and frameworks based on proven marketing principles. However, we cannot and do not guarantee any specific financial results, lead generation quotas, or listings as a result of using our materials.
+              Success in Real Estate depends on local market conditions, your execution, and consistency. These assets are<strong> tools, not guarantees </strong>. You are responsible for your own business decisions.Marketing is a complex ecosystem: Success in Real Estate depends on a multitude of variables beyond our control. The ReBest Digital Ecosystem provides high-quality strategic tools, templates, and frameworks based on proven marketing principles. However, <strong>we cannot and do not guarantee any specific financial results, lead generation quotas, or listings as a result of using our materials.</strong>
             </p>
           </div>
         </div>

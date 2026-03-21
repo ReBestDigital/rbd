@@ -36,7 +36,7 @@ export default function ComparazionePage() {
      <div className="max-w-5xl w-full text-center mt-10">
         <img src="ReBestEcosystem.svg" alt="ReBest Logo" className="h-30 mx-auto mb-6" />
         <p className="p-2 md:p-4 text-5xl text-slate-100 font-extrabold mb-4 border-b-8 border-t-8 border-[#ff00ff]">
-          Everything you need to dominate the real estate market.
+          Everything you need to dominate the real estate market.(details)
         </p>
         <h1 className={`${style.text} text-xl md:text-xl font-extrabold mb-8  tracking-tight mb-6`}>
          Stop overpaying for generic, elegant marketing tools. <br />Stop relying on generic web agency.
@@ -75,9 +75,9 @@ export default function ComparazionePage() {
       {/* Vantaggi rapidi */}
       <div className="text-center md:text-left flex-1">
         <ul className="text-slate-300 text-sm space-y-1 inline-block text-left">
-          <li className="flex items-center gap-2">✅ Lifetime Access</li>
-          <li className="flex items-center gap-2">✅ Exclusive Bonuses</li>
-          <li className="flex items-center gap-2">✅ All Future Updates</li>
+          <li className="flex items-center gap-2">✅ Lifetime Access to Fb Vault and YT Strategic playlist</li>
+          <li className="flex items-center gap-2">✅ Exclusive Bonuses and discounts</li>
+          <li className="flex items-center gap-2">✅ All Future Residential Updates and templates</li>
         </ul>
       </div>
     </div>
