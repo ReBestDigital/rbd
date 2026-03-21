@@ -52,8 +52,8 @@ export default function SEOAdvantages({ style }: SEOAdvantagesProps) {
   return (
     <section className="max-w-6xl mx-auto py-24 px-6 border-t border-white/10">
       {/* Titolo H2: Fondamentale per la SEO */}
-      <h2 className="text-white text-3xl md:text-4xl font-black mb-16 text-center uppercase tracking-tighter">
-        Why Be an early bird and Choose the ReBest Digital Ecosystem: <br/>
+      <h2 className="text-white text-3xl md:text-4xl font-black mb-16 text-center  tracking-tighter  border-b-4 border-t-4 pb-6 pt-6" style={{ borderColor: style.color || '#FFffFF' }}>
+        <span className="uppercase" >  Why Be an early bird and Choose the ReBest Digital Ecosystem:</span> <br/>
         <span className={style.text}>The Competitive Edge for Modern Real Estate Agents</span>
       </h2>
 
@@ -63,7 +63,7 @@ export default function SEOAdvantages({ style }: SEOAdvantagesProps) {
           <li key={index} className="flex gap-4">
             {/* Numero o Icona */}
             <span className={`${style.text} font-black text-xl opacity-50`}>
-              {(index + 1).toString().padStart(2, '0')}
+             {/*  {(index + 1).toString().padStart(2, '0')} */}*
             </span>
             
             <div>

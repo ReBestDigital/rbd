@@ -50,7 +50,7 @@ export default function DetailedFAQSection({ style }: FAQSectionProps) {
 
   return (
     <section className="max-w-4xl mx-auto py-24 px-6 border-t border-white/10">
-      <h2 className="text-white text-3xl font-black mb-12 text-center uppercase tracking-tighter">
+      <h2 className="text-white text-3xl font-black mb-12 text-center uppercase tracking-tighter border-b-2 border-t-2 pb-6 pt-6" style={{ borderColor: style.color || '#FFffFF' }}>
         Deep Dive: <span className={style.text}>Technical & License FAQ</span>
       </h2>
 

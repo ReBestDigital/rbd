@@ -5,7 +5,7 @@ import { PRICING_CONFIG, PLAN_PRICES } from './config/pricing';
 import Link from 'next/link';
 import { RBDLINKS } from '@/config/rbdlinks';
 import SEOAdvantages from './DetailedSEOAdvantages'; 
-import FAQSection1 from '@/components/FAQSection1';
+import FAQSection1 from '@/app/earlybird-details/FAQSection1';
 const HOME_CAMPAIGN_ID = "stop";
 
 export default function ComparazionePage() {

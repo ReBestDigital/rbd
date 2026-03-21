@@ -50,7 +50,7 @@ export default function OperationalSEOAdvantages({ style }: SEOAdvantagesProps) 
 
   return (
     <section className="max-w-6xl mx-auto py-24 px-6 border-t border-white/10">
-      <h2 className="text-white text-3xl md:text-4xl font-black mb-16 text-center uppercase tracking-tighter">
+      <h2 className="text-white text-3xl md:text-4xl font-black mb-16 text-center uppercase tracking-tighter border-b-4 border-t-4 pb-6 pt-6" style={{ borderColor: style.color || '#FFffFF' }}>
         Conversion & Results: <br/>
         <span className={style.text}>Turning Leads into Exclusive Listings</span>
       </h2>
@@ -59,7 +59,7 @@ export default function OperationalSEOAdvantages({ style }: SEOAdvantagesProps) 
         {advantages.map((adv, index) => (
           <li key={index} className="flex gap-4">
             <span className={`${style.text} font-black text-xl opacity-50`}>
-              {(index + 21).toString()} {/* Parte dal numero 21 */}
+              -{/* {(index + 21).toString()} */} {/* Parte dal numero 21 */}
             </span>
             
             <div>

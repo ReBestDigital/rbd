@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
 import StrategySection from './homeconfig/strategySection'; 
 import EcosystemDetails from './homeconfig/EcosystemDetails';
-import EssentialFAQ from '@/components/FAQSection2';
+import EssentialFAQ from '@/app/homeconfig/FAQSection2';
 import OperationalSEOAdvantages from './homeconfig/DetailedSEOAdvantages';
 
 const CAMPAIGN_ID = "homebird";

@@ -50,16 +50,16 @@ export default function DetailedSEOAdvantages({ style }: SEOAdvantagesProps) {
 
   return (
     <section className="max-w-6xl mx-auto py-24 px-6 border-t border-white/10">
-      <h2 className="text-white text-3xl md:text-4xl font-black mb-16 text-center uppercase tracking-tighter">
-        The Early Bird Real Estate Arsenal in Detail: <br/>
-        <span className={style.text}>Rrbest digital ecosystem gives you Technical Superiority for Your Business</span>
+      <h2 className="text-white text-3xl md:text-4xl font-black mb-16 text-center tracking-tighter border-b-4 border-t-4 pb-6 pt-6" style={{ borderColor: style.color || '#FFffFF' }}>
+       <span className="uppercase"> The Early Bird Real Estate Arsenal in Detail:</span> <br/>
+        <span className={style.text}>ReBest Digital Ecosystem gives you Technical Superiority for Your Business</span>
       </h2>
 
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
         {advantages.map((adv, index) => (
           <li key={index} className="flex gap-4">
             <span className={`${style.text} font-black text-xl opacity-50`}>
-              {(index + 11).toString()} {/* Parte dal numero 11 */}
+               {/* {(index + 11).toString()} */} {/* Parte dal numero 11 */}
             </span>
             
             <div>
