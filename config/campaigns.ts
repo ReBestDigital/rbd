@@ -6,6 +6,7 @@ import { RBDLINKS } from './rbdlinks';
 export const CAMPAIGNS = {
   // ************************          PRODOTTI           *************************
  "book": {
+  // used in book page
     "id": "book",
     "title": "Break the 'Real Estate Pushy Agent' Cycle. Stop Asking, Start Giving: The Blueprint to start Attracting clients",
   "subtitle": "Download 'The Reciprocity Engine' free PDF to master the DIY foundations of value-based Real Estate attraction. This guide offers a strategic preview of the full Real Estate protocol found in our book, 'STOP BEING INVISIBLE!'—the complete operational course designed to help you dominate your territory.",

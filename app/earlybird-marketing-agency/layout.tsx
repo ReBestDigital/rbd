@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   ],
  openGraph: {
     title: 'Agency In-A-Box | Scale Your Real Estate Marketing Business',
-    description: 'Deploy a high-conversion Real Estate Ecosystem in 24h. White-label assets and 10x ROI for Marketing Agencies and Solopreneurs.',
+    description: 'Deploy a high-conversion Real Estate Ecosystem in 24h for your clients. White-label assets and 10x ROI for Marketing Agencies and Solopreneurs that wish start a business.',
     type: 'website',
-    url: 'https://rebestdigital.com/earlybird-marketing-agency', // Il tuo URL finale
+    url: 'https://www.rebestdigital.com/earlybird-marketing-agency', // Il tuo URL finale
     images: [
       {
-        url: 'https://rebestdigital.com/1GraficheHomeEarlybird.jpg', 
+        url: 'https://www.rebestdigital.com/1GraficheHomeEarlybird.jpg', 
         width: 1200,
         height: 630,
         alt: 'ReBest Digital Marketing Agency License - Scale Your Business',
