@@ -75,8 +75,8 @@ export default function LandingPage() {
   return (
     <main className={`min-h-screen ${style.bg} flex items-center justify-center p-6`}>
       {/* STICKY BUTTONS BAR */}
-      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}>
-        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
+      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
+         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
             href="https://rebestdigital.gumroad.com/l/ixtfn" target="_blank" rel="noopener noreferrer"
             className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}

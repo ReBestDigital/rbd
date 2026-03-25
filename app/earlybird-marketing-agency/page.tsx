@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
-import StrategySection from '@/app/earlybird/strategySection'; 
+import StrategySection from './strategySection'; 
+import MarketingAgencyFAQ from './FAQSection';
 
-const CAMPAIGN_ID = "bird";
+const CAMPAIGN_ID = "agency_early_bird";
 
 const generateHash = async (text: string) => {
   const msgUint8 = new TextEncoder().encode(text);
@@ -204,6 +205,9 @@ export default function LandingPage() {
       {/* SEZIONE 2: STRATEGIA (Colonna Singola fluida che contiene le sue 3 colonne) */}
             <div className="mt-20">
               <StrategySection style={style} />
+            </div>
+            <div className="mt-20">
+              < MarketingAgencyFAQ style={style} />
             </div>
        </div>
     </main>

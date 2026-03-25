@@ -38,7 +38,7 @@ export default function RootLayout({
         <Footer />
        {/*  <CookieReset />  */}
        <CookieBanner />
-        
+      
       </body>
     </html>
   );

@@ -140,6 +140,46 @@ export const CAMPAIGNS = {
         footerNote: "Check your Spam folder if the Checklist link doesn't arrive in 2 minutes. Don't let the 'Digital New-Comers' win.",
     }
 },
+"agency_early_bird": {
+    // Target: Marketing & Web Agencies, Solopreneurs, Opportunity Seekers
+    id: "agency_early_bird",
+    // SEO Optimized: Focus su Agency Business, Scalability e Profit
+    title: "Marketing Agency? Meet Your Ready-to-Deploy Real Estate Fulfillment Machine. Skip 3 Months of R&D and Start Delivering High-Ticket Results to Your Clients in 24 Hours!", 
+    // Leva: Smetti di perdere tempo nel R&D, passa direttamente all'incasso
+    subtitle: "Stop building from scratch. Get the 'Agency-in-a-Box' license and deliver elite marketing results to your clients for 1/10 of the development cost. The only White-Label Ecosystem designed for marketing Agencies and Solopreneurs to dominate the Real Estate market without the headache of content creation.", 
+    text1 : "Transform your business model from 'Service Provider' to 'Market Leader'. Gain 80+ strategic White-Label assets—from lead magnets to psychological sales funnels—engineered specifically for the Real Estate niche. Don't waste months on research; deliver the 'Warfare Toolkit' to your clients today and charge premium fees.",
+    // Leva psicologica: L'investimento si ripaga con il primo cliente (ROI > 100%)
+    text2bold : "Agency Early Bird: Secure a real estate ecosystem for just €1,299. One single 'Done-for-you' client setup will double your investment instantly.",
+    // Download dimostrativo per agenzie: Mostriamo la qualità del prodotto
+    text3border : "Curious about the quality? Download our 'Home buyer checklist'. Witness the conversion-focused logic that will allow you to outperform any generic competitor. While others sell 'pretty posts', you will sell 'listing appointments'.",
+    leadMagnet: "the Homebuyer checklist",
+    buttonLabel: "Get the Homebuyer checklist",
+    image: "/1GraficheHomeEarlybird.jpg", 
+    style: BRAND_STYLES["dark-magenta"], 
+    legal: PRIVACY_DOCS["standard-v1"],  
+    brevoListId: 14, // Assicurati di creare una lista separata per le Agency su Brevo
+    brevotemplateId: 15, 
+    thankYou: {
+        icon: "🏢",
+        title: "The Vision of a CEO, the Execution of a Machine!",
+        description: "You've just unlocked the shortcut to high-ticket Real Estate fulfillment. Your Homebuyer checklist is on its way to your inbox.",
+        highlight: "Secure your 10x ROI Advantage without building any product. The Agency Vault is open. You will also get the access to every strategic videos generated from our secret project files that will teach you how to win in this niche.",
+        subDescription: "While you wait for the preview, discover how many templates and resources you will be able to customize for your real estate clients and sell it for at least €3,000 per client. Access the full detailed Arsenal below. NOTE:  ReBest Digital cannot and do not guarantee any specific financial results cause we dont know your marketing skills to sell your done for you product.",
+        // CTA 1: Spinge sul business model
+        ctaLabel: "Look inside the ecosystem",
+        ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
+        // CTA 2: Social per networking professionale
+        secondaryLabel: "Follow our Agency Growth on IG",
+        secondaryLink: SOCIALS["rebest-digital"].instagram,
+        // CTA 3: Video strategico per agenzie
+        ctaLabel3: "Watch the Agency Strategy in Action",
+        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
+        // CTA 4: Gruppo FB per supporto e networking
+        ctaLabel4: "Agency Facebook Community",   
+        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+        footerNote: "This investment is professional and may be tax-deductible check your country regulation. Check your spam if the homebuyer checklist doesn't arrive in 2 minutes. Start scaling.",
+    }
+},
 "homebird": {
     //used in earlybird page
     id: "homebird",
