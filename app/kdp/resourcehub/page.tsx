@@ -3,6 +3,9 @@
 import React from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
+import HubDetails from './HubDetails';
+import HubFAQ from './FAQSectionHub';
+import HubSEOAdvantages from './DetailedSEOAdvantages';
 
 const CAMPAIGN_ID = "resourceHub";
 
@@ -17,18 +20,24 @@ export default function ResourceHubPage() {
         
       {/* STICKY BUTTONS BAR - Identica a prima */}
       <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`} style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
-         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
+         <div className="flex flex-col sm:flex-row gap-1 sm:gap-3 w-full max-w-3xl bg-black/40 backdrop-blur-xl p-1 sm:p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
             href="/" 
-            className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
+            className={`flex-1 ${style.primary} text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
           >
-            🔥 Home
+            🏠 Official site
           </Link>
           <Link 
             href="/earlybird-feature" 
-            className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
+            className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
-            📦 Browse Features
+            🔥 Havent read the the book yet?
+          </Link>
+          <Link 
+            href="/earlybird-feature" 
+            className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
+          >
+            ⭐ Review the book if you liked it
           </Link>
         </div>
       </div> 
@@ -87,7 +96,18 @@ export default function ResourceHubPage() {
         </div>
 
         {/* Spaziatori per le sezioni extra se vorrai riattivarle */}
-        <div className="mt-20"></div>
+        <div className="mt-20">
+        <HubDetails style={style} />
+        </div>
+        
+        <div className="mt-20">
+        <HubSEOAdvantages style={style} />
+
+        </div>
+        <div className="mt-20">
+        <HubFAQ style={style} />
+        
+      </div>
       </div>
     </main>
   );
