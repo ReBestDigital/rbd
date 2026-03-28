@@ -9,15 +9,15 @@ interface HubDetailsProps {
 
 export default function HubDetails({ style }: HubDetailsProps) {
   return (
-    <section className="max-w-6xl mx-auto py-4 px-6 space-y-32">
+    <section className="max-w-6xl mx-auto py-4 px-6 space-y-8">
      {/* DIVIDER HEADER */}
-<h2 className={`${style.text} text-2xl mb-12 mt-20 border-b-4 border-t-4 pb-6 pt-6 uppercase font-black text-center tracking-tighter`} style={{ borderColor: style.color || '#FFffFF' }}>
+<h2 className={`${style.text} text-2xl mb-12 mt-4 border-b-4 border-t-4 pb-6 pt-6 uppercase font-black text-center tracking-tighter`} style={{ borderColor: style.color || '#FFffFF' }}>
   <strong>You dont need "pretty" files. You need functional business tools.</strong> <br /> Here You will also find the "how to use it"</h2>
 
 {/* SECTION 1: THE HOME BUYER CHECKLIST (Immagine a Destra) */}
-<div className="flex flex-col md:flex-row items-center gap-12 py-12 border-b border-white/10">
+<div className="flex flex-col md:flex-row items-center gap-12 py-4 border-b border-white/10">
   <div className="flex-1 order-2 md:order-1">
-    <h2 className={`${style.text} text-3xl font-black mb-6 uppercase tracking-tight`}>🏠 The Home Buyer Checklist</h2>
+    <h2 className={`${style.text} text-3xl font-black mb-6 uppercase tracking-tight`}>🏠 Our Case study of a lead Magnet - The Home Buyer Checklist - Be inspired</h2>
     <p className="text-white/80 mb-6 leading-relaxed">
       This isn't just a checklist; it's a <strong>Strategic Lead-Capture Engine</strong> designed to neutralize "First-Time Purchase Anxiety" . As part of our <strong>LM-Series Assets</strong>, this tool activates the <strong>Principle of Reciprocity</strong>, transforming you from a "pushy solicitor" into a trusted <strong>Market Guide</strong> before the first handshake ever occurs .
     </p>
@@ -26,7 +26,11 @@ export default function HubDetails({ style }: HubDetailsProps) {
       <p className="text-white/70 text-base italic mb-4">
         "Use this asset to bridge the gap between digital attention and a signed mandate. It forces the prospect to perceive your expertise as an indispensable resource, not a commodity service". <strong>Use it on social media to capture the prospect's email address.</strong>
       </p>
+      <p className="text-white/70 text-base italic mb-4">
+      <a href="/homebuyerchecklist" target = "_blank" className={` text-center  inline-block ${style.primary} text-white font-extrabold py-1 px-4 rounded-xl shadow-lg `}>
+        Here you can find our landing page </a>  where we collect our customers' email addresses. You can consult it to understand what you need to implementif you wanna do the same. 
       
+      </p>
       {/* Punti di forza basati sulla psicologia del design del libro */}
       <ul className="space-y-3 text-white/60 text-sm">
         <li className="flex items-center gap-2">
@@ -43,7 +47,7 @@ export default function HubDetails({ style }: HubDetailsProps) {
         </li>
       </ul>
     </div>
-    <a href="/downloads/LM003_Homebuyer_checklist_lead_magnet156165451DfevasdfCXcvsdSDvs.pdf" download className={`inline-block ${style.primary} text-white font-extrabold py-2 px-4 rounded-xl uppercase shadow-lg transition-transform active:scale-95`}>
+    <a href="/downloads/LM003_Homebuyer_checklist_lead_magnet156165451DfevasdfCXcvsdSDvs.pdf" download className={` text-center  inline-block ${style.primary} text-white font-extrabold py-2 px-4 rounded-xl uppercase shadow-lg transition-transform active:scale-95`}>
       Download the home buyer Checklist PDF
     </a>
   </div>
@@ -54,7 +58,7 @@ export default function HubDetails({ style }: HubDetailsProps) {
 </div>
 
 {/* SECTION 2: THE RECIPROCITY ENGINE (Immagine a Sinistra) */}
-<div className="flex flex-col md:flex-row items-center gap-12 py-12 border-b border-white/10">
+<div className="flex flex-col md:flex-row items-center gap-12 py-4 border-b border-white/10">
   <div className="flex-1 w-full rounded-2xl border border-white/10 ">
     {/* Qui metterai l'immagine dell'infografica reciprocità */}
     <img src="/hub2.jpg" alt="Reciprocity Engine Preview" className="w-full object-cover opacity-80" />
@@ -86,14 +90,14 @@ export default function HubDetails({ style }: HubDetailsProps) {
     </ul>
   </div>
 </div>
-    <a href="/downloads/RBDLM_The_Reciprocity_Engine_sdvsfs9+95+9+sdf.pdf" download className={`inline-block ${style.primary} text-white font-extrabold py-2 px-4 mt-4 rounded-xl uppercase shadow-lg transition-transform active:scale-95`}>
+    <a href="/downloads/RBDLM_The_Reciprocity_Engine_sdvsfs9+95+9+sdf.pdf" download className={` text-center inline-block ${style.primary} text-white font-extrabold py-2 px-4 mt-4 rounded-xl uppercase shadow-lg transition-transform active:scale-95`}>
       Download Reciprocity Engine PDF
     </a>
   </div>
 </div>
 
 {/* SECTION 3: Business Card  (Immagine a Destra) */}
-<div className="flex flex-col md:flex-row items-center gap-12 py-12">
+<div className="flex flex-col md:flex-row items-center gap-12 py-4">
   <div className="flex-1 order-2 md:order-1">
     <h2 className={`${style.text} text-3xl font-black mb-10 uppercase tracking-tight`}>📧 T-SERIES: The Business Card as a Lead Magnet Bridge</h2>
     <p className="text-white/80 mb-6 leading-relaxed">
@@ -106,7 +110,7 @@ export default function HubDetails({ style }: HubDetailsProps) {
         <li className="flex gap-2"><span>•</span><span><strong>Digital Metamorphosis:</strong> Seamlessly moving physical prospects into your <strong>Private Vault</strong> to achieve total <strong>Data Sovereignty</strong> and long-term nurturing.</span></li>
       </ul>
     </div>
-    <a href="/downloads/ReBestDigitalBusinessCardPDF.pdf" download className={`inline-block ${style.primary} text-white font-extrabold py-2 px-4 rounded-xl uppercase shadow-lg transition-transform active:scale-95`}>
+    <a href="/downloads/ReBestDigitalBusinessCardPDF.pdf" download className={`text-center inline-block ${style.primary} text-white font-extrabold py-2 px-4 rounded-xl uppercase shadow-lg transition-transform active:scale-95`}>
       Download ReBest Digital PDF B.Card
     </a>
   </div>
@@ -120,12 +124,12 @@ export default function HubDetails({ style }: HubDetailsProps) {
       <div className="pt-20 border-t border-white/10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-            <h3 className="text-white font-bold mb-4 uppercase border-b-1 md:pb-3 pb-1" style={{ borderColor: style.color || '#FF00FF' }}>🏢 Marketing Agency?</h3>
+            <h3 className="text-white font-bold mb-4 uppercase border-b-1 md:pb-3 pb-1" style={{ borderColor: style.color || '#FF00FF' }}>🏢 Please Note:</h3>
             <p className="text-sm text-white/90 leading-relaxed">
-              If you wish to use the ReBest Ecosystem for your own clients, please select the <strong>"Extended Commercial License"</strong> at checkout.
+              <strong>"These are non-customizable PDF previews of the customizable assets included in the ReBest digital ecosystem."</strong>
             </p>
             <p className="text-sm text-white/90 leading-relaxed pt-4">
-            Distribution: <strong>For resale license or distribution agreements, contact us at: info@rebestdigital.com</strong>
+           <strong> Resource hub is being populated:</strong> More content and infographics are coming soon, so check back for updates.
             </p>
           </div>
           <div className="bg-red-500/5 p-8 rounded-2xl border border-red-500/20">

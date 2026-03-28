@@ -6,6 +6,7 @@ import { CAMPAIGNS } from '@/config/campaigns';
 import HubDetails from './HubDetails';
 import HubFAQ from './FAQSectionHub';
 import HubSEOAdvantages from './DetailedSEOAdvantages';
+import HubDetails2 from './HubDetails2';
 
 const CAMPAIGN_ID = "resourceHub";
 
@@ -19,8 +20,8 @@ export default function ResourceHubPage() {
     <main className={`min-h-screen ${style.bg} flex items-center justify-center p-6 pb-24`}>
         
       {/* STICKY BUTTONS BAR - Identica a prima */}
-      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`} style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
-         <div className="flex flex-col sm:flex-row gap-1 sm:gap-3 w-full max-w-3xl bg-black/40 backdrop-blur-xl p-1 sm:p-3 rounded-2xl border border-white/10 shadow-2xl">
+      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center`} style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
+         <div className="flex flex-col sm:flex-row gap-1 sm:gap-3 w-full max-w-2xl bg-black/40 backdrop-blur-xl sm:p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
             href="/" 
             className={`flex-1 ${style.primary} text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
@@ -46,7 +47,7 @@ export default function ResourceHubPage() {
         {/* TITOLO CON BORDI E ANIMAZIONE - Identico a prima */}
         <h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-1`} style={{ borderColor: style.color || '#FFffFF' }}>
           <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse mb-6">
-            ⚠️ READER EXCLUSIVE: ACCESSING YOUR TACTICAL ASSETS
+            ⚠️ ACCESSING YOUR TACTICAL ASSETS
           </div>
           <div className="pb-4">
             <img src="/ReBestEcosystem.svg" alt="ReBest Logo" className="object-cover max-w-100" />
@@ -98,6 +99,9 @@ export default function ResourceHubPage() {
         {/* Spaziatori per le sezioni extra se vorrai riattivarle */}
         <div className="mt-20">
         <HubDetails style={style} />
+        </div>
+        <div className="mt-20">
+        <HubDetails2 style={style} />
         </div>
         
         <div className="mt-20">
