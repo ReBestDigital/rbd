@@ -70,6 +70,38 @@ export const CAMPAIGNS = {
   footerNote: "Please check your Spam or Promotions folder if you don't see the mail with the download link.",
 }
 },
+"resourceHub": {
+    id: "resourceHub",
+    title: "The ReBest Digital Tactical Vault: The Exclusive 'Stop Being Invisible!' Resources Hub.",
+    subtitle: "Welcome to the inner circle of the ReBest Digital Ecosystem. You’ve officially made the leap from observer to player.",
+    text1 : "If you are on this page, it's because you decided to stop paying for someone else’s growth and started building your own. You chose to move away from the 'portals slavery' and invest in your Agency. As promised in the pages of 'Stop Being Invisible!', this Hub is the digital extension of your manual. Here you will find the strategic assets, mental maps, and visual protocols that—due to space and print quality constraints—could not be enclosed within a physical book.",
+    text2bold : "These are not just 'pretty pictures' or generic PDF files. Consider them the architectural blueprint of your new 'Unfair Advantage'. Every line, every color, and every word in these resources has been engineered for one goal: to position you as the undisputed authority in your local area.",
+    text3border : "We want you to take action immediately. That’s why you won't find forms to fill out, we won't ask for your email, and there are no barriers between you and your growth. Everything is ready for direct download below. Our mission is to give you the tools to dominate your market right now, without friction.",
+    leadMagnet: "",
+    buttonLabel: "",
+    image: "/CopertinaDefinitivaPerKindle.jpg", // Percorso della copertina
+    //style: BRAND_STYLES["modern-blue"], // Collega lo stile
+    style: BRAND_STYLES["dark-magenta"], // Collega lo stile
+    legal: PRIVACY_DOCS["standard-v1"],  // Collega la privacy
+    brevoListId: 3,
+    brevotemplateId : 8 ,
+    thankYou: {
+  icon: "🚀",
+  title: "Confirmation Received!",
+  description: "Thank you for confirming your email.",
+  highlight: "Your infographic",
+  subDescription: "is on its way to your inbox.",
+ ctaLabel: "Here you can find the roadmap",
+  ctaLink: SOCIALS["rebest-digital"].site,
+  secondaryLabel: "ReBest Instagram",
+  secondaryLink: SOCIALS["rebest-digital"].instagram,
+  ctaLabel3: "You tube secret playlist",
+  ctaLink3: "https://youtube.com/yourchannel",
+  ctaLink4: "https://wa.me/tuonumero", // Aggiungi questo
+  ctaLabel4: "Facebook Vault",   // E questo
+  footerNote: "Please check your Spam or Promotions folder if you don't see the mail with the download link.",
+}
+},
 "stop": {
     id: "stop",
     title: "Own your Business, stop paying for someone else growth.",

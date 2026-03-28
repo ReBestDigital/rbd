@@ -36,7 +36,7 @@ export default function FeaturesLayout({
   return (
     <section className="">
       {/* Banner Urgenza: April 30, 2026 */}
-      <div className="bg-red-600 text-white text-center py-2 text-sm font-bold animate-pulse">
+      <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
         ⚠️ EARLY BIRD EXPIRES: APRIL 30, 2026. SECURE YOUR 5X VALUE NOW.
       </div>
       

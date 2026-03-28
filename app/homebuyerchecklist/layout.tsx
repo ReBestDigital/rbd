@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'Homebuying Roadmap for Agents'
   ],
   openGraph: {
-    title: 'Stop Chasing Tourists: Get the Professional Homebuyer Checklist',
+    title: 'Stop Chasing Real Estate Tourists: Get the Professional Homebuyer Checklist',
     description: 'The strategic roadmap to filter action-takers from window shoppers. Download your professional PDF and upgrade your Real Estate authority.',
     type: 'website',
     url: 'https://www.rebestdigital.com/homebuyerchecklist',
