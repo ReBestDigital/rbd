@@ -76,7 +76,7 @@ export default function LandingPage() {
     <main className={`min-h-screen ${style.bg} flex items-center justify-center p-6`}>
        
       {/* STICKY BUTTONS BAR */}
-      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
+      <div className={`bg-yellow-600 fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
          
          <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
@@ -94,7 +94,7 @@ export default function LandingPage() {
         </div>
       </div> 
     
-       <div className= "bg-yellow max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-1`} style={{ borderColor: style.color || '#FFffFF' }}>
+       <div className= " max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-1`} style={{ borderColor: style.color || '#FFffFF' }}>
           <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
         ⚠️ EARLY BIRD EXPIRES: APRIL 30, 2026. SECURE YOUR 5X VALUE NOW.
          </div>
