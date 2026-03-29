@@ -63,7 +63,7 @@ export default function RootLayout({
        {/*  <CookieReset />  */}
        <CookieBanner />
        <footer className="bg-black  py-6 opacity-100 hover:opacity-100 transition-opacity">
-  <nav className="flex justify-center gap-4 text-[10px]">
+  {/* <nav className="flex justify-center gap-4 text-[10px]">
     <a href="/">home early bird</a>
     <a href="/book">The Book</a>
     <a href="/earlybird">Early bird</a>
@@ -73,7 +73,7 @@ export default function RootLayout({
     <a href="/homebuyerchecklist">Free home buyer Checklist</a>
     <a href="/homesellerchecklist">Free home seller Checklist</a>
     <a href="/reciprocityengine">Find out reciprocity</a>
-  </nav>
+  </nav> */}
 </footer>
       </body>
      
