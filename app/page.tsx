@@ -216,7 +216,7 @@ export default function LandingPage() {
           </p>
         </div>
       </div>
-            <div className="mt-20">
+            {/* <div className="mt-20">
               <EcosystemDetails style={style} />
             </div>
             <div className="mt-20">
@@ -227,7 +227,7 @@ export default function LandingPage() {
             </div>
             <div className="mt-20">
               <EssentialFAQ style={style} />
-            </div>
+            </div> */}
        </div>
     </main>
   );
