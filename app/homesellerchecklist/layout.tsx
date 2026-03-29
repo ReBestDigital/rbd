@@ -34,7 +34,7 @@ export default function HomeSellerLayout({
   children: React.ReactNode
 }) {
   return (
-    <section className="lead-magnet-seller-section bg-white">
+    <section className="lead-magnet-seller-section bg-yellow-600">
       {/* Banner con focus sull'autorità professionale */}
       <div className="bg-[#ff00ff] text-white text-center py-2 text-xl font-bold uppercase tracking-tighter">
         🦅 Limited Early Bird Offer - Save 80% Today
