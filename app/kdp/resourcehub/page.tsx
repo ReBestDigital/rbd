@@ -17,7 +17,7 @@ export default function ResourceHubPage() {
   const { style } = config;
 
   return (
-    <main className={`min-h-screen ${style.bg} flex items-center justify-center p-6 pb-24`}>
+    <main className={`min-h-screen ${style.bg} flex flex-col items-center justify-center overflow-x-hidden w-full`}>
         
       {/* STICKY BUTTONS BAR - Identica a prima */}
       <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center`} style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
@@ -50,7 +50,7 @@ export default function ResourceHubPage() {
             ⚠️ ACCESSING YOUR TACTICAL ASSETS
           </div>
           <div className="pb-4">
-            <img src="/ReBestEcosystem.svg" alt="ReBest Logo" className="object-cover max-w-100" />
+            <img src="/ReBestEcosystem.svg" alt="ReBest Logo" className="object-cover w-full sm:w-1/2" />
           </div>        
           {config.title}
         </h1>       
