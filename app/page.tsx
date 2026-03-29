@@ -94,7 +94,7 @@ export default function LandingPage() {
         </div>
       </div> 
     
-       <div className= " max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-1`} style={{ borderColor: style.color || '#FFffFF' }}>
+       <div className= " max-w-4xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-2`} style={{ borderColor: style.color || '#FFffFF' }}>
           <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
         ⚠️ EARLY BIRD EXPIRES: APRIL 30, 2026. SECURE YOUR 5X VALUE NOW.
          </div>
@@ -102,7 +102,7 @@ export default function LandingPage() {
         {/* <div><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover  w-full" /> */}
         </div>        {config.title}
               </h1>       
-      <div className="px-6 max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 ">
+      <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 ">
          
         {/* Preview Immagine Dinamica */}
        
