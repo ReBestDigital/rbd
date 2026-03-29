@@ -50,7 +50,7 @@ export default function ResourceHubPage() {
             ⚠️ ACCESSING YOUR TACTICAL ASSETS
           </div>
           <div className="pb-4">
-            <img src="/ReBestEcosystem.svg" alt="ReBest Logo" className="object-cover w-full sm:w-1/2" />
+            <img src="/ReBestEcosystem.svg" alt="ReBest Logo" className="object-cover w-full sm:w-2/5" />
           </div>        
           {config.title}
         </h1>       

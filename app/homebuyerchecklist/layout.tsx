@@ -42,7 +42,7 @@ export default function HomebuyerLayout({
       
       {children}
       
-      <div className="bg-[#ff00ff] py-8  font-bold text-center text-xl  border-t">
+      <div className="bg-[#ff00ff] py-8 text-white font-bold text-center text-xl  border-t">
         <p>This is a non-customizable PDF preview of the ReBest Digital Ecosystem.</p>
         <p className="mt-2">© {new Date().getFullYear()} ReBest Digital. All rights reserved.</p>
       </div>

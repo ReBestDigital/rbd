@@ -68,7 +68,7 @@ export default function LandingPage() {
   };
 
   return (
-    <main className={`min-h-screen ${style.bg} flex items-center justify-center p-6`} >
+    <main className={`min-h-screen ${style.bg} flex flex-col items-center justify-center overflow-x-hidden w-full`}>
       {/* STICKY BUTTONS BAR */}
       <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
@@ -87,7 +87,7 @@ export default function LandingPage() {
         </div>
       </div> 
        <div className= "max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4`} style={{ borderColor: style.color || '#FFffFF' }}>
-        <div className= "pb-4"><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover max-w-100 " />
+        <div className= "pb-4"><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover w-full sm:w-2/5 " />
         {/* <div><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover  w-full" /> */}
         </div>        {config.title}
               </h1>       
