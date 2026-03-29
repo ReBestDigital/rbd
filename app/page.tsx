@@ -73,7 +73,8 @@ export default function LandingPage() {
   };
 
   return (
-    <main className={`min-h-screen ${style.bg} flex items-center justify-center`}>
+    
+    <main className={`min-h-screen ${style.bg} flex flex-col items-center justify-center overflow-x-hidden w-full`}>
        
       {/* STICKY BUTTONS BAR */}
   {/*     <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
@@ -98,7 +99,7 @@ export default function LandingPage() {
           <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
         ⚠️ EARLY BIRD EXPIRES: APRIL 30, 2026. SECURE YOUR 5X VALUE NOW.
          </div>
-        <div className= "pb-4 "><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover max-w-100 " />
+        <div className= "pb-4 w-full"><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover w-full sm:w-1/2 " />
         {/* <div><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover  w-full" /> */}
         </div>        {config.title}
               </h1>       
