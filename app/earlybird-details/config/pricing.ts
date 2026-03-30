@@ -1,4 +1,4 @@
-const fineeb = '30/04/2026'
+const fineeb = '31/05/2026'
 export interface PlanFeature {
   feature: string;
   description?: string;

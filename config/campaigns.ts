@@ -72,7 +72,7 @@ export const CAMPAIGNS = {
 },
 "resourceHub": {
     id: "resourceHub",
-    title: "The ReBest Digital Tactical Vault: The Exclusive 'Stop Being Invisible!' Resources Hub.",
+    title: "The ReBest Digital Tactical Vault: The Exclusive 'Stop Being Invisible!' Resources Hub. ",
     subtitle: "Welcome to the inner circle of the ReBest Digital Ecosystem. You’ve officially made the leap from observer to player.",
     text1 : "If you are on this page, it's because you decided to stop paying for someone else’s growth and started building your own. You chose to move away from the 'portals slavery' and invest in your Agency. As promised in the pages of 'Stop Being Invisible!', this Hub is the digital extension of your manual. Here you will find the strategic assets, mental maps, and visual protocols that—due to space and print quality constraints—could not be enclosed within a physical book.",
     text2bold : "These are not just 'pretty pictures' or generic PDF files. Consider them the architectural blueprint of your new 'Unfair Advantage'. Every line, every color, and every word in these resources has been engineered for one goal: to position you as the undisputed authority in your local area.",
@@ -319,7 +319,7 @@ export const CAMPAIGNS = {
         ctaLink3: SOCIALS["rebest-digital"].YTStrategicalNblmPRIVATE,
         ctaLabel4: "YT 7-Days Preview P-list",
         ctaLink4: "https://www.youtube.com/playlist?list=PLVCnprZcthXp01g95LsAdtgPp0ffvyX4r",
-        footerNote: "EARLY BIRD NOTICE: Our bonus channels are currently under construction, which is why you secured such a competitive advantage. We expect them to be 80% complete by April 30, 2026. If you joined at this very early stage, content may be limited at first." }
+        footerNote: "EARLY BIRD NOTICE: Our bonus channels are currently under construction, which is why you secured such a competitive advantage. We expect them to be 80% complete by May 31, 2026. If you joined at this very early stage, content may be limited at first." }
 },
 
 // ************************           LEAD MAGNETS           *************************

@@ -91,11 +91,14 @@ export default function ResourceHubPage() {
             )}
 
             
-
+           
            
           </div>
         </div>
-
+                 <div className="text-3xl text-slate-100 m-8 border-l-4 border-r-4  p-4 text-center" style={{ borderColor: style.color || '#FF00FF' }}>
+                <p> Remember: 'The market doesn t pay the best agent; it pays the most visible authority.'
+             </p>
+              </div>
         {/* Spaziatori per le sezioni extra se vorrai riattivarle */}
         <div className="mt-20">
         <HubDetails style={style} />

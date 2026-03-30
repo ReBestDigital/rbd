@@ -52,7 +52,7 @@ export default function ComparazionePage() {
   </h1>
 
  <h2 className="text-2xl md:text-3xl text-[#ffffff] font-extrabold uppercase tracking-widest mb-4">
-    Early Bird Access — Limited Time Offer <br /> Expires April 30, 2026
+    Early Bird Access — Limited Time Offer <br /> Expires May 31, 2026
   </h2>
  {/* 3. THE OFFER BOX - Design compatto e tecnico per la conversione */}
   <div className="max-w-3xl mx-auto mb-12 bg-slate-900/80 p-6 md:p-8 rounded-3xl border border-fuchsia-500/30 backdrop-blur-sm shadow-[0_0_40px_rgba(255,0,255,0.1)]">
@@ -99,7 +99,7 @@ export default function ComparazionePage() {
               <tr className="border-b border-white/10 bg-white/5">
                 <th className="p-2  md:p-6 text-left text-slate-300 font-bold uppercase text-sm md:text-base  tracking-widest">Product / Service</th>
                 <th className={`p-2  md:p-6 text-center ${style.accent} font-black text-sm md:text-base `}>EARLY BIRD</th>
-                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/04/30</th>
+                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/05/31</th>
                 <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-opacity-60 text-sm md:text-base ">START Pack</th>
               </tr>
               <tr className="border-b border-white/5 bg-black/20">
