@@ -7,6 +7,7 @@ import HubDetails from './HubDetails';
 import HubFAQ from './FAQSectionHub';
 import HubSEOAdvantages from './DetailedSEOAdvantages';
 import HubDetails2 from './HubDetails2';
+import AuthorCard from '../../../components/AuthorCard';
 
 const CAMPAIGN_ID = "resourceHub";
 
@@ -29,13 +30,13 @@ export default function ResourceHubPage() {
             🏠 Official site
           </Link>
           <Link 
-            href="/earlybird-feature" 
+            href="https://www.amazon.it/dp/B0F5NC8MN5" 
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
             🔥 Havent read the the book yet?
           </Link>
           <Link 
-            href="/earlybird-feature" 
+            href="https://www.amazon.it/review/create-review/error?asin=B0F5NC8MN5" 
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
             ⭐ Review the book if you liked it
@@ -56,7 +57,7 @@ export default function ResourceHubPage() {
         </h1>       
 
         <div className="px-6 max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12">
-          
+          <div>
           {/* COLONNA SINISTRA: Preview Immagine - Identica a prima */}
           <div className="relative aspect-[3/4] bg-slate-100 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center border border-slate-200">
             {config.image ? (
@@ -65,7 +66,7 @@ export default function ResourceHubPage() {
               <span className="text-slate-400 font-medium italic">RESOURCE PREVIEW</span>
             )}
           </div>
-        
+         <AuthorCard style={style}/></div>
           {/* COLONNA DESTRA: Contenuto Testuale (Sostituisce il Form) */}
           <div className="flex flex-col">
             <p className="font-bold text-white text-xl mb-4 leading-tight">
