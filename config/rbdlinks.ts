@@ -5,7 +5,7 @@ export const RBDLINKS = {
     earlybirdDetailsurl: "https://www.rebestdigital.com/earlybird-details",  
     earlybirdDetails: "/earlybird-details",  
     earlybirdBuyGumroad: "https://rebestdigital.gumroad.com/l/ixtfn",   
-    stopbeinginvisibleAmazon: "https://www.amazon.it",     
+    stopbeinginvisibleAmazon: "https://www.amazon.com/dp/B0F5NC8MN5",     
     rebestdigitalEcosystem: "https://www.rebestdigital.com/earlybird-feature",
     }
 }

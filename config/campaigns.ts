@@ -37,6 +37,38 @@ export const CAMPAIGNS = {
       "footerNote": "If the Engine hasn't landed in your inbox, check Spam. Don't let your authority remain invisible!"
     }
 },
+ "audioPdf": {
+  // used in companion pdf page
+    "id": "audioPdf",
+    "title": "Download Your Companion PDF Guide",
+  "subtitle": "We are sure you enjoyed the audiobook! Now, it's time to take action and turn what you learned into real-world results.",
+  "text1" : "Once you sign up and confirm your email, you will receive a message with a direct download button to access your companion PDF guide instantly.",
+"text2bold" : "Inside this companion PDF, you will find the 50 complete scripts ready to copy and paste. You won't have to waste time rewriting them word for word from the audiobook.",
+"text3border" : "Plus, we have included all the images, charts, and frameworks from the book so you don't miss any visual details. You will also get the direct links to all the secret apps, tools, and digital resources mentioned in the chapters.",
+"leadMagnet": "The Companion PDF",
+"buttonLabel": "Confirm & Download Companion PDF",
+ "image": "/QuadratiAudioStopBeingInvisible2.jpg", 
+    "style": BRAND_STYLES["dark-magenta"], 
+    "legal": PRIVACY_DOCS["standard-v1"],  
+    "brevoListId": 16,
+    "brevotemplateId" : 15 ,
+    "thankYou": {
+      "icon": "🚀",
+      "title": "Start with Reciprocity Engine then get our book!",
+      "description": "Check your inbox. You now have the DIY guide to stop being a 'Digital Tenant' and start building your own 'Fortress of Trust'.",
+      "highlight": "The Reciprocity Engine Infographic",
+      "subDescription": "is on its way. Ready for the full strategic protocol? The book is waiting for you below. If you want everything you need at once explore The ReBest Digital Ecosystem and Start Dominating your Area.",
+      "ctaLabel": "Get the book!",
+      "ctaLink": RBDLINKS["rebest-digital"].stopbeinginvisibleAmazon,
+      "secondaryLabel": "Discover the full Ecosystem",
+      "secondaryLink":RBDLINKS["rebest-digital"].rebestdigitalEcosystem,
+      "ctaLabel3": "ReBest Digital Facebook",
+      "ctaLink3": SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+      "ctaLink4":  SOCIALS["rebest-digital"].instagram, 
+      "ctaLabel4": "ReBest Digital Instagram",   
+      "footerNote": "If the Engine hasn't landed in your inbox, check Spam. Don't let your authority remain invisible!"
+    }
+},
   // Stop Being invisible , campagna del libro
   "book2": {
     id: "book2",
