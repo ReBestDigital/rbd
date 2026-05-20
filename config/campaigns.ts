@@ -54,10 +54,10 @@ export const CAMPAIGNS = {
     "brevotemplateId" : 15 ,
     "thankYou": {
       "icon": "🚀",
-      "title": "Start with Reciprocity Engine then get our book!",
-      "description": "Check your inbox. You now have the DIY guide to stop being a 'Digital Tenant' and start building your own 'Fortress of Trust'.",
-      "highlight": "The Reciprocity Engine Infographic",
-      "subDescription": "is on its way. Ready for the full strategic protocol? The book is waiting for you below. If you want everything you need at once explore The ReBest Digital Ecosystem and Start Dominating your Area.",
+      "title": "Check Your Inbox!",
+      "description": "You are just one step away from downloading your Companion PDF.",
+      "highlight": "We have sent a confirmation email to your address. Please open it and click the button inside to verify your email and unlock your file.",
+      "subDescription": "If you don't see the email within 2 minutes, remember to check your Spam or Promotions folder so you don't miss the 50 ready-to-use scripts!",
       "ctaLabel": "Get the book!",
       "ctaLink": RBDLINKS["rebest-digital"].stopbeinginvisibleAmazon,
       "secondaryLabel": "Discover the full Ecosystem",
@@ -66,7 +66,7 @@ export const CAMPAIGNS = {
       "ctaLink3": SOCIALS["rebest-digital"].facebookPagePUBLIC, 
       "ctaLink4":  SOCIALS["rebest-digital"].instagram, 
       "ctaLabel4": "ReBest Digital Instagram",   
-      "footerNote": "If the Engine hasn't landed in your inbox, check Spam. Don't let your authority remain invisible!"
+      "footerNote": "If the Companion hasn't landed in your inbox, check Spam. Don't let your authority remain invisible!"
     }
 },
   // Stop Being invisible , campagna del libro
