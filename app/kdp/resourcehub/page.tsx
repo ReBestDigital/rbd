@@ -8,6 +8,8 @@ import HubFAQ from './FAQSectionHub';
 import HubSEOAdvantages from './DetailedSEOAdvantages';
 import HubDetails2 from './HubDetails2';
 import AuthorCard from '../../../components/AuthorCard';
+import { RBDLINKS } from '@/config/rbdlinks';
+
 
 const CAMPAIGN_ID = "resourceHub";
 
@@ -24,19 +26,25 @@ export default function ResourceHubPage() {
       <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center`} style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
          <div className="flex flex-col sm:flex-row gap-1 sm:gap-3 w-full max-w-2xl bg-black/40 backdrop-blur-xl sm:p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
-            href="/" 
+            href="/" target="_blank" rel="noopener noreferrer"
             className={`flex-1 ${style.primary} text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
           >
-            🏠 Official site
+            🏠 Official site home page
           </Link>
           <Link 
-            href="https://www.amazon.it/dp/B0F5NC8MN5" 
+            href={` ${RBDLINKS["rebest-digital"].AudioBookBuyGumroad} `} target="_blank" rel="noopener noreferrer"
+            className={`flex-1 ${style.primary} text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
+          >
+            🎧 Get the audiobook
+          </Link>
+          <Link 
+            href={` ${RBDLINKS["rebest-digital"].stopbeinginvisibleAmazon}`} target="_blank" rel="noopener noreferrer"
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
             🔥 Havent read the the book yet?
           </Link>
           <Link 
-            href="https://www.amazon.it/review/create-review/error?asin=B0F5NC8MN5" 
+            href="https://www.amazon.com/review/create-review/ref=cm_cr_othr_d_wr_but_top?ie=UTF8&channel=glance-detail&asin=B0F5NC8MN5" target="_blank" rel="noopener noreferrer"
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
             ⭐ Review the book if you liked it

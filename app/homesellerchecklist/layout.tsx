@@ -44,6 +44,7 @@ export default function HomeSellerLayout({
       
       <div className="bg-[#ff00ff] py-8 text-white font-bold text-center text-xl  border-t">
         <p>This is a non-customizable PDF version of the Home Seller Checklist included in the ReBest Ecosystem.</p>
+           Simply reply to the second email you receive to request the CUSTOMIZABLE VERSION.
       </div>
     </section>
   )

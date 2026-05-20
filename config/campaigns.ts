@@ -56,7 +56,7 @@ export const CAMPAIGNS = {
       "icon": "🚀",
       "title": "Check Your Inbox!",
       "description": "You are just one step away from downloading your Companion PDF.",
-      "highlight": "We have sent a confirmation email to your address. Please open it and click the button inside to verify your email and unlock your file.",
+      "highlight": "We have sent a confirmation email to your address. Click the button inside to Download your file.",
       "subDescription": "If you don't see the email within 2 minutes, remember to check your Spam or Promotions folder so you don't miss the 50 ready-to-use scripts!",
       "ctaLabel": "Get the book!",
       "ctaLink": RBDLINKS["rebest-digital"].stopbeinginvisibleAmazon,
@@ -398,7 +398,7 @@ export const CAMPAIGNS = {
     // Spieghiamo il valore della risorsa rispetto alla concorrenza generica
     subtitle: "A 'Free Home Valuation' attracts window shoppers. A 'Professional Home Seller Checklist' attracts action-takers ready for a premium sale.", 
     text1 : "Transform your Real Estate Agency's authority. Get a taste of our 360° Content Engine—80+ strategic assets, from high-conversion newsletters to expert-built lead magnets, designed to secure consistent listings and dominate your area.",
-    text2bold : "You will receive in your inbox (after confirming your subscription to our newsletter via the first email you receive) the link to download the non-customizable multi-page PDF version of the tool used in our Premium Ecosystem: the Checklist for Real Estate Sellers.",
+    text2bold : "You will receive in your inbox (after confirming your subscription to our newsletter via the first email you receive) the link to download the non-customizable multi-page PDF version of the tool used in our ReBest Digital Ecosystem: the Checklist for Real Estate Sellers. Simply reply to the second email you receive to request the CUSTOMIZABLE VERSION.",
     text3border : "Witness the ReBest Digital quality that sets you apart from every 'real estate digital newcomer'. Our templates are not just beautiful—they are technically optimized and strategically engineered for your growth.",
     leadMagnet: "the Home Seller Checklist",
     buttonLabel: "Get Our Checklist & Start Dominating",
