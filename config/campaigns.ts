@@ -351,7 +351,7 @@ export const CAMPAIGNS = {
         ctaLink3: SOCIALS["rebest-digital"].YTStrategicalNblmPRIVATE,
         ctaLabel4: "YT 7-Days Preview P-list",
         ctaLink4: "https://www.youtube.com/playlist?list=PLVCnprZcthXp01g95LsAdtgPp0ffvyX4r",
-        footerNote: "EARLY BIRD NOTICE: Our bonus channels are currently under construction, which is why you secured such a competitive advantage. We expect them to be 80% complete by May 31, 2026. If you joined at this very early stage, content may be limited at first." }
+        footerNote: "EARLY BIRD NOTICE: Our bonus channels are currently under construction, which is why you secured such a competitive advantage. We expect them to be 80% complete by June 15th, 2026. If you joined at this very early stage, content may be limited at first." }
 },
 
 // ************************           LEAD MAGNETS           *************************
@@ -412,7 +412,7 @@ export const CAMPAIGNS = {
         title: "You've just taken the first step to escape generic marketing.",
         description: " Your high-end, Home Seller Checklist PDF link, is being delivered to your inbox.",
         highlight: "Position yourself as the Expert, not just another Agent.",
-        subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine AKA Rebest Digital Ecosystem: 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer. Please note that you will receive a non-customizable PDF version of the checklist; the complete, customizable version with instructions is available within the ReBest digital ecosystem. Stop chasing , start actracting." ,
+        subDescription: "While you wait for the email, discover the full 360° Real Estate Content Engine AKA Rebest Digital Ecosystem: 12 months of strategic newsletters and 80+ technical assets waiting for you in the EarlyBird Offer. Please note that you will receive a non-customizable PDF version of the checklist; the complete, customizable version with instructions is available within the ReBest digital ecosystem or Simply reply to the second email you justreceive to request the CUSTOMIZABLE VERSION.. Stop chasing , start actracting." ,
         // CTA 1: Spinge verso la suite completa dei 12 mesi + 20 bonus
         ctaLabel: "View the Early Bird Arsenal(5xValue)",
         ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 

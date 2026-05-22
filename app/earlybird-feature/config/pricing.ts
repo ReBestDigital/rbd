@@ -73,14 +73,14 @@ export const PRICING_CONFIG: PlanFeature[] = [
   {
     feature: "Expansion Lead Magnet Pack",
     description: "Cod: LM005 to LM008 =>???? ",
-    earlyBird: { active: true, status: 'in_arrivo',date :'31/05/2026' },
-    full: { active: true, status: 'in_arrivo',date :'31/05/2026' },
+    earlyBird: { active: true, status: 'in_arrivo',date :'15/06/2026' },
+    full: { active: true, status: 'in_arrivo',date :'15/06/2026' },
     start: { active: false, status: 'completo' }
   },
   {
     feature: "Early Bird Lead Magnet Pack",
     description: "Cod: LM009 to LM010 =>???? ",
-    earlyBird: { active: true, status: 'in_arrivo',date :'31/05/2026' },
+    earlyBird: { active: true, status: 'in_arrivo',date :'15/06/2026' },
     full: { active: false, status: 'completo' },
     start: { active: false, status: 'completo' }
   },

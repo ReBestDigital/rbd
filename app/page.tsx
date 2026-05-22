@@ -97,7 +97,7 @@ export default function LandingPage() {
     
        <div className= " max-w-4xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-2`} style={{ borderColor: style.color || '#FFffFF' }}>
           <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
-        ⚠️ EARLY BIRD EXPIRES: MAY 31, 2026. SECURE YOUR 5X VALUE NOW.
+        ⚠️ EARLY BIRD EXPIRES: June 15th, 2026. SECURE YOUR 5X VALUE NOW.
          </div>
         <div className= "pb-4 w-full"><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover w-full sm:w-1/2 " />
         {/* <div><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover  w-full" /> */}

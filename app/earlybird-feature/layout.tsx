@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'The Full "Firepower" of ReBest Digital Ecosystm (Early Bird Access)',
-    description: 'Compare plans and discover the massive scale of our 80+ strategic assets. Save over 70% before May 31, 2026.',
+    description: 'Compare plans and discover the massive scale of our 80+ strategic assets. Save over 70% before June 15th, 2026.',
     type: 'website',
     url: 'https://www.rebestdigital.com/earlybird-feature',
     images: [
@@ -35,9 +35,9 @@ export default function FeaturesLayout({
 }) {
   return (
     <section className="">
-      {/* Banner Urgenza: May 31, 2026 */}
+      {/* Banner Urgenza: June 15th, 2026 */}
       <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
-        ⚠️ EARLY BIRD EXPIRES: MAY 31, 2026. SECURE YOUR 5X VALUE NOW.
+        ⚠️ EARLY BIRD EXPIRES: JUNE 15th, 2026. SECURE YOUR 5X VALUE NOW.
       </div>
       
       

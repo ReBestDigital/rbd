@@ -54,7 +54,7 @@ export default function ComparazionePage() {
   </h1>
 
  <h2 className="text-2xl md:text-3xl text-[#ffffff] font-extrabold uppercase tracking-widest mb-4">
-    Early Bird Access — Limited Time Offer <br /> Expires May 31, 2026
+    Early Bird Access — Limited Time Offer <br /> Expires June 15th, 2026
   </h2>
  {/* 3. THE OFFER BOX - Design compatto e tecnico per la conversione */}
   <div className="max-w-3xl mx-auto mb-12 bg-slate-900/80 p-6 md:p-8 rounded-3xl border border-fuchsia-500/30 backdrop-blur-sm shadow-[0_0_40px_rgba(255,0,255,0.1)]">
