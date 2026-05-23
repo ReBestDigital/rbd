@@ -99,7 +99,7 @@ export default function ComparazionePage() {
               <tr className="border-b border-white/10 bg-white/5">
                 <th className="p-2  md:p-6 text-left text-slate-300 font-bold uppercase text-sm md:text-base  tracking-widest">Product / Service</th>
                 <th className={`p-2  md:p-6 text-center ${style.accent} font-black text-sm md:text-base `}>EARLY BIRD</th>
-                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/05/31</th>
+                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/06/15</th>
                 <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-opacity-60 text-sm md:text-base ">START Pack</th>
               </tr>
               <tr className="border-b border-white/5 bg-black/20">

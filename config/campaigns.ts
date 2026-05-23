@@ -214,7 +214,7 @@ export const CAMPAIGNS = {
     subtitle: "Stop building from scratch. Get the 'Agency-in-a-Box' license and deliver elite marketing results to your clients for 1/10 of the development cost. The only White-Label Ecosystem designed for marketing Agencies and Solopreneurs to dominate the Real Estate market without the headache of content creation.", 
     text1 : "Transform your business model from 'Service Provider' to 'Market Leader'. Gain 80+ strategic White-Label assets—from lead magnets to psychological sales funnels—engineered specifically for the Real Estate niche. Don't waste months on research; deliver the 'Warfare Toolkit' to your clients today and charge premium fees.",
     // Leva psicologica: L'investimento si ripaga con il primo cliente (ROI > 100%)
-    text2bold : "Agency Early Bird: Secure a real estate ecosystem for just €1,299. One single 'Done-for-you' client setup will double your investment instantly.",
+    text2bold : "Agency Early Bird: Secure a real estate ecosystem for just €1,299 till June 15th. One single 'Done-for-you' client setup will double your investment instantly.",
     // Download dimostrativo per agenzie: Mostriamo la qualità del prodotto
     text3border : "Curious about the quality? Download our 'Home buyer checklist'. Witness the conversion-focused logic that will allow you to outperform any generic competitor. While others sell 'pretty posts', you will sell 'listing appointments'.",
     leadMagnet: "the Homebuyer checklist",

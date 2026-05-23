@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.rebestdigital.com/book',
     images: [
       {
-        url: 'https://www.rebestdigital.com/CopertinaDefinitivaPerKindle.jpg', 
+        url: 'https://www.rebestdigital.com/SBIfronteretro_xlinkFB.jpg', 
         width: 1200,
         height: 630,
         alt: 'Stop Being Invisible - Real Estate Marketing Book by ReBest Digital',
