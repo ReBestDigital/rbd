@@ -26,6 +26,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  verification: {
+    other: {
+      'p:domain_verify': '97cec79762be552410dffb789eb1c135',
+    },
+  },
+  
 }
 
 export default function HomeSellerLayout({
