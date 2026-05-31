@@ -42,6 +42,11 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  verification: {
+    other: {
+      'p:domain_verify': '97cec79762be552410dffb789eb1c135',
+    },
+  },
 }
 
 export default function RootLayout({
