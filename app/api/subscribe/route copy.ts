@@ -1,30 +1,24 @@
 import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
-
-// Rimosso runtime = 'edge' per rendere stabile la cache degli IP su Node.js
-
-// 1. Memoria temporanea per gli IP (Funziona correttamente su Node.js standard)
+export const runtime = 'edge';
+// 1. Memoria temporanea per gli IP
 const ipCache = new Map<string, { count: number; lastRequest: number }>();
-
-// Semplice funzione Regex per verificare la validità dell'email lato server
-const isValidEmail = (email: string) => {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email) && email.length < 150;
-};
 
 export async function POST(request: Request) {
   const headerList = await headers();
   
-  // Recupero IP pulito e reale
-  const forwarded = headerList.get('x-forwarded-for');
-  const ip = forwarded ? forwarded.split(',')[0].trim() : 'anonymous';
-  
+  // RECUPERO IP UNIFICATO (fondamentale per evitare anomalie)
+  //const forwarded = headerList.get('x-forwarded-for');
+  //const ip = forwarded ? forwarded.split(',')[0].trim() : '127.0.0.1';
+
+  const ip = headerList.get('x-forwarded-for') || 'anonymous';
   const now = Date.now();
   const userData = ipCache.get(ip);
 
-  // 2. Logica di blocco (Rate Limiting) - Ora stabile
+  // 2. Logica di blocco (Rate Limiting)
   if (userData) {
-    if (now - userData.lastRequest < 600000 && userData.count >= 10) { // Abbassato a 10 tentativi per sicurezza
+    // 600.000 ms = 10 minuti
+    if (now - userData.lastRequest < 600000 && userData.count >= 13) {
       return NextResponse.json(
         { error: 'Troppi tentativi. Riprova tra 10 minuti.' }, 
         { status: 429 }
@@ -39,24 +33,14 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { email, source, privacy_version, consent_text, privacy_hash, title_campaign, brevoListId, brevotemplateId } = body;
 
-    // SCUDO 1: Controllo stringente sull'email
-    if (!email || !isValidEmail(email)) {
-      return NextResponse.json({ error: 'A valid email address is required' }, { status: 400 });
-    }
-
-    // SCUDO 2: Controllo di sicurezza sulle lunghezze contro attacchi Injection di testo
-    if (
-      (consent_text && consent_text.length > 2000) || 
-      (title_campaign && title_campaign.length > 200) ||
-      (source && source.length > 100)
-    ) {
-      return NextResponse.json({ error: 'Invalid input data length' }, { status: 400 });
+    if (!email) {
+      return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
     // 3. Costruzione URL Dinamico
     const host = headerList.get('host') || 'localhost:3000';
     const protocol = host.includes('localhost') ? 'http' : 'https';
-    const redirectUrl = `${protocol}://${host}/thank-you?campaign=${source || 'generic'}`;
+    const redirectUrl = `${protocol}://${host}/thank-you?campaign=${source}`;
 
     // 4. Chiamata a Brevo
     const response = await fetch('https://api.brevo.com/v3/contacts/doubleOptinConfirmation', {
@@ -67,18 +51,18 @@ export async function POST(request: Request) {
         'api-key': process.env.BREVO_API_KEY as string,
       },
       body: JSON.stringify({
-        email: email.trim(),
-        templateId: Number(brevotemplateId), 
-        includeListIds: [Number(brevoListId)], 
+        email: email,
+        templateId: Number(brevotemplateId), // Brevo vuole un numero qui
+        includeListIds: [Number(brevoListId)], // Anche qui vuole numeri
         redirectionUrl: redirectUrl,
         attributes: {
           'OPT_IN': true,
           'OPT_IN_DATE': new Date().toISOString().split('T')[0],
           'IP_ADDRESS': ip,
-          'SOURCE': source ? source.substring(0, 50) : 'biella_network',
-          'PRIVACY_VERSION': privacy_version ? privacy_version.substring(0, 10) : 'v1.0',
+          'SOURCE': source || 'generic_site',
+          'PRIVACY_VERSION': privacy_version || 'v1.0',
           'CONSENT_TEXT': consent_text,
-          'CONSENT_DATE': new Date().toISOString().split('T')[0],
+          'CONSENT_DATE':  new Date().toISOString().split('T')[0],
           'PRIVACY_HASH': privacy_hash,
           'INSCRIPTION_CAMPAIGN_TITLE': title_campaign,
         },
