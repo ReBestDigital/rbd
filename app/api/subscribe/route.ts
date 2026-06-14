@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 
-// Rimosso runtime = 'edge' per rendere stabile la cache degli IP su Node.js
+export const runtime = 'edge'; // <--- RIMETTI QUESTA RIGA QUI!
+
 
 // 1. Memoria temporanea per gli IP (Funziona correttamente su Node.js standard)
 const ipCache = new Map<string, { count: number; lastRequest: number }>();
