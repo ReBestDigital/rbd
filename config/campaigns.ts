@@ -249,33 +249,33 @@ export const CAMPAIGNS = {
     //used in earlybird page
     id: "homebird",
     // Focus sul dominio del mercato e sull'investimento intelligente
-    title: "ReBest Digital Ecosystem (the ultimate marketing machine for real estate agents) Stop renting your growth from portals. Start owning your market.", 
+    title: "Stop renting your growth from portals. Start owning your market.", 
     // Spieghiamo chiaramente il valore dell'operazione Early Bird
-    subtitle: "Welcome to the ReBest Digital Ecosystem: Your Complete Real Estate Marketing Machine.", 
+    subtitle: "Welcome to the ReBest Digital Ecosystem: the ultimate marketing machine for real estate agents.", 
     text1 : "The real estate market is changing. Agencies that rely solely on monotonous elegance or expensive portal subscriptions are losing ground to digital-first competitors. The ReBest Digital Ecosystem was built to solve this problem, providing you with a strategic, automated, and ready-to-use marketing engine. ",
     text2bold : "This is not just a collection of templates; it is a comprehensive strategic system designed to position you as the undisputed leader in your local area.",
-    text3border : "Transform your Real Estate Agency local presence with the ReBest Digital Ecosystem.Stop relying on real estate portals. Get 80+ strategic marketing assets—from high-conversion newsletters to lead magnets and social systems—designed to establish your authority and secure consistent listings. Early Bird access: Get an ecosystem worth at least 5x your investment—less than 10% of your smallest commission.",
+    text3border : "Transform your Real Estate Agency local presence with the ReBest Digital Ecosystem.Stop relying on real estate portals. Get 80+ strategic marketing assets—from high-conversion newsletters to lead magnets and social systems—designed to establish your authority and secure consistent listings. Second Chance access: Get an ecosystem worth at least 3x your investment—less than 10% of your smallest commission.",
     leadMagnet: "the Homebuyer Checklist",
-    buttonLabel: "Get the Checklist & Taste the Ecosystem",
-    image: "/earlySellpage1.jpg", 
+    buttonLabel: "Subscribe to the ReBest Digital newsletter",
+    image: "/secondChance.jpg", 
     style: BRAND_STYLES["dark-magenta"], 
     legal: PRIVACY_DOCS["standard-v1"],  
     brevoListId: 10, 
     brevotemplateId: 15 ,
     thankYou: {
         icon: "🦅",
-        title: "The Vision of an Eagle, the Timing of an Early Bird!",
-        description: "You've just taken the first step to escape the portals' slavery. Your high-end checklist is being delivered.",
-        highlight: "Seecure you 500% Value Gain, Wake up as an Early Bird",
-        subDescription: "While you wait for the e-mail with the homebuyer checklist, discover the full arsenal of 80+ strategic assets that is waiting for you in the Early Bird vault, click the button below.",
+        title: "The Vision of an Eagle, the Strategy of a Leader!",
+        description: "You've just taken the first step to escape the portals' slavery. Your Premium Homebuyer Checklist is on its way.",
+        highlight: "⚠️ Action Required: Check your inbox now and click the button to download the checklist!",
+        subDescription: "Since you are here don't waste your Second Chance to get our full ReBest Digital Ecosystem with an unfair offer! Discover the full arsenal of 80+ strategic assets that are waiting for you in the 'Second Chance OFFER', click the button below.",
         // CTA 1: Spinge forte sulla vendita/roadmap dell'ecosistema
-        ctaLabel: "View the Early Bird Arsenal(5xValue)",
-        ctaLink: RBDLINKS["rebest-digital"].earlybirdDetails, 
+        ctaLabel: "🔥VIEW THE ECOSYSTEM",
+        ctaLink: RBDLINKS["rebest-digital"].RBDEcosystemDetails, 
         // CTA 2: Social per l'autorità
-        secondaryLabel: "Join the Revolution on IG",
+        secondaryLabel: "Join us on IG",
         secondaryLink: SOCIALS["rebest-digital"].instagram,
         // CTA 3: Video per mostrare il "dietro le quinte"
-        ctaLabel3: "Watch the Strategy in Action",
+        ctaLabel3: "Youtube channel",
         ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
         // CTA 4: Gruppo FB per il "social proof"
         ctaLabel4: "Facebook Page",   
@@ -335,7 +335,7 @@ export const CAMPAIGNS = {
     // Testo legale per la "parte piccola" sotto il form
     legal: PRIVACY_DOCS["standard-v1"], 
     brevoListId: 7,
-    brevotemplateId: 15,
+    brevotemplateId: 26,
     
     thankYou: {
         icon: "🦅",
@@ -352,6 +352,43 @@ export const CAMPAIGNS = {
         ctaLabel4: "YT 7-Days Preview P-list",
         ctaLink4: "https://www.youtube.com/playlist?list=PLVCnprZcthXp01g95LsAdtgPp0ffvyX4r",
         footerNote: "EARLY BIRD NOTICE: Our bonus channels are currently under construction, which is why you secured such a competitive advantage. We expect them to be 80% complete by June 15th, 2026. If you joined at this very early stage, content may be limited at first." }
+},
+// per avere l accesso al gruppo privato facebook lifetime dopo l acquisto dell ecosystema
+"getprivategrouplifetime": {
+    id: "getprivategrouplifetime",
+  title: "Congratulations! You've just secured your Real Estate unfair advantage. Your PDF contains all the template links.",
+    
+    // Sottotitolo modificato: focalizzato sulla registrazione per accedere al gruppo FB e ricevere i template
+    subtitle: "To unlock your access to our Private Facebook Group and receive all the lifetime updates for our residential templates, please register with your email below.",
+    text1: "",
+    text2bold: "",
+    text3border: "",
+    leadMagnet: "Our Private Facebook Group Link",
+    buttonLabel: "REGISTER TO CLAIM MY ACCESS",
+    image: "/UnlockLTVault.jpg", 
+    style: BRAND_STYLES["dark-magenta"], 
+    
+    // Testo legale per la "parte piccola" sotto il form
+    legal: PRIVACY_DOCS["standard-v1"], 
+    brevoListId: 19,
+    brevotemplateId: 15,
+    
+    thankYou: {
+        icon: "🦅",
+        title: "Welcome to the ReBest Digital Ecosystem Circle.",
+        description: "We value our clients' privacy, so we have adopted a double opt-in registration process. Your explicit consent has been recorded. You are now officially a ReBest Digital Ecosystem Lifetime Member.",
+        highlight: "Access the Vault",
+        subDescription: "Below you will find the direct links to join your PRIVATE groups and channels! Start dominating your area.",
+        ctaLabel: "YT Channel",
+        ctaLink: SOCIALS["rebest-digital"].youtube_PUBLIC,
+        secondaryLabel: "FB ReBest Digital Page",
+        secondaryLink: SOCIALS["rebest-digital"].facebookPagePUBLIC,
+        ctaLabel3: "",//"Strategic Nblm discussions",
+        ctaLink3: "",//SOCIALS["rebest-digital"].YTStrategicalNblmPRIVATE,
+        ctaLabel4: "",//"YT 7-Days Preview P-list",
+        ctaLink4:"", //"https://youtube.com",
+        footerNote: "LIFETIME UPDATE NOTICE: You have unlocked lifetime access to all our  future residential templates and updates. New content, releases, and platform tools will be shared inside our Private Facebook Group or via email as they roll out. Stay tuned!"
+    }
 },
 
 // ************************           LEAD MAGNETS           *************************
@@ -464,6 +501,53 @@ export const CAMPAIGNS = {
         ctaLabel4: "Facebook Authority Group",   
         ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
         footerNote: "Check your Spam folder if the link doesn't arrive in 2 minutes. Remember: Attention is fleeting, but Data is permanent.",
+    }
+},
+"newsletter": {
+    // Landing page dedicata all'iscrizione alla newsletter strategica
+    id: "newsletter",
+    // Focus sulla visibilità e l'apertura degli occhi sul problema dei portali
+    title: "Stop Being a Real Estate Digital Tenant. Start Owning Your Market. Join the ReBest Digital Newsletter today!", 
+    // Spostamento dalla dipendenza dai portali alla consapevolezza dei dati
+    subtitle: "Portals own your audience and usually you own the Invoice. To escape this digital dependency, you need a step-by-step transition from a 'Solicitor' begging for listings to an 'Expert Advisor' who understands the local market.", 
+    
+    // Testo 1: Focus sul percorso di consapevolezza e sul problema del marketing "Vanilla"
+    text1: "The market doesn't pay the best agent; it pays the most visible authority. Most agencies are trapped in 'passive hope', renting their business from portals instead of owning their database. Our Strategic Newsletter is designed to raise your awareness, piece by piece, opening your eyes to the structural gaps in modern real estate marketing. We will share raw insights, tactical breakdowns, and free tool samples to help you understand the core mechanics of conversion over pure, empty graphics. This Newsletter doesn't give you an instant magical solution—it will try to giving you the strategic foundation to start building your own independent authority.",
+    
+    // Text2: Presenta la guida come il contenuto tecnico allegato all'Email Numero 1
+    text2bold: "Inside your very first newsletter issue – sent automatically right after you confirm your subscription – you will find the link to 'The Reciprocity Engine' Infographic, showing you exactly how the psychology of value works.",
+    
+    // Text3: Sposta il focus sul lavoro costante e sul percorso a lungo termine
+    text3border: "Stop working blindly IN your business and start gaining awareness ON your authority. Learn the principles, test our samples, and discover how to gradually reduce your portal dependency.  Join our Newsletter today.",
+    
+    leadMagnet: "The ReBest Strategic Newsletter (Issue #1 with Reciprocity Engine)",
+    buttonLabel: "Join the ReBest Digital Strategic Newsletter",
+    image: "/stopasking.jpg", 
+    style: BRAND_STYLES["dark-magenta"], 
+    legal: PRIVACY_DOCS["standard-v1"],  
+    brevoListId: 17, 
+    brevotemplateId: 15,
+    
+    thankYou: {
+        icon: "🧠",
+        title: "Welcome to the First Step of Your Strategic Journey!",
+        description: "Your registration is confirmed. The first issue of our newsletter, including 'The Reciprocity Engine' framework, is on its way to your inbox.",
+        highlight: "Awareness is a process, not a switch. Consistency on the ground is what matters.",
+        subDescription: "The first issue introduces the core logic of psychological reciprocity (the Cialdini principle). This newsletter is designed to guide you slowly through these frameworks. If you ever decide you want to speed up this learning process and implement these strategies immediately, you can explore our complete plug-and-play Ecosystem of assets: The ReBest Digital Ecosystem.",
+        
+        // CTA 1: Spinge verso l'ecosistema completo come acceleratore, non come obbligo
+        ctaLabel: "🔥VIEW THE ECOSYSTEM",
+        ctaLink: RBDLINKS["rebest-digital"].RBDEcosystemFeature, 
+        // CTA 2: Social
+        secondaryLabel: "Follow the Journey on IG",
+        secondaryLink: SOCIALS["rebest-digital"].instagram,
+        // CTA 3: Video
+       /*  ctaLabel3: "Watch Strategic Breakdowns on YouTube",
+        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
+        // CTA 4: Social Proof
+        ctaLabel4: "Facebook Owners Group",   
+        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC,  */
+        footerNote: "Check your Spam folder if the first issue doesn't arrive in 2 minutes. Remember: Tools are useless without the strategic consistency to drive them.",
     }
 },
 // ************************           FUNZIONAMENTO SITO            *************************

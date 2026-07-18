@@ -57,13 +57,7 @@ export async function POST(request: Request) {
     // 3. Costruzione URL Dinamico
     const host = headerList.get('host') || 'localhost:3000';
     const protocol = host.includes('localhost') ? 'http' : 'https';
-    let redirectUrl;
-
-if (source === "getprivategrouplifetime") {
-  redirectUrl = `${protocol}://${host}/thank-you-rbde?campaign=${source}`;
-} else {
-  redirectUrl = `${protocol}://${host}/thank-you?campaign=${source}`;
-}
+    const redirectUrl = `${protocol}://${host}/thank-you?campaign=${source || 'generic'}`;
 
     // 4. Chiamata a Brevo
     const response = await fetch('https://api.brevo.com/v3/contacts/doubleOptinConfirmation', {

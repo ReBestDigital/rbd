@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import img1 from '../../public/GraficheHomeEarlybird.jpg'
+import img1 from '../../public/rbdepdfPreview.jpg'
 import img2 from '../../public/1GraficheHomeEarlybird.jpg'
 import img3 from '../../public/2GraficheHomeEarlybird.jpg'
 interface EcosystemDetailsProps {
@@ -48,7 +48,7 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
             <p>You get <strong>80+ high-performance assets</strong> engineered for conversion:</p>
             <div className="border-l-1 md:pl-12 pl-4" style={{ borderColor: style.color || '#FF00FF' }}>
             <p><strong>The Trust Builder:</strong> 25+ Professional Newsletter sequences to nurture leads and stay top-of-mind.</p>
-            <p><strong>The Inbound Machine:</strong> 10+ Strategic Lead Magnets and High-Tech Business cards to turn every contact into a lead.</p>
+            <p><strong>The Inbound Machine:</strong> 4+ Strategic Lead Magnets and High-Tech Business cards to turn every contact into a lead.</p>
             <p><strong>Social Dominance Kit:</strong> 32+ optimized templates for Instagram Reels, Carousels, and Stories.</p>
             <p><strong>Physical Presence:</strong> Complete Open House kits, professional signage, and digital check-in tools.</p>
             <p><strong>The Strategic Brain: </strong> 10+ Detailed Manuals and a private Video Playlist explaining the "Why" and "How" behind every single asset and marketing strategy.</p>
@@ -58,7 +58,7 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
       </div>
 
       {/* SECTION 3: EARLY BIRD PRIVILEGES (Immagine a Destra) */}
-      <div className="flex flex-col md:flex-row items-center gap-12">
+     {/*  <div className="flex flex-col md:flex-row items-center gap-12">
         <div className="flex-1 order-2 md:order-1">
           <h2 className={`${style.text} text-3xl font-black mb-10 uppercase`}>💎Early Bird Privileges</h2>
           <div className="border-l-1 md:pl-12 pl-4" style={{ borderColor: style.color || '#FF00FF' }}>
@@ -74,7 +74,7 @@ export default function EcosystemDetails({ style }: EcosystemDetailsProps) {
            src={img3}
            alt="early-bird-products" />
         </div>
-      </div>
+      </div> */}
 
       {/* SECTION 4: DISCLAIMER & AGENCY (Full Width) */}
       <div className="pt-20 border-t border-white/10">

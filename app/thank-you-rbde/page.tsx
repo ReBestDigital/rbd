@@ -17,8 +17,10 @@ function ThankYouContent() {
 
   return (
     <div className={`${style.bg} min-h-screen flex flex-col items-center justify-center p-6  text-center  `}>
-       
-      
+       {/* STICKY BUTTONS BAR */}
+      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
+        
+      </div> 
       {/* Icona o Elemento Visivo */}
       <div className={`${style.primary} w-20 h-20 rounded-full flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(255,0,255,0.4)] animate-bounce`}>
         <span className="text-white text-4xl">{thankYou.icon || "🚀"}</span>

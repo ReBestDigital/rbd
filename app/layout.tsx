@@ -55,6 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
@@ -67,6 +68,7 @@ export default function RootLayout({
         <Footer />
        {/*  <CookieReset />  */}
        <CookieBanner />
+       
        <footer className="bg-black  py-6 opacity-100 hover:opacity-100 transition-opacity">
   {/* <nav className="flex justify-center gap-4 text-[10px]">
     <a href="/">home early bird</a>

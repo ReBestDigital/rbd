@@ -2,7 +2,7 @@ export const PRIVACY_DOCS = {
   // Qui decidi la versione per ogni categoria di pagina
 "standard-v1": {
     name: "standard-v1",
-    version: "v1.0_2026_03",
+    version: "v1.0_2026_07",
     textContent: `
 Privacy Policy
 
@@ -43,11 +43,11 @@ This website may direct users, via hyperlinks, to external platforms for the enj
 
 Social Media: Users may be redirected to YouTube, Facebook, Instagram, and TikTok. Any interaction and information acquired by these platforms are subject to the user's privacy settings for each respective social network.
 
-E-commerce and Payments: For the sale of digital or physical products, this site redirects users to the Gumroad platform. In this case, the processing of personal data related to payments and economic transactions occurs directly on Gumroad's servers, which acts as an independent Data Controller.
+E-commerce and Payments: For the sale of digital ecosystems, this site links to, redirects to, or cross-references the Etsy and Gumroad platforms. The processing of personal data related to orders, billing, payments, and economic transactions occurs directly on the respective servers of Etsy or Gumroad, which act as independent Data Controllers.
 
 Please note: The Owner of this website does not install profiling cookies, tracking pixels, or analytical tools (such as Google Analytics) to monitor user behavior. Once you leave this website via the aforementioned links, data processing falls under the exclusive responsibility of the respective third-party platforms.
 
-Last Updated: March 7, 2026
+Last Updated: July 14, 2026
 `
 },
   "standard-v2": {

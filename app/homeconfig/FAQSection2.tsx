@@ -13,7 +13,7 @@ export default function EssentialFAQ({ style }: FAQProps) {
     },
     {
       question: "Is this a one-time payment or a subscription?",
-      answer: "During the <strong>Early Bird phase</strong>, it is a one-time investment. You get lifetime access to all current assets and the Private Vault. Future versions will likely move to a monthly subscription model."
+      answer: "During the <strong>Second Chance phase</strong>, it is a one-time investment. You get lifetime access to all current assets and the Private Vault. Future versions will likely move to a monthly subscription model."
     },
     {
       question: "Do I need to be a tech expert or a designer?",
@@ -27,17 +27,14 @@ export default function EssentialFAQ({ style }: FAQProps) {
       question: "Can I customize everything with my own brand?",
       answer: "Yes, 100%. Every layout, color, and font can be adjusted in Canva to match your <strong>personal or agency branding</strong> perfectly while maintaining the high-conversion structure we designed."
     },
-    {
-      question: "What are the Early Bird exclusive bonuses?",
-      answer: "You get <strong>Lifetime Access to the Private Facebook Vault, new templates for free, 10 Lead Magnets 2 only for Early birds</strong> and our private Video Strategy Playlist. These are high-value resources that will be restricted or paid-only for future customers."
-    },
+    
     {
       question: "Is there support if I get stuck?",
       answer: "Yes. Within the Private Vault, you can interact with the community and get updates. Plus, our <strong>internal guides</strong> cover almost every question you might have during setup."
     },
     {
       question: "Why should I buy now instead of waiting?",
-      answer: "Simple: <strong>The price will never be this low again</strong>. By joining the Early Bird elite, you get over $1,500 worth of strategic assets for a fraction of the cost, securing a massive competitive advantage."
+      answer: "Simple: <strong>The price will never be this low again</strong>. You get over $1,300 worth of strategic assets for a fraction of the cost, securing a massive competitive advantage."
     }
   ];
 
