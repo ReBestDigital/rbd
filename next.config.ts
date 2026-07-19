@@ -1,11 +1,10 @@
 import type { NextConfig } from "next";
-//@ts-ignore
+
 const nextConfig: NextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
+  /* Qui forziamo Next.js a compilare tutto in modalità Edge, 
+     rendendolo compatibile al 100% con Cloudflare Workers */
+  experimental: {
+    runtime: 'edge',
   },
 };
 
