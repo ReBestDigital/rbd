@@ -152,7 +152,7 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
                 {config.text3border}
                  </p>
                </div>
-              <div className="text-lg text-slate-100 mb-4"><p>till undecided about the Ecosystem?
+              <div className="text-lg text-slate-100 mb-4"><p>Still undecided about the Ecosystem?
 Join our newsletter! We regularly send breakdown guides, case studies, exclusive commercial offers, and actionable strategies on how to dominate your local real estate market with our ecosystem. 
 
 Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immediately after confirming your subscription.</p>
