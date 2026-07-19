@@ -51,7 +51,7 @@ export default function DetailedSEOAdvantages({ style }: SEOAdvantagesProps) {
   return (
     <section className="max-w-6xl mx-auto py-24 px-6 border-t border-white/10">
       <h2 className="text-white text-3xl md:text-4xl font-black mb-16 text-center tracking-tighter border-b-4 border-t-4 pb-6 pt-6" style={{ borderColor: style.color || '#FFffFF' }}>
-       <span className="uppercase"> The Early Bird Real Estate Arsenal in Detail:</span> <br/>
+       <span className="uppercase"> The Real Estate Arsenal in Detail:</span> <br/>
         <span className={style.text}>ReBest Digital Ecosystem gives you Technical Superiority for Your Business</span>
       </h2>
 

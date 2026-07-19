@@ -8,16 +8,16 @@ interface FAQSectionProps {
 export default function DetailedFAQSection({ style }: FAQSectionProps) {
   const faqs = [
     {
-      question: "What exclusive bonuses do I get with the Early Bird access?",
-      answer: "By joining now, you secure <strong>exclusive lifetime access</strong> to our Private Facebook Vault and private YouTube Strategic channels. Please note: in the near future, these resources will transition to a <strong>paid monthly subscription</strong>. Early Bird members are 'grandfathered' in and will never pay extra."
+      question: "What exclusive bonuses do I get with the Second Chance access?",
+      answer: "By joining now, you secure <strong>exclusive lifetime access</strong> to our Private Facebook Vault and private YouTube Drilldown channels. Please note: in the near future, these resources will transition to a <strong>paid monthly subscription</strong>."
     },
     {
       question: "Are there step-by-step instructions for the assets?",
-      answer: "Yes. Every single template and strategy comes with its own <strong>dedicated manual</strong>. We don't just give you the 'what', we give you the 'how' and 'why' through detailed guides and a private video playlist included in the Early Bird package."
+      answer: "Yes. Every single template and strategy comes with its own <strong>dedicated manual</strong>. We don't just give you the 'what', we give you the 'how' and 'why' through detailed guides and a private video playlist included in the Second chance package."
     },
     {
       question: "I have a real estate group with multiple offices. Can we all use it?",
-      answer: "The standard Early Bird license covers small groups of up to <strong>3 offices/locations</strong>. For larger organizations, franchises, or groups with 4+ offices, a <strong>Commercial License</strong> is required to ensure compliance and support for your entire team."
+      answer: "The standard license covers small groups of up to <strong>3 offices/locations</strong>. For larger organizations, franchises, or groups with 4+ offices, a <strong>Commercial License</strong> is required to ensure compliance and support for your entire team."
     },
     {
       question: "I am a Marketing Agency serving real estate clients. Can I use this?",
@@ -25,7 +25,7 @@ export default function DetailedFAQSection({ style }: FAQSectionProps) {
     },
     {
       question: "Will I get new updates and future templates?",
-      answer: "Early Bird members get <strong>7-day early access</strong> to all new you tube new public videos, free new Residential infographics, and Residential templates we add to the ecosystem. You will always stay one step ahead of the competition who will have to wait—and eventually pay—for these updates."
+      answer: "Rebest digital Ecosystem members get <strong>access</strong> to free new Residential infographics, and Residential templates we add to the ecosystem. You will always stay one step ahead of the competition who will have to pay—for these updates."
     },
     {
       question: "Can I fully customize the branding and colors?",
@@ -36,16 +36,16 @@ export default function DetailedFAQSection({ style }: FAQSectionProps) {
       answer: "Unlike generic valuation offers, our <strong>Homebuyer and Seller Checklists</strong> educate your prospects. By the time you meet them, they already trust your process, making the listing appointment a formality rather than a struggle."
     },
     {
-      question: "What happens if I miss the Early Bird window?",
-      answer: "Once the Early Bird phase ends, the price will increase significantly to reflect the full market value ($1,500+), and the <strong>Facebook Vault and Secret YouTube playlist</strong> will likely move to a recurring monthly fee model."
+      question: "What happens if I miss the Second Chance window?",
+      answer: "Once the Second Chance phase ends, the price will increase significantly to reflect the full market value , and the <strong>Facebook Vault and Secret YouTube playlist</strong> will likely move to a recurring monthly fee model."
     },
     {
       question: "Is this suitable for solo agents or only large teams?",
       answer: "It’s perfect for both. For <strong>solo agents</strong>, it acts as a 'marketing department in a box'. For <strong>teams</strong>, it provides a standardized framework so every agent communicates with the same level of authority."
     },
     {
-      question: "What makes ReBest different from cheap template bundles?",
-      answer: "Cheap bundles offer 'pretty' designs. ReBest offers <strong>Conversion Engineering</strong>. Every asset is based on real-world real estate psychology designed to defeat 'Digital New-Comers' and reclaim your local market dominance."
+      question: "What makes ReBest Digital Ecosystem different from cheap template bundles?",
+      answer: "Cheap bundles offer 'pretty' designs. Our Ecosystem offers <strong>Conversion Engineering</strong>. Every asset is based on real-world real estate psychology designed to defeat 'Digital New-Comers' and reclaim your local market dominance."
     }
   ];
 

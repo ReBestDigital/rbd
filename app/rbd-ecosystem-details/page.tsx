@@ -5,7 +5,7 @@ import { PRICING_CONFIG, PLAN_PRICES } from './config/pricing';
 import Link from 'next/link';
 import { RBDLINKS } from '@/config/rbdlinks';
 import SEOAdvantages from './DetailedSEOAdvantages'; 
-import FAQSection1 from '@/app/earlybird-details/FAQSection1';
+import FAQSection1 from '@/app/rbd-ecosystem-details/FAQSection1';
 const HOME_CAMPAIGN_ID = "stop";
 
 export default function ComparazionePage() {
@@ -19,13 +19,13 @@ export default function ComparazionePage() {
       <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
-             href={RBDLINKS["rebest-digital"].earlybirdBuyGumroad} target="_blank" rel="noopener noreferrer"
+             href={RBDLINKS["rebest-digital"].RBDbuyEcosystemGumroad} target="_blank" rel="noopener noreferrer"
             className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
           >
-            🔥 Buy Early Bird
+            🔥 Buy The Ecosystem NOW!
           </Link>
           <Link 
-            href={RBDLINKS["rebest-digital"].earlybirdFeature} 
+            href={RBDLINKS["rebest-digital"].RBDEcosystemFeature} 
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
             📦 Grouped Features
@@ -36,7 +36,7 @@ export default function ComparazionePage() {
      <div className="max-w-5xl w-full text-center mt-10">
         <img src="ReBestEcosystem.svg" alt="ReBest Logo" className="h-30 mx-auto mb-6" />
         <p className="p-2 md:p-4 text-5xl text-slate-100 font-extrabold mb-4 border-b-8 border-t-8 border-[#ff00ff]">
-          Everything you need to dominate the real estate market.(details)
+          ReBest Digital Ecosystem: <br/>Everything you need to dominate the real estate market. (details)
         </p>
         <h1 className={`${style.text} text-xl md:text-xl font-extrabold mb-8  tracking-tight mb-6`}>
          Stop overpaying for generic, elegant marketing tools. <br />Stop relying on generic web agency.
@@ -65,7 +65,7 @@ export default function ComparazionePage() {
         </span>
         <div className="flex items-baseline justify-center md:justify-start gap-3">
           <span className="text-white text-5xl font-black">€399</span>
-          <span className="text-slate-500 line-through text-lg">€1,490+</span>
+          <span className="text-slate-500 line-through text-lg">€1,190+</span>
         </div>
       </div>
 
@@ -104,7 +104,7 @@ export default function ComparazionePage() {
               <tr className="border-b border-white/5 bg-black/20">
                 <td className="p-2  md:p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
                 <td className="p-2  md:p-4 text-center font-bold text-xl text-slate-500 line-through">{PLAN_PRICES.earlyBird}</td>
-                <td className="p-2  md:p-4 text-center font-black text-2xl text-[#ff00ff] text-sm md:text-2xl">{PLAN_PRICES.start}</td>
+                <td className="p-2  md:p-4 text-center font-black text-2xl text-[#ff00ff] text-sm md:text-2xl">{PLAN_PRICES.secondC}</td>
                 <td className="p-2  md:p-4 text-center font-bold text-2xl text-white text-sm md:text-xl">{PLAN_PRICES.full}</td>
               </tr>
             </thead>
@@ -139,7 +139,7 @@ export default function ComparazionePage() {
                     
                     {[
                       { data: item.earlyBird, type: 'earlyBird' },
-                      { data: item.start, type: 'secondChance' },
+                      { data: item.secondC, type: 'secondChance' },
                       { data: item.full, type: 'fullPrice' }
                     ].map((planObj, i) => {
                       const plan = planObj.data;

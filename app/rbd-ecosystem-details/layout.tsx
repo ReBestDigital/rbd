@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Explore the "Firepower": Full Technical Marketing Asset List',
     description: 'Every single real estate marketing asset of the ReBest Digital Ecosystem revealed. See exactly what you get inside the Early Bird vault before the price increases.',
     type: 'website',
-    url: 'https://www.rebestdigital.com/earlybird-details',
+    url: 'https://www.rebestdigital.com/rbd-ecosystem-details',
     images: [
       {
         url: 'https://www.rebestdigital.com/1GraficheHomeEarlybird.jpg', 
