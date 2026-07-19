@@ -37,7 +37,7 @@ export default function ReciprocityLayout({
     <section className="strategy-blueprint-section bg-slate-50">
       {/* Banner con focus sulla mentalità imprenditoriale */}
       <div className="bg-[#ff00ff] text-white text-center py-2 text-xl font-extrabold">
-        🦅 Subscribe To The ReBest Digital Newsletter Today <br />
+        🦅 Subscribe To The ReBest Digital Newsletter Today<br />
       </div>
       
       {children}
