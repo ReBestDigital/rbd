@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Lascialo vuoto, ci pensa la build standard */
+  /* Impostazioni standard compatibili */
 };
 
 export default nextConfig;
