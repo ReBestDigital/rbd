@@ -542,11 +542,11 @@ export const CAMPAIGNS = {
         secondaryLabel: "Follow the Journey on IG",
         secondaryLink: SOCIALS["rebest-digital"].instagram,
         // CTA 3: Video
-       /*  ctaLabel3: "Watch Strategic Breakdowns on YouTube",
-        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
+         ctaLabel3: "",
+        ctaLink3:  "",
         // CTA 4: Social Proof
-        ctaLabel4: "Facebook Owners Group",   
-        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC,  */
+        ctaLabel4:  "",  
+        ctaLink4:   "",
         footerNote: "Check your Spam folder if the first issue doesn't arrive in 2 minutes. Remember: Tools are useless without the strategic consistency to drive them.",
     }
 },
