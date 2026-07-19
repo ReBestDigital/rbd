@@ -89,7 +89,7 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
       
        <div className= " max-w-4xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-2`} style={{ borderColor: style.color || '#FFffFF' }}>
           <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
-        ⚠️ EARLY BIRD EXPIRED-----: You got a Second Chance! Claim your 3x value now.
+        ⚠️ EARLY BIRD EXPIRED---: You got a Second Chance! Claim your 3x value now.
          </div>
         <div className= "pb-4 w-full"><img src="/ReBestEcosystem.svg" alt="Second chance Preview" className="object-cover w-full sm:w-1/2 " />
         {/* <div><img src="/ReBestEcosystem.svg" alt="Second chance Preview" className="object-cover  w-full" /> */}
@@ -152,7 +152,7 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
                 {config.text3border}
                  </p>
                </div>
-              <div className="text-lg text-slate-100 mb-4">    <p>Still undecided about the Ecosystem?
+              <div className="text-lg text-slate-100 mb-4"><p>till undecided about the Ecosystem?
 Join our newsletter! We regularly send breakdown guides, case studies, exclusive commercial offers, and actionable strategies on how to dominate your local real estate market with our ecosystem. 
 
 Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immediately after confirming your subscription.</p>
