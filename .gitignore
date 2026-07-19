@@ -19,7 +19,7 @@
 
 # production
 /build
-
+.open-next
 # misc
 .DS_Store
 *.pem

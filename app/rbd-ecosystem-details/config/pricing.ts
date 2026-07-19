@@ -1,12 +1,11 @@
 const fineeb = '15/06/2026'
 export interface PlanFeature {
-  secondC: any;
   feature: string;
   description?: string;
   isHeader?: boolean;
   earlyBird?: { active: boolean; status: 'completo' | 'in_arrivo'; date?: string };
   full?: { active: boolean; status: 'completo' | 'in_arrivo'; date?: string };
-  start?: { active: boolean; status: 'completo' | 'in_arrivo'; date?: string };
+  secondC?: { active: boolean; status: 'completo' | 'in_arrivo'; date?: string };
 }
 
 export const PLAN_PRICES = {
