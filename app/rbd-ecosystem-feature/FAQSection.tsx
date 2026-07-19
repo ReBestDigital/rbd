@@ -20,7 +20,7 @@ export default function FAQSection({ style }: FAQSectionProps) {
       answer: "No. Most templates on the market focus on 'monotonous elegance'. ReBest focuses on <strong>conversion psychology</strong>. Every word and layout is engineered to generate listing appointments, not just 'likes'."
     },
       {
-      question: "How does the Early Bird access work?",
+      question: "How does the Second Chance access work?",
       answer: "During this phase, you get the entire ecosystem for a fraction of its future price. Plus, you get <strong>exclusive lifetime access</strong> to our private Facebook Vault and future updates that will later become a paid subscription."
     },
     {
@@ -57,7 +57,7 @@ export default function FAQSection({ style }: FAQSectionProps) {
           Have more technical questions about licenses or specific assets?
         </p>
         <Link 
-          href="/earlybird-details" 
+          href="/rbd-ecosystem-details" 
           className="text-white/60 hover:text-white text-sm font-bold uppercase tracking-widest border-b border-white/20 pb-1 transition-all"
         >
           View Detailed Technical FAQ & Asset List →

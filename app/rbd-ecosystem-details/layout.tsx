@@ -38,7 +38,7 @@ export default function DetailsLayout({
     <section className="technical-details-layout ">
       {/* Header tecnico per dare un senso di "Catalogo Professionale" */}
       <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
-        ⚠️ EARLY BIRD EXPIRES: JUNE 15TH, 2026. SECURE YOUR 5X VALUE NOW.
+        ⚠️ EARLY BIRD EXPIRED: You got a Second Chance! Claim your 3x value now.
       </div>
         {children}
      

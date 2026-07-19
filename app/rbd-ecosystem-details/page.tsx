@@ -52,16 +52,16 @@ export default function ComparazionePage() {
   </h1>
 
  <h2 className="text-2xl md:text-3xl text-[#ffffff] font-extrabold uppercase tracking-widest mb-4">
-    Early Bird Access — Limited Time Offer <br /> Expires June 15th, 2026
+    ⚠️ EARLY BIRD EXPIRED: You got a Second Chance! Claim your 3x value now.
   </h2>
- {/* 3. THE OFFER BOX - Design compatto e tecnico per la conversione */}
+ {/* 3. THE OFFER BOX */}
   <div className="max-w-3xl mx-auto mb-12 bg-slate-900/80 p-6 md:p-8 rounded-3xl border border-fuchsia-500/30 backdrop-blur-sm shadow-[0_0_40px_rgba(255,0,255,0.1)]">
     <div className="flex flex-col md:flex-row items-center justify-between gap-8">
       
       {/* Prezzi */}
       <div className="text-center md:text-left">
-        <span className="text-[#ff00ff] text-xs font-bold uppercase tracking-[0.2em] block mb-2">
-          Limited Early Bird Access
+        <span className="text-[#ff00ff] text-sm font-extrabold uppercase tracking-[0.15em] block mb-2">
+          Second Chance Opportunity
         </span>
         <div className="flex items-baseline justify-center md:justify-start gap-3">
           <span className="text-white text-5xl font-black">€399</span>
@@ -83,8 +83,7 @@ export default function ComparazionePage() {
     </div>
   </div>
   <p className="text-xl text-slate-100 mb-10 leading-relaxed border-l-8  border-[#ff00ff] pl-8">
-    We analyzed every single step of Top Real estate Agent's workflow and built a full-scale 
-    solution. From the first touchpoint to the final closing, we’ve got you covered.
+    The Early Bird has officially expired! However, you can still grab this <strong>second chance opportunity</strong> we are offering you at a heavily discounted price. This dynamic rate will remain active only until we roll out all our training videos on YouTube, after which the price will increase permanently.
     <br/><br/>
     <span className="text-white font-bold italic">Scroll down to witness the full "Firepower" of the ReBest Digital Ecosystem. </span> <br />
      We listed every single asset because we want you to see the massive scale of what you’re 
@@ -97,16 +96,16 @@ export default function ComparazionePage() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="border-b border-white/10 bg-white/5">
-                <th className="p-2  md:p-6 text-left text-slate-300 font-bold uppercase text-sm md:text-base  tracking-widest">Product / Service</th>
-                <th className={`p-2  md:p-6 text-center ${style.accent} font-black text-sm md:text-base `}>EARLY BIRD</th>
-                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/06/15</th>
-                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-opacity-60 text-sm md:text-base ">START Pack</th>
+                <th className="p-2  md:p-6 text-left text-slate-200 font-bold uppercase text-base md:text-lg tracking-widest">Product / Service</th>
+                <th className="p-2 md:p-6 text-center text-slate-500 font-black text-sm md:text-base line-through opacity-60">EARLY BIRD <br/><span className="text-xs no-underline block text-red-500 font-bold">(EXPIRED)</span></th>
+                <th className="p-2  md:p-6 text-center text-[#ff00ff] font-black text-sm md:text-base tracking-wide">SECOND CHANCE<br/>Opportunity</th>
+                <th className="p-2 md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/06/15</th>
               </tr>
               <tr className="border-b border-white/5 bg-black/20">
                 <td className="p-2  md:p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
-                <td className={`p-2  md:p-4 text-center font-black text-2xl ${style.accent} text-sm md:text-2xl`}>{PLAN_PRICES.earlyBird}</td>
+                <td className="p-2  md:p-4 text-center font-bold text-xl text-slate-500 line-through">{PLAN_PRICES.earlyBird}</td>
+                <td className="p-2  md:p-4 text-center font-black text-2xl text-[#ff00ff] text-sm md:text-2xl">{PLAN_PRICES.start}</td>
                 <td className="p-2  md:p-4 text-center font-bold text-2xl text-white text-sm md:text-xl">{PLAN_PRICES.full}</td>
-                <td className="p-2  md:p-4 text-center font-bold text-2xl text-white/60 text-sm md:text-xl">{PLAN_PRICES.start}</td>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
@@ -138,22 +137,37 @@ export default function ComparazionePage() {
                       )}
                     </td>
                     
-                    {[item.earlyBird, item.full, item.start].map((plan, i) => (
-                      <td key={i} className="text-center">
-                        {plan?.status === 'in_arrivo' ? (
-                          <div className="flex flex-col items-center">
-                            <span className="text-[10px]  font-black text-orange-400 uppercase tracking-tighter bg-orange-400/20 px-2 py-0.5 rounded-full">
-                              Coming Soon
+                    {[
+                      { data: item.earlyBird, type: 'earlyBird' },
+                      { data: item.start, type: 'secondChance' },
+                      { data: item.full, type: 'fullPrice' }
+                    ].map((planObj, i) => {
+                      const plan = planObj.data;
+                      return (
+                        <td key={i} className="text-center">
+                          {plan?.status === 'in_arrivo' ? (
+                            <div className="flex flex-col items-center">
+                              <span className="text-[10px]  font-black text-orange-400 uppercase tracking-tighter bg-orange-400/20 px-2 py-0.5 rounded-full">
+                                Coming Soon
+                              </span>
+                              <span className="text-[10px] text-slate-400 mt-1">{plan.date}</span>
+                            </div>
+                          ) : plan?.active ? (
+                            <span className={`text-2xl drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] ${
+                              planObj.type === 'earlyBird' 
+                                ? 'text-black/50' 
+                                : planObj.type === 'secondChance' 
+                                  ? 'text-[#ff00ff]' 
+                                  : style.accent
+                            }`}>
+                              ✦
                             </span>
-                            <span className="text-[10px] text-slate-400 mt-1">{plan.date}</span>
-                          </div>
-                        ) : plan?.active ? (
-                          <span className={`${style.accent} text-2xl drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]`}>✦</span>
-                        ) : (
-                          <span className="text-white/10 text-xl">✕</span>
-                        )}
-                      </td>
-                    ))}
+                          ) : (
+                            <span className="text-white/10 text-xl">✕</span>
+                          )}
+                        </td>
+                      );
+                    })}
                   </tr>
                 );
               })}

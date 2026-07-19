@@ -4,8 +4,8 @@ import { CAMPAIGNS } from '@/config/campaigns';
 import { PRICING_CONFIG, PLAN_PRICES } from './config/pricing';
 import Link from 'next/link';
 import { RBDLINKS } from '@/config/rbdlinks';
-import SEOAdvantages from './strategySection'; 
-import FAQSection from '@/app/rbd-ecosystem-feature/FAQSection';
+import SEOAdvantages from './DetailedSEOAdvantages'; 
+import FAQSection1 from '@/app/earlybird-details/FAQSection1';
 const HOME_CAMPAIGN_ID = "stop";
 
 export default function ComparazionePage() {
@@ -15,29 +15,28 @@ export default function ComparazionePage() {
   return (
     <main className={`min-h-screen ${style.bg} flex flex-col items-center p-1 md:p-6 text-white font-sans`}>
 
-{/* STICKY BUTTONS BAR */}
-     <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
+ {/* STICKY BUTTONS BAR */}
+      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
           <Link 
-            href={RBDLINKS["rebest-digital"].RBDbuyEcosystemGumroad} target="_blank" rel="noopener noreferrer"
+             href={RBDLINKS["rebest-digital"].earlybirdBuyGumroad} target="_blank" rel="noopener noreferrer"
             className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
           >
-            🔥 BUY THE ECOSYSTEM NOW
+            🔥 Buy Early Bird
           </Link>
           <Link 
-            href={RBDLINKS["rebest-digital"].RBDEcosystemDetails} 
+            href={RBDLINKS["rebest-digital"].earlybirdFeature} 
             className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
           >
-            📦 Details (All 80+ Features)
+            📦 Grouped Features
           </Link>
         </div>
       </div>
 
-
-      <div className="max-w-5xl w-full text-center mt-10">
+     <div className="max-w-5xl w-full text-center mt-10">
         <img src="ReBestEcosystem.svg" alt="ReBest Logo" className="h-30 mx-auto mb-6" />
         <p className="p-2 md:p-4 text-5xl text-slate-100 font-extrabold mb-4 border-b-8 border-t-8 border-[#ff00ff]">
-          Everything you need to dominate the real estate market. (features)
+          Everything you need to dominate the real estate market.(details)
         </p>
         <h1 className={`${style.text} text-xl md:text-xl font-extrabold mb-8  tracking-tight mb-6`}>
          Stop overpaying for generic, elegant marketing tools. <br />Stop relying on generic web agency.
@@ -53,20 +52,20 @@ export default function ComparazionePage() {
   </h1>
 
  <h2 className="text-2xl md:text-3xl text-[#ffffff] font-extrabold uppercase tracking-widest mb-4">
-    ⚠️ EARLY BIRD EXPIRED: You got a Second Chance! Claim your 3x value now.
+    Early Bird Access — Limited Time Offer <br /> Expires June 15th, 2026
   </h2>
-  {/* 3. THE OFFER BOX */}
+ {/* 3. THE OFFER BOX - Design compatto e tecnico per la conversione */}
   <div className="max-w-3xl mx-auto mb-12 bg-slate-900/80 p-6 md:p-8 rounded-3xl border border-fuchsia-500/30 backdrop-blur-sm shadow-[0_0_40px_rgba(255,0,255,0.1)]">
     <div className="flex flex-col md:flex-row items-center justify-between gap-8">
       
       {/* Prezzi */}
       <div className="text-center md:text-left">
-        <span className="text-[#ff00ff] text-sm font-extrabold uppercase tracking-[0.15em] block mb-2">
-          Second Chance Opportunity
+        <span className="text-[#ff00ff] text-xs font-bold uppercase tracking-[0.2em] block mb-2">
+          Limited Early Bird Access
         </span>
         <div className="flex items-baseline justify-center md:justify-start gap-3">
           <span className="text-white text-5xl font-black">€399</span>
-          <span className="text-slate-500 line-through text-lg">€1,190+</span>
+          <span className="text-slate-500 line-through text-lg">€1,490+</span>
         </div>
       </div>
 
@@ -84,31 +83,30 @@ export default function ComparazionePage() {
     </div>
   </div>
   <p className="text-xl text-slate-100 mb-10 leading-relaxed border-l-8  border-[#ff00ff] pl-8">
-    The Early Bird has officially expired! However, you can still grab this <strong>second chance opportunity</strong> we are offering you at a heavily discounted price. This dynamic rate will remain active only until we roll out all our training videos on YouTube, after which the price will increase permanently.
+    We analyzed every single step of Top Real estate Agent's workflow and built a full-scale 
+    solution. From the first touchpoint to the final closing, we’ve got you covered.
     <br/><br/>
-    Here you can see the group of features . By clicking Details button you ll witness the full "Firepower" of the ReBest Digital Ecosystem. 
-     There we listed every single asset because we want you to see the massive scale of what you’re 
+    <span className="text-white font-bold italic">Scroll down to witness the full "Firepower" of the ReBest Digital Ecosystem. </span> <br />
+     We listed every single asset because we want you to see the massive scale of what you’re 
     getting for <strong>less than 10% of a your single small commission.</strong>
   </p>
 
-  
-</div>
+ </div>
 
-{/* Tabella */}
         <div className="overflow-x-auto rounded-3xl border border-white/10 shadow-2xl bg-slate-900/40 backdrop-blur-md">
           <table className="w-full border-collapse">
             <thead>
               <tr className="border-b border-white/10 bg-white/5">
-                <th className="p-2  md:p-6 text-left text-slate-200 font-bold uppercase text-base md:text-lg tracking-widest">Product / Service</th>
-                <th className="p-2 md:p-6 text-center text-slate-500 font-black text-sm md:text-base line-through opacity-60">EARLY BIRD <br/><span className="text-xs no-underline block text-red-500 font-bold">(EXPIRED)</span></th>
-                <th className="p-2  md:p-6 text-center text-[#ff00ff] font-black text-sm md:text-base tracking-wide">SECOND CHANCE<br/>Opportunity</th>
-                <th className="p-2 md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE</th>
+                <th className="p-2  md:p-6 text-left text-slate-300 font-bold uppercase text-sm md:text-base  tracking-widest">Product / Service</th>
+                <th className={`p-2  md:p-6 text-center ${style.accent} font-black text-sm md:text-base `}>EARLY BIRD</th>
+                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-sm md:text-base ">FULL PRICE <br></br>after 2026/06/15</th>
+                <th className="p-2  md:p-6 text-center text-slate-200 font-bold text-opacity-60 text-sm md:text-base ">START Pack</th>
               </tr>
               <tr className="border-b border-white/5 bg-black/20">
                 <td className="p-2  md:p-4 text-left font-bold text-slate-400 italic text-lg">Investment</td>
-                <td className="p-2  md:p-4 text-center font-bold text-xl text-slate-500 line-through">{PLAN_PRICES.earlyBird}</td>
-                <td className="p-2  md:p-4 text-center font-black text-2xl text-[#ff00ff] text-sm md:text-2xl">{PLAN_PRICES.secondC}</td>
+                <td className={`p-2  md:p-4 text-center font-black text-2xl ${style.accent} text-sm md:text-2xl`}>{PLAN_PRICES.earlyBird}</td>
                 <td className="p-2  md:p-4 text-center font-bold text-2xl text-white text-sm md:text-xl">{PLAN_PRICES.full}</td>
+                <td className="p-2  md:p-4 text-center font-bold text-2xl text-white/60 text-sm md:text-xl">{PLAN_PRICES.start}</td>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
@@ -125,7 +123,7 @@ export default function ComparazionePage() {
 
                 return (
                   <tr key={index} className="hover:bg-white/5 transition-all group">
-                    <td className="p-3 pl-3 md:pl-8  text-left flex items-center gap-2">
+                   <td className="p-3 pl-2 md:pl-8  text-left flex items-center gap-2">
                       <span className={`text-sm md:text-lg font-medium ${style.text}`}>{item.feature}</span>
                       
                       {/* TOOLTIP LOGIC */}
@@ -140,49 +138,34 @@ export default function ComparazionePage() {
                       )}
                     </td>
                     
-                    {[
-                      { data: item.earlyBird, type: 'earlyBird' },
-                      { data: item.secondC, type: 'secondChance' },
-                      { data: item.full, type: 'fullPrice' }
-                    ].map((planObj, i) => {
-                      const plan = planObj.data;
-                      return (
-                        <td key={i} className="text-center">
-                          {plan?.status === 'in_arrivo' ? (
-                            <div className="flex flex-col items-center">
-                              <span className="text-[10px]  font-black text-orange-400 uppercase tracking-tighter bg-orange-400/20 px-2 py-0.5 rounded-full">
-                                Coming Soon
-                              </span>
-                              <span className="text-[10px] text-slate-400 mt-1">{plan.date}</span>
-                            </div>
-                          ) : plan?.active ? (
-                            <span className={`text-2xl drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] ${
-                              planObj.type === 'earlyBird' 
-                                ? 'text-black/50' 
-                                : planObj.type === 'secondChance' 
-                                  ? 'text-[#ff00ff]' 
-                                  : style.accent
-                            }`}>
-                              ✦
+                    {[item.earlyBird, item.full, item.start].map((plan, i) => (
+                      <td key={i} className="text-center">
+                        {plan?.status === 'in_arrivo' ? (
+                          <div className="flex flex-col items-center">
+                            <span className="text-[10px]  font-black text-orange-400 uppercase tracking-tighter bg-orange-400/20 px-2 py-0.5 rounded-full">
+                              Coming Soon
                             </span>
-                          ) : (
-                            <span className="text-white/10 text-xl">✕</span>
-                          )}
-                        </td>
-                      );
-                    })}
+                            <span className="text-[10px] text-slate-400 mt-1">{plan.date}</span>
+                          </div>
+                        ) : plan?.active ? (
+                          <span className={`${style.accent} text-2xl drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]`}>✦</span>
+                        ) : (
+                          <span className="text-white/10 text-xl">✕</span>
+                        )}
+                      </td>
+                    ))}
                   </tr>
                 );
               })}
             </tbody>
           </table>
         </div>
-                    <div className="mt-20">
-                      <SEOAdvantages style={style} />
-                    </div>
-                    <div className="mt-20">
-                      <FAQSection style={style} />
-                    </div>
+                            <div className="mt-20">
+                              <SEOAdvantages style={style} />
+                            </div>
+                            <div className="mt-20">
+                                    <FAQSection1 style={style} />
+                             </div>
       </div>
     </main>
   );

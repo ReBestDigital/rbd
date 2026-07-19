@@ -33,15 +33,15 @@ export default function SEOAdvantages({ style }: SEOAdvantagesProps) {
     },
     {
       title: "Why-Behind-the-How Strategies",
-      text: "For Early Birds We provide more than just files; we provide a proven method. Every component is backed by strategic manuals and private video tutorials to elevate your digital marketing expertise."
+      text: "We provide more than just files; we provide a proven method. Every component is backed by strategic manuals and private video tutorials to elevate your digital marketing expertise."
     },
     {
       title: "Differentiate from Digital New-Comers",
-      text: "Outperform tech giants with advanced communication tools. The ReBest Ecosystem provides the strategic edge needed to win at the highest level in today’s modern market."
+      text: "Outperform tech giants with advanced communication tools. The ReBest Digital Ecosystem provides the strategic edge needed to win at the highest level in today’s modern market."
     },
     {
       title: "Unbeatable Marketing ROI",
-      text: "Secure your <strong>Early Bird access</strong> to gain a professional marketing suite with a market value over 5 times the price paid. It pays for itself with 1/10 of the first commission generated."
+      text: "Secure your <strong>Second Chance access</strong> to gain a professional marketing suite with a market value over 5 times the price paid. It pays for itself with 1/10 of the first commission generated."
     },
     {
       title: "Lifetime Community & Updates",
@@ -53,7 +53,7 @@ export default function SEOAdvantages({ style }: SEOAdvantagesProps) {
     <section className="max-w-6xl mx-auto py-24 px-6 border-t border-white/10">
       {/* Titolo H2: Fondamentale per la SEO */}
       <h2 className="text-white text-3xl md:text-4xl font-black mb-16 text-center  tracking-tighter  border-b-4 border-t-4 pb-6 pt-6" style={{ borderColor: style.color || '#FFffFF' }}>
-        <span className="uppercase" >  Why Be an early bird and Choose the ReBest Digital Ecosystem:</span> <br/>
+        <span className="uppercase" >  Why Choose the ReBest Digital Ecosystem:</span> <br/>
         <span className={style.text}>The Competitive Edge for Modern Real Estate Agents</span>
       </h2>
 
