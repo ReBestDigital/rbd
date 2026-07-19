@@ -10,9 +10,9 @@ const nextConfig = {
     unoptimized: true,
   },
   // Forza la disattivazione del motore di build sperimentale che rompe OpenNext
-  turbo: false,
+  turbo: true,
   experimental: {
-    turbo: false,
+    turbo: true,
   },
 }
 
