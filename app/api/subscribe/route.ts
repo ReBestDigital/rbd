@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 
-export const runtime = 'edge'; // <--- RIMETTI QUESTA RIGA QUI!
+//export const runtime = 'edge'; // <--- RIMETTI QUESTA RIGA QUI!
 
 
 // 1. Memoria temporanea per gli IP (Funziona correttamente su Node.js standard)
