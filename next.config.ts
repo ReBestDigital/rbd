@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Impostazioni pulite senza chiavi sperimentali obsolete */
+  /* Lascialo vuoto, ci pensa la build standard */
 };
 
 export default nextConfig;
