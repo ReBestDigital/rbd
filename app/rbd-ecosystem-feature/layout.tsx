@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   // SEO Titolo: Focus sulle funzionalità e il risparmio Early Bird
-  title: 'Real Estate Marketing Ecosystem, Features & Early Bird Offer | ReBest Digital',
-  description: 'Explore the 80+ strategic assets of the ReBest Digital Ecosystem. From Newsletter Calendars to Lead Generation Kits, get everything you need to dominate your local market.',
+  title: 'Real Estate Marketing Ecosystem, Features & Second Chance Offer | ReBest Digital',
+  description: 'Explore the 80+ strategic assets of the ReBest Digital Ecosystem. From Real Estate Newsletter to Lead Generation Kits, get everything you need to dominate your local market.',
   keywords: [
     'Real Estate Marketing Features',
     'Real Estate Newsletter Calendar',
@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     'Real Estate Social Media Strategy'
   ],
   openGraph: {
-    title: 'The Full "Firepower" of ReBest Digital Ecosystm (Early Bird Access)',
-    description: 'Compare plans and discover the massive scale of our 80+ strategic assets. Save over 70% before June 15th, 2026.',
+    title: 'The Full "Firepower" of ReBest Digital Ecosystm (Real Estate Canva Templates)',
+    description: 'Compare plans and discover the massive scale of our 80+ strategic assets. Save over 66% with your Second Chance',
     type: 'website',
-    url: 'https://www.rebestdigital.com/earlybird-feature',
+    url: 'https://www.rebestdigital.com/rbd-ecosystem-feature',
     images: [
       {
-        url: 'https://www.rebestdigital.com/earlySellpage1.jpg', 
+        url: 'https://www.rebestdigital.com/secondChance.jpg', 
         width: 1200,
         height: 630,
         alt: 'ReBest Digital Ecosystem Features Comparison',

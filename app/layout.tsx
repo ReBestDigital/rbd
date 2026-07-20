@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     'Digital Transformation Real Estate'
   ],
   openGraph: {
-    title: 'ReBest Digital | Engineering Real Estate Growth',
+    title: 'ReBest Digital Ecosystem | Engineering for Real Estate Agent s Growth',
     description: 'Transform your agency from passive hope to a dominant, strategic authority.',
     url: 'https://www.rebestdigital.com',
     siteName: 'ReBest Digital',
     images: [
       {
-        url: 'https://www.rebestdigital.com/earlySellpage1.jpg', // Questa la cambierai quando finirà l'early bird
+        url: 'https://www.rebestdigital.com/LogoQuadRBD.jpg', // Questa la cambierai quando finirà l'early bird
         width: 1200,
         height: 630,
       },

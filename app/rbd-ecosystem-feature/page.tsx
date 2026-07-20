@@ -158,7 +158,7 @@ export default function ComparazionePage() {
                           ) : plan?.active ? (
                             <span className={`text-2xl drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] ${
                               planObj.type === 'earlyBird' 
-                                ? 'text-black/50' 
+                                ? 'text-[#550055]' 
                                 : planObj.type === 'secondChance' 
                                   ? 'text-[#ff00ff]' 
                                   : style.accent

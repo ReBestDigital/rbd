@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   // SEO Titolo: Focus sulla sovranità dei dati e l'autorità psicologica
-  title: 'The Reciprocity Engine | Real Estate Marketing Strategy',
+  title: 'The ReBest Digital Newsletter | Real Estate Marketing Strategy',
   description: 'Stop being a digital tenant of real estate portals. Join ReBest Digital Newsletter today to build your own database and become the visible authority in your area.',
   keywords: [
     'Real Estate Marketing Psychology',
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Stop Asking for Listings. Start Creating Psychological Debt.',
-    description: 'Download the Reciprocity Engine Roadmap. Learn how to transition from a "Solicitor" to the only "Expert Advisor" your district recognizes.',
+    description: 'Join the ReBest Digital Reak Estate Marketing Newsletter . Learn how to transition from a "Solicitor" to the only "Expert Advisor" your district recognizes.',
     type: 'website',
-    url: 'https://www.rebestdigital.com/newslettersubscriptiom',
+    url: 'https://www.rebestdigital.com/newslettersubscription',
     images: [
       {
-        url: 'https://www.rebestdigital.com/reciprocity-engine-preview.jpg', 
+        url: 'https://www.rebestdigital.com/stopasking.jpg', 
         width: 1200,
         height: 630,
         alt: 'The Reciprocity Engine Strategy - ReBest Digital Ecosystem',
