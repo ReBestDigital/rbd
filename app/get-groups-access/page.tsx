@@ -57,11 +57,12 @@ export default function LandingPage() {
       if (response.ok) {
         setSubmitted(true);
       } else {
+      
         throw new Error('Subscription failed');
       }
     } catch (err) {
       console.error("Error:", err);
-      setError("Something went wrong. Please try again later.");
+      setError("Something went wrong. Please try again later." );
     } finally {
       setLoading(false);
     }
