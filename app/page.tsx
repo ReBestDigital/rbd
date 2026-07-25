@@ -8,6 +8,7 @@ import EcosystemDetails from './homeconfig/EcosystemDetails';
 import EssentialFAQ from '@/app/homeconfig/FAQSection2';
 import OperationalSEOAdvantages from './homeconfig/DetailedSEOAdvantages';
 import StickyBtn from '../components/StickyButton'
+import AudiobookBonusSection from './homeconfig/AudiobookBonusSection';
 import { RBDLINKS } from '@/config/rbdlinks';
  const iMieiBottoni = [
     { text: "🔥 GET THE ECOSYSTEM NOW!", href: RBDLINKS["rebest-digital"].RBDbuyEcosystemGumroad, isPrimary: true },
@@ -211,6 +212,9 @@ Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immed
           </p>
         </div>
       </div>
+            <div className="mt-20 w-full">
+                  <AudiobookBonusSection style={style} />
+             </div>
             <div className="mt-20">
               <EcosystemDetails style={style} />
             </div>

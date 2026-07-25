@@ -125,6 +125,13 @@ export const PRICING_CONFIG: PlanFeature[] = [
     full: { active: true, status: 'completo' },
     secondC: { active: true, status: 'completo' }
   },
+  {
+    feature: "Full Strategic Audiobook: Stop Being Invisible! (for Second Chance Only)",
+    description: "Learn the strategic why behind most of the templates included in this ecosystem, ensuring you use them for peak performance. + 50 high conversion copy paste social scripts.",
+    earlyBird: { active: false, status: 'completo' },
+    full: { active: false, status: 'completo' },
+    secondC: { active: true, status: 'completo' }
+  },
   { feature: "Life Time Access private to Templates DrillDown in private YT channels to find out the WHY of the templates ", description: "Strategical Templates drilldown generated from our secret ReBest Digital Ecosystem Files", earlyBird: { active: true, status: 'completo' }, full: { active: true, status: 'in_arrivo' }, secondC: { active: true, status: 'in_arrivo' }} ,
  
   /* CATEGORIA: EARLY BIRD BONUSES */
