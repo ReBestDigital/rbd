@@ -13,5 +13,7 @@ export const RBDLINKS = {
     AudioBookFreeChapter2_3GR: "https://rebestdigital.gumroad.com/l/dhmpq",   
     stopbeinginvisibleAmazon: "https://www.amazon.com/dp/B0F5NC8MN5",     
     rebestdigitalEcosystem: "https://www.rebestdigital.com/earlybird-feature",
+    EtsyShop: "https://rebestrealestate.etsy.com",
+    GumroadShop: "https://rebestdigital.gumroad.com",
     }
 }

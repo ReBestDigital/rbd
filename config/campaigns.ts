@@ -283,7 +283,44 @@ export const CAMPAIGNS = {
         footerNote: "Check your Spam folder if the Checklist link doesn't arrive in 2 minutes. Don't let the 'Digital New-Comers' win.",
     }
 },
-
+"homedefinitiva": {
+    //used in home page
+    id: "homedefinitiva",
+    // Focus sul dominio del mercato e sull'investimento intelligente
+    title: "Stop renting your growth from portals. Start owning your market.", 
+    // Spieghiamo chiaramente il valore dell'operazione Early Bird
+    subtitle: "Welcome to the ReBest Digital Ecosystem: the ultimate strategic evolution designed to eliminate the real estate agent's invisibility.", 
+    text1 : "ReBest Digital was founded with a definitive mission: to eliminate the real estate agent's invisibility. In a market saturated with 'generalists' who limit themselves to outdated methods—like mass flyering or simply posting ads on portals—ReBest Digital represents the strategic evolution for the professional. We empower agents to establish a dominant, recognized authority in their specific territory.",
+    text2bold : "Rather than a traditional service provider, ReBest is the architect of a Strategic Protocol that merges sales psychology, digital automation and high-impact visual communication.",
+    text3border : "Our focus is not merely on aesthetics, but on providing an Operational Workflow designed to streamline lead attraction and listing acquisition. Through the ReBest Digital Ecosystem, we help Real Estate Agents transition from an unpredictable, manual workflow into a Data-Driven Methodology for market positioning and lead conversion. Second Chance access: Get an ecosystem worth at least 3x your investment—less than 10% of your smallest commission.",
+    leadMagnet: "the Homebuyer Checklist",
+    buttonLabel: "Subscribe to the ReBest Digital newsletter",
+    image: "/RBDquadratoxthumbnail.webp", 
+    style: BRAND_STYLES["dark-magenta"], 
+    legal: PRIVACY_DOCS["standard-v1"],  
+    brevoListId: 10, 
+    brevotemplateId: 15 ,
+    thankYou: {
+        icon: "🦅",
+        title: "Thank you for subscribing to our Newsletter!",
+        description: "From now on, you will always be updated regarding our latest news, insights, and strategic updates. Your Premium Homebuyer Checklist is on its way.",
+        highlight: "⚠️ Please note: You will always have the option to unsubscribe at any time. A dedicated unsubscribe link will be included in every single email following the welcome email.",
+        subDescription: "Since you are here don't waste your Second Chance to get our full ReBest Digital Ecosystem with an unfair offer! Discover the full arsenal of 80+ strategic assets that are waiting for you in the 'Second Chance OFFER', click the button below.",
+        // CTA 1: Spinge forte sulla vendita/roadmap dell'ecosistema
+        ctaLabel: "🔥VIEW THE ECOSYSTEM",
+        ctaLink: RBDLINKS["rebest-digital"].RBDEcosystemDetails, 
+        // CTA 2: Social per l'autorità
+        secondaryLabel: "Join us on IG",
+        secondaryLink: SOCIALS["rebest-digital"].instagram,
+        // CTA 3: Video per mostrare il "dietro le quinte"
+        ctaLabel3: "Youtube channel",
+        ctaLink3:  SOCIALS["rebest-digital"].youtube_PUBLIC,
+        // CTA 4: Gruppo FB per il "social proof"
+        ctaLabel4: "Facebook Page",   
+        ctaLink4:  SOCIALS["rebest-digital"].facebookPagePUBLIC, 
+        footerNote: "Check your Spam folder if the Checklist link doesn't arrive in 2 minutes. Don't let the 'Digital New-Comers' win.",
+    }
+},
 "bird1": {
     id: "bird1",
     title: "Own your Business, stop paying for someone else growth.",

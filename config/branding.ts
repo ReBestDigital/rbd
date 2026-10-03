@@ -4,7 +4,7 @@ export const BRAND_STYLES = {
     hover: "hover:bg-[#D400D4]",   // Un fucsia leggermente più scuro per l'effetto al passaggio del mouse
     accent: "text-[#ff00FF]",      // Testo accentato fucsia
     check:"accent-[#ff00ff] border-[#ff00ff]",
-    text: "text-white",           // <--- NUOVO: Testo principale bianco
+    text: "text-white",           // <--- NUOVO: Testo principale bianco text: "text-red-200"
     mute: "text-slate-200",      // <--- NUOVO: Testo secondario grigio chiaro
     bg: "bg-slate-900",            // Sfondo quasi nero come la parte sinistra della copertina
     card: "rounded-2xl shadow-2xl border border-slate-800 bg-slate-900", // Card scura per far risaltare il testo bianco

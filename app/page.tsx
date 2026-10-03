@@ -1,5 +1,5 @@
 "use client";
-
+import Marquee from "react-fast-marquee";
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
@@ -10,13 +10,16 @@ import OperationalSEOAdvantages from './homeconfig/DetailedSEOAdvantages';
 import StickyBtn from '../components/StickyButton'
 import AudiobookBonusSection from './homeconfig/AudiobookBonusSection';
 import { RBDLINKS } from '@/config/rbdlinks';
+import ServiceList from '@/app/homeconfig/ServiceList';
  const iMieiBottoni = [
     { text: "🔥 GET THE ECOSYSTEM NOW!", href: RBDLINKS["rebest-digital"].RBDbuyEcosystemGumroad, isPrimary: true },
-    { text: "📦 SEE THE 80+ ASSETS", href: RBDLINKS["rebest-digital"].RBDEcosystemDetails }
+    { text: "📦 SEE THE 80+ ASSETS", href: RBDLINKS["rebest-digital"].RBDEcosystemDetails },
+    { text: "🛒 ETSY SHOP", href: RBDLINKS["rebest-digital"].EtsyShop },
+    { text: "🛍️ GUMROAD SHOP", href: RBDLINKS["rebest-digital"].GumroadShop}
   ];
 
 
-const CAMPAIGN_ID = "homebird";
+const CAMPAIGN_ID = "homedefinitiva";
 
 const generateHash = async (text: string) => {
   const msgUint8 = new TextEncoder().encode(text);
@@ -95,32 +98,32 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
 
 
 
-<div className="max-w-4xl w-full overflow-hidden mb-10 mt-6 border-b-8 border-t-8" style={{ borderColor: style.color || '#FFffFF' }}>
-  {/* Rimuoviamo il w-[200%] fisso e usiamo max-content per assecondare la larghezza reale delle foto */}
-  <div className="flex w-max animate-infinite-scroll pause-scroll cursor-pointer py-4">
-    
-    {/* Prima traccia di immagini */}
-    <div className="flex shrink-0">
-      <img src="/BannerOrRbde.webp" alt="Second chance Preview" className="h-52 md:h-64 w-auto object-contain" />
+{/* CONTENITORE ESTERNO: Tiene tutto bloccato nei confini del sito */}
+    <div 
+      className="w-full max-w-4xl overflow-hidden mb-10 mt-6 border-b-8 border-t-8" 
+      style={{ borderColor: style.color || '#FFffFF' }}
+    >
+      {/* IL MARQUEE INTELLIGENTE: Gestisce lui la fisica dei pixel in automatico */}
+      {/* pauseOnHover fa fermare il banner se ci passi sopra con il mouse o con il dito */}
+      <Marquee speed={40} gradient={false} pauseOnHover={true}>
+        
+        {/* METTI UNA SOLA IMMAGINE: Ci pensa la libreria a duplicarla e a non farla sovrapporre! */}
+        {/* Ora puoi pacioccare sulle altezze (h-[...]) quanto vuoi, non si romperà MAI più */}
+        <img 
+          src="/BannerOrRbde.webp" 
+          alt="Second chance Preview" 
+          className="h-[180px] md:h-[220px] w-auto object-contain pr-4" 
+        />
+        
+      </Marquee>
     </div>
-    
-    {/* Seconda traccia identica per il loop continuo */}
-    <div className="flex shrink-0" aria-hidden="true">
-      <img src="/BannerOrRbde.webp" alt="Second chance Preview" className="h-52 md:h-64 w-auto object-contain" />
-    </div>
-
-  </div>
-</div>
-
-
-
 
 
 
 
 
         </div>     
-        <div className= "pb-4 w-full"><img src="/ReBestDigital.svg" alt="Second chance Preview" className="object-cover w-full sm:w-1/2 " />
+        <div className= "pb-4 w-full"><img src="/ReBestDigital.svg" alt="RBD" className="object-cover w-full sm:w-1/2 " />
         {/* <div><img src="/ReBestEcosystem.svg" alt="Second chance Preview" className="object-cover  w-full" /> */}
         </div>        {config.title}
               </h1>       
@@ -128,7 +131,7 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
          
         {/* Preview Immagine Dinamica */}
        
-        <div className=" relative aspect-[3/4] bg-slate-100 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center border border-slate-200">
+        <div className=" relative aspect-[4/4] bg-slate-100 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center border border-slate-200">
          
           {config.image ? (
             <img src={config.image} alt="Second chance Preview" className="object-cover w-full h-full" />
@@ -181,11 +184,9 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
                 {config.text3border}
                  </p>
                </div>
-              <div className="text-lg text-slate-100 mb-4"><p>Still undecided about the Ecosystem?
-Join our newsletter! We regularly send breakdown guides, case studies, exclusive commercial offers, and actionable strategies on how to dominate your local real estate market with our ecosystem. 
 
-Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immediately after confirming your subscription.</p>
-             </div></div>
+               
+             </div>
               )}
               {/* Box Errore (se presente) */}
               {error && (
@@ -194,7 +195,22 @@ Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immed
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-5">
+              
+            </>
+          )}
+
+          
+        </div>
+      </div>
+       <div className="font-bold text-3xl text-center text-slate-100 mb-4 border-t-8 mt-8 pt-8" style={{ borderColor: style.color || '#FFffFF' }}>
+           Below you will find a list of our primary services and products, each with a direct link to its respective page.
+       </div>
+<ServiceList  style={style}  />
+       <div className="font-bold text-lg text-slate-100 mb-4 border-t-8 mt-5 pt-5" style={{ borderColor: style.color || '#FFffFF' }}><p>Still undecided about ReBest Digital?
+Join our newsletter! We regularly send breakdown guides, case studies, exclusive commercial offers, and actionable strategies on how to dominate your local real estate market with our ecosystem. 
+Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immediately after confirming your subscription.</p>
+             </div>
+      <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <input
                     type="email"
@@ -232,14 +248,14 @@ Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immed
                   {loading ? "SENDING..." : config.buttonLabel}
                 </button>
               </form>
-            </>
-          )}
+              <p className={`${style.mute} font-medium text-xs text-center mt-4 italic`}>
+                   We value your privacy. Unsubscribe with one click at any time. Your information is secure. We only use trusted partners (like Brevo) to manage your data and we never sell it to third parties.
+              </p>
 
-          <p className={`${style.mute} font-medium text-xs text-center mt-4 italic`}>
-            We value your privacy. Unsubscribe with one click at any time. Your information is secure. We only use trusted partners (like Brevo) to manage your data and we never sell it to third parties.
-          </p>
-        </div>
-      </div>
+
+
+
+
             <div className="mt-20 w-full">
                   <AudiobookBonusSection style={style} />
              </div>
