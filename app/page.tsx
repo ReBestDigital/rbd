@@ -89,10 +89,38 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
        <StickyBtn  buttons={iMieiBottoni}/>
       
        <div className= " max-w-4xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-2`} style={{ borderColor: style.color || '#FFffFF' }}>
-          <div className="bg-red-600 text-white text-center py-2 text-xl font-bold animate-pulse">
-        ⚠️ EARLY BIRD EXPIRED: You got a Second Chance! Claim your 3x value now.
-         </div>
-        <div className= "pb-4 w-full"><img src="/ReBestEcosystem.svg" alt="Second chance Preview" className="object-cover w-full sm:w-1/2 " />
+          <div className= "pb-4 w-full">
+           
+
+
+
+
+<div className="max-w-4xl w-full overflow-hidden mb-10 mt-6 border-b-8 border-t-8" style={{ borderColor: style.color || '#FFffFF' }}>
+  {/* Rimuoviamo il w-[200%] fisso e usiamo max-content per assecondare la larghezza reale delle foto */}
+  <div className="flex w-max animate-infinite-scroll pause-scroll cursor-pointer py-4">
+    
+    {/* Prima traccia di immagini */}
+    <div className="flex shrink-0">
+      <img src="/BannerOrRbde.webp" alt="Second chance Preview" className="h-52 md:h-64 w-auto object-contain" />
+    </div>
+    
+    {/* Seconda traccia identica per il loop continuo */}
+    <div className="flex shrink-0" aria-hidden="true">
+      <img src="/BannerOrRbde.webp" alt="Second chance Preview" className="h-52 md:h-64 w-auto object-contain" />
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+        </div>     
+        <div className= "pb-4 w-full"><img src="/ReBestDigital.svg" alt="Second chance Preview" className="object-cover w-full sm:w-1/2 " />
         {/* <div><img src="/ReBestEcosystem.svg" alt="Second chance Preview" className="object-cover  w-full" /> */}
         </div>        {config.title}
               </h1>       

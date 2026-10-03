@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Image from 'next/image'
 import img1 from '../../../public/GraficheHomeEarlybird.jpg'
 import img2 from '../../../public/1GraficheHomeEarlybird.jpg'
@@ -28,7 +28,7 @@ export default function HubDetails({ style }: HubDetailsProps) {
       </p>
       <p className="text-white/70 text-base italic mb-4">
       <a href="/homebuyerchecklist" target = "_blank" className={` text-center  inline-block ${style.primary} text-white font-extrabold py-1 px-4 rounded-xl shadow-lg `}>
-        Here you can find our landing page </a>  where we collect our customers' email addresses. You can consult it to understand what you need to implementif you wanna do the same. 
+        Here you can find our landing page </a>  where we collect our customers' email addresses. You can consult it to understand what you need to implement if you wanna do the same. 
       
       </p>
       {/* Punti di forza basati sulla psicologia del design del libro */}

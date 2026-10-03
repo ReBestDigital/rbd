@@ -45,6 +45,12 @@ export default function AudiobookBonusSection({ style }: AudiobookBonusSectionPr
             <div className="text-white/80 text-base">
               <strong className="text-white">⚙️ Full Ecosystem Optimization:</strong> Seamlessly integrate all tools into a unified, high-performing marketing machine.
             </div>
+            <div className="text-white/80 text-base">
+              <strong className="text-white">Authority: </strong>In this high-impact audiobook, you will learn the ReBest Strategic Protocol—the definitive blueprint to reclaim your local market and transition from an invisible salesperson to a recognized Local Authority.
+            </div>
+            <div className="text-white/80 text-base">
+              <strong className="text-white">Avoid The Portal Trap: </strong>Learn how to escape the cycle of buying back your own data and achieve Total Data Sovereignty.
+            </div>
           </div>
         </div>
 

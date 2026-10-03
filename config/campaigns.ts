@@ -371,7 +371,7 @@ export const CAMPAIGNS = {
     // Testo legale per la "parte piccola" sotto il form
     legal: PRIVACY_DOCS["standard-v1"], 
     brevoListId: 19,
-    brevotemplateId: 15,
+    brevotemplateId: 26,
     
     thankYou: {
         icon: "🦅",
