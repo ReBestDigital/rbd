@@ -202,7 +202,7 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
           
         </div>
       </div>
-       <div className="font-bold text-3xl text-center text-slate-100 mb-4 border-t-8 mt-8 pt-8" style={{ borderColor: style.color || '#FFffFF' }}>
+       <div className="font-bold text-3xl text-left text-slate-100 mb-4 border-t-8 mt-8 pt-8" style={{ borderColor: style.color || '#FFffFF' }}>
            Below you will find a list of our primary services and products, each with a direct link to its respective page.
        </div>
 <ServiceList  style={style}  />

@@ -15,18 +15,21 @@ export default function ServiceList({ style }: ServiceListProps) {
         const isRight = service.posizioneImmagine === 'destra';
 
         return (
+          
+          <div>
+           <div><span className="text-2xl font-bold tracking-wider uppercase  block mb-2" style={{ color: style.color || '#FF00FF' }}>
+                {service.sottotitolo}
+              </span></div> 
           <div 
             key={service.id} 
-            className="flex flex-col md:flex-row items-center gap-12 pt-6"
+            className="flex flex-col md:flex-row items-start gap-12 pt-6"
           >
             {/* Contenitore Testi */}
             {/* Usiamo l'ordine condizionale basato su isRight per specchiare il layout su desktop */}
             <div className={`flex-1 ${isRight ? 'order-2 md:order-1' : 'order-2'}`}>
-              <span className="text-sm font-semibold tracking-wider uppercase opacity-60 block mb-2" style={{ color: style.color || '#FF00FF' }}>
-                {service.sottotitolo}
-              </span>
               
-              <h2 className={`${style.text} text-3xl font-black mb-6 uppercase`}>
+              
+              <h2 className={`${style.text} text-3xl font-black mb-6 `}>
                 {service.titolo}
               </h2>
               
@@ -74,8 +77,10 @@ export default function ServiceList({ style }: ServiceListProps) {
               </div>
             </div>
           </div>
+          </div> 
         );
       })}
     </section>
+    
   );
 }
