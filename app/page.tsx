@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image'; // Assicurati che questo import sia presente in cima al file
 import Marquee from "react-fast-marquee";
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -94,8 +95,30 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
        <div className= " max-w-4xl">
         <div className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-2`} style={{ borderColor: style.color || '#FFffFF' }}>
           <div className= "pb-0 w-full">
-           <div className= "pb-0 w-full"><img src="/ReBestDigital.svg" alt="RBD" className="w-full max-w-[280px] md:max-w-[400px] h-auto object-contain"/></div>  
-        <h1>Solution for Real Estate Agents!</h1>
+
+<div className="pb-0 w-full flex flex-col items-start">
+      {/* Contenitore protettivo per il componente Image di Next.js */}
+      {/* CONTENITORE DINAMICO: 100% su mobile (w-full), 50% su computer (md:w-1/2) */}
+      <div className="w-full md:w-1/2 mb-4">
+        <Image 
+          src="/ReBestDigital.svg" 
+          alt="RBD" 
+          width={0}   // Trucco Next.js per svincolare le dimensioni fisse...
+          height={0}  // ...e permettere al CSS di guidare le proporzioni
+          sizes="(max-width: 768px) 100vw, 50vw" // Dice a Next.js l'ingombro esatto nei due breakpoint
+          className="w-full h-auto object-contain" // w-full qui riempie il box padre, h-auto mantiene le proporzioni dell'SVG
+          priority // Carica il logo all'istante
+        />
+      </div>
+      
+    </div>
+
+
+
+
+
+           {/* <div className= "pb-0 w-full"><img src="/ReBestDigital.svg" alt="RBD" className="w-full max-w-[280px] md:max-w-[400px] h-auto object-contain"/></div>  
+       */}  <h1>Solution for Real Estate Agents!</h1>
            
 
 

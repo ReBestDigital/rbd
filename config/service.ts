@@ -10,9 +10,6 @@ export interface ServiceItem {
   link: string;
 }
 
-// data/services.ts
-import { ServiceItem } from "@/types/service";
-
 export const servicesData: ServiceItem[] = [
   {
   id: "1",
@@ -28,7 +25,7 @@ export const servicesData: ServiceItem[] = [
  {
   id: "2",
   titolo: "🎧 STOP BEING INVISIBLE! (Why Veteran Real Estate Agents are Failing in Lead Generation and Losing the Digital Battle.[Audiobook Edition])",
-  sottotitolo: "The Real Estate Strategy Audiobook (MP3 + Complete PDF Companion & Script Vault)",
+  sottotitolo: "The Real Estate Strategy Audiobook (MP3 + PDF Companion & Script Vault)",
   descrizione1: "Turn your commute into a masterclass. This audiobook is engineered to fit seamlessly into the 'gaps' of your day—listen while driving to your next listing appointment and master the ReBest Strategic Protocol without touching a keyboard. Instantly receive the 1x Full Audiobook and the 1x Complete PDF Companion & Script Vault for immediate copy-and-paste execution.",
   descrizione2: "Production Technology Note: This audiobook is narrated by Andrew AI, a custom-engineered synthetic voice protocol. Unlike generic text-to-speech, this high-authority protocol has been iteratively refined, tested, and audited to deliver a flawless, high-velocity strategic listening experience. Learn how to build an impenetrable Fortress of Trust on autopilot while you drive.",
   immagine: "/QuadratiAudioStopBeingInvisible2.jpg", // Sostituisci liberamente con il path della copertina dell'audiolibro
