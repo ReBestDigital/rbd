@@ -13,7 +13,7 @@ import { RBDLINKS } from '@/config/rbdlinks';
 import ServiceList from '@/app/homeconfig/ServiceList';
  const iMieiBottoni = [
     { text: "🔥 GET THE ECOSYSTEM NOW!", href: RBDLINKS["rebest-digital"].RBDbuyEcosystemGumroad, isPrimary: true },
-    { text: "📦 SEE THE 80+ ASSETS", href: RBDLINKS["rebest-digital"].RBDEcosystemDetails },
+    //{ text: "📦 SEE THE 80+ ASSETS", href: RBDLINKS["rebest-digital"].RBDEcosystemDetails },
     { text: "🛒 ETSY SHOP", href: RBDLINKS["rebest-digital"].EtsyShop },
     { text: "🛍️ GUMROAD SHOP", href: RBDLINKS["rebest-digital"].GumroadShop}
   ];
@@ -88,12 +88,15 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
 
   return (
     
-    <main className={`min-h-screen ${style.bg} flex flex-col items-center justify-center overflow-x-hidden w-full p-5`}>
+    <main className={`min-h-screen ${style.bg} flex flex-col items-center justify-center overflow-x-hidden w-full p-2`}>
        <StickyBtn  buttons={iMieiBottoni}/>
       
        <div className= " max-w-4xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-2`} style={{ borderColor: style.color || '#FFffFF' }}>
-          <div className= "pb-4 w-full">
-           
+          <div className= "pb-0 w-full">
+           <div className= "pb-0 w-full"><img src="/ReBestDigital.svg" alt="RBD" className="object-cover w-full sm:w-1/2 " />
+        {/* <div><img src="/ReBestEcosystem.svg" alt="Second chance Preview" className="object-cover  w-full" /> */}
+        Solution for Real Estate Agents!
+        </div>     
 
 
 
@@ -123,9 +126,7 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
 
 
         </div>     
-        <div className= "pb-4 w-full"><img src="/ReBestDigital.svg" alt="RBD" className="object-cover w-full sm:w-1/2 " />
-        {/* <div><img src="/ReBestEcosystem.svg" alt="Second chance Preview" className="object-cover  w-full" /> */}
-        </div>        {config.title}
+           {config.title}
               </h1>       
       <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 ">
          
