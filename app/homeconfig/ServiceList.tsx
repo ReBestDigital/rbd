@@ -10,7 +10,7 @@ interface ServiceListProps {
 
 export default function ServiceList({ style }: ServiceListProps) {
   return (
-    <section className="max-w-6xl mx-auto py-4 px-6 space-y-32">
+    <section className="max-w-4xl mx-auto py-2 px-0 space-y-32">
       {servicesData.map((service) => {
         const isRight = service.posizioneImmagine === 'destra';
 
@@ -18,7 +18,7 @@ export default function ServiceList({ style }: ServiceListProps) {
           // Spostiamo il KEY sul div più esterno del ciclo per un corretto rendering di React
           <div key={service.id} className="w-full">
             <div>
-              <span className="text-2xl font-bold tracking-wider uppercase block mb-2" style={{ color: style.color || '#FF00FF' }}>
+              <span className={`${style.text} py-2 text-4xl font-bold tracking-wider uppercase block mb-2  border-b-8 border-t-8`} style={{ borderColor : style.color || '#FF00FF' }}>
                 {service.sottotitolo}
               </span>
             </div> 
@@ -26,7 +26,7 @@ export default function ServiceList({ style }: ServiceListProps) {
             <div className="flex flex-col md:flex-row items-start gap-12 pt-6">
               {/* Contenitore Testi */}
               <div className={`flex-1 w-full ${isRight ? 'order-2 md:order-1' : 'order-2'}`}>
-                <h2 className={`${style.text} text-3xl font-black mb-6`}>
+                <h2 className={`${style.text} text-xl font-black mb-6`}>
                   {service.titolo}
                 </h2>
                 

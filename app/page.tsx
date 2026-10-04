@@ -94,10 +94,9 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
        <div className= " max-w-4xl">
         <div className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-2`} style={{ borderColor: style.color || '#FFffFF' }}>
           <div className= "pb-0 w-full">
-           <div className= "pb-0 w-full"><img src="/ReBestDigital.svg" alt="RBD" className="object-cover w-full sm:w-1/2 " />
-
-        Solution for Real Estate Agents!
-        </div>     
+           <div className= "pb-0 w-full"><img src="/ReBestDigital.svg" alt="RBD" className="w-full max-w-[280px] md:max-w-[400px] h-auto object-contain"/></div>  
+        <h1>Solution for Real Estate Agents!</h1>
+           
 
 
 
@@ -204,7 +203,7 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
           
         </div>
       </div>
-       <div className="font-bold text-3xl text-left text-slate-100 mb-4 border-t-8 mt-8 pt-8" style={{ borderColor: style.color || '#FFffFF' }}>
+       <div className="font-bold text-3xl text-left text-slate-100 mb-4 mt-2 pb-8" style={{ borderColor: style.color || '#FFffFF' }}>
            Below you will find a list of our primary services and products, each with a direct link to its respective page.
        </div>
 <ServiceList  style={style}  />
