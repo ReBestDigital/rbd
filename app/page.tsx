@@ -101,7 +101,7 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
       {/* CONTENITORE DINAMICO: 100% su mobile (w-full), 50% su computer (md:w-1/2) */}
       <div className="w-full md:w-1/2 mb-4">
         <Image 
-          src="/ReBestDigital.svg" 
+          src="/rebestdigital.webp" 
           alt="RBD" 
           width={0}   // Trucco Next.js per svincolare le dimensioni fisse...
           height={0}  // ...e permettere al CSS di guidare le proporzioni
@@ -280,12 +280,7 @@ Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immed
 
 
 
-            <div className="mt-20 w-full">
-                  <AudiobookBonusSection style={style} />
-             </div>
-            <div className="mt-20">
-              <EcosystemDetails style={style} />
-            </div>
+            
             <div className="mt-20">
               <StrategySection style={style} />
             </div>

@@ -289,7 +289,7 @@ export const CAMPAIGNS = {
     // Focus sul dominio del mercato e sull'investimento intelligente
     title: "Stop renting your growth from portals. Start owning your market.", 
     // Spieghiamo chiaramente il valore dell'operazione Early Bird
-    subtitle: "Welcome to the ReBest Digital Ecosystem: the ultimate strategic evolution designed to eliminate the real estate agent's invisibility.", 
+    subtitle: "Welcome to the ReBest Digital Vision!", 
     text1 : "ReBest Digital was founded with a definitive mission: to eliminate the real estate agent's invisibility. In a market saturated with 'generalists' who limit themselves to outdated methods—like mass flyering or simply posting ads on portals—ReBest Digital represents the strategic evolution for the professional. We empower agents to establish a dominant, recognized authority in their specific territory.",
     text2bold : "Rather than a traditional service provider, ReBest is the architect of a Strategic Protocol that merges sales psychology, digital automation and high-impact visual communication.",
     text3border : "Our focus is not merely on aesthetics, but on providing an Operational Workflow designed to streamline lead attraction and listing acquisition. Through the ReBest Digital Ecosystem, we help Real Estate Agents transition from an unpredictable, manual workflow into a Data-Driven Methodology for market positioning and lead conversion. Second Chance access: Get an ecosystem worth at least 3x your investment—less than 10% of your smallest commission.",
