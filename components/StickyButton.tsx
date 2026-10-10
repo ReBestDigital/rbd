@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
+import { RBDLINKS } from '@/config/rbdlinks';
+
 
 const CAMPAIGN_ID = "homebird";
 const config = CAMPAIGNS[CAMPAIGN_ID as keyof typeof CAMPAIGNS];
@@ -18,13 +20,17 @@ interface StickyBtnProps {
 // 1. Definiamo i tuoi due bottoni di DEFAULT (quelli che usi nel 95% delle pagine)
 const DEFAULT_BUTTONS: ButtonItem[] = [
   { 
-    text: "🔥 Buy Early Bird (Save 80%)", 
-    href: "https://gumroad.com", 
+    text: "🔥 Buy The ecosystem", 
+    href:  RBDLINKS["rebest-digital"].GumroadShop, 
     isPrimary: true 
   },
   { 
     text: "📦 Browse Features", 
-    href: "/earlybird-feature", 
+    href: "/rbd-ecosystem-feature", 
+    isPrimary: false 
+  },{ 
+    text: "📦 Get The Book", 
+    href: RBDLINKS["rebest-digital"].stopbeinginvisibleAmazon, 
     isPrimary: false 
   }
 ];
@@ -53,8 +59,8 @@ export default function StickyBtn({ buttons }: StickyBtnProps) {
       <div className={`flex flex-col sm:flex-row gap-3 w-full ${maxWidthClass} bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl`}>
         {validButtons.map((btn, index) => {
           const buttonStyle = btn.isPrimary
-            ? `flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm  tracking-tight shadow-lg transition-transform active:scale-95 flex items-center justify-center min-w-[150px]`
-            : "flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm tracking-tight border border-white/20 transition-all active:scale-95 flex items-center justify-center min-w-[150px]";
+            ? `flex-1 ${style.primary} text-white text-center py-1 sm:py-3 px-4 rounded-xl font-bold text-sm  tracking-tight shadow-lg transition-transform active:scale-95 flex items-center justify-center min-w-[150px]`
+            : "flex-1 bg-white/10 hover:bg-white/20 text-white text-center sm:py-3 py-1 px-4 rounded-xl font-bold text-sm tracking-tight border border-white/20 transition-all active:scale-95 flex items-center justify-center min-w-[150px]";
 
           return (
             <Link 

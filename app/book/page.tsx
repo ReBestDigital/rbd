@@ -4,6 +4,14 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
 import StrategySection from './strategySection'; 
+import StickyBtn from '@/components/StickyButton';
+import { RBDLINKS } from '@/config/rbdlinks';
+const iMieiBottoni = [
+    { text: "🔥 GET THE BOOK NOW!", href: RBDLINKS["rebest-digital"].stopbeinginvisibleAmazon, isPrimary: true },
+    //{ text: "📦 SEE THE 80+ ASSETS", href: RBDLINKS["rebest-digital"].RBDEcosystemDetails },
+    { text: "🎧 GET THE AUDIOBOOK", href: RBDLINKS["rebest-digital"].EtsyShop },
+    { text: "⭐ REVIEW THE BOOK", href: RBDLINKS["rebest-digital"].stopbeinginvisibleAmazonReview}
+  ];
 
 const CAMPAIGN_ID = "book";
 
@@ -70,26 +78,11 @@ export default function LandingPage() {
   return (
     <main className={`min-h-screen ${style.bg} flex flex-col items-center justify-center overflow-x-hidden w-full`}>
       {/* STICKY BUTTONS BAR */}
-      <div className={`fixed bottom-2 left-0 right-0 z-50 flex ${style.text} justify-center px-6`}style={{ marginBottom: 'var(--cookie-banner-height, 0px)' }}>
-        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl bg-black/40 backdrop-blur-xl p-3 rounded-2xl border border-white/10 shadow-2xl">
-          <Link 
-            href="https://rebestdigital.gumroad.com/l/ixtfn" target="_blank" rel="noopener noreferrer"
-            className={`flex-1 ${style.primary} text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight shadow-lg transition-transform active:scale-95`}
-          >
-            🔥 Buy Early Bird (Save 80%)
-          </Link>
-          <Link 
-            href="/earlybird-feature" target="_blank" rel="noopener noreferrer"
-            className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-3 px-4 rounded-xl font-bold text-sm uppercase tracking-tight border border-white/20 transition-all active:scale-95"
-          >
-            📦 Browse Early B Features
-          </Link>
-        </div>
-      </div> 
-       <div className= "max-w-5xl"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4`} style={{ borderColor: style.color || '#FFffFF' }}>
+      <StickyBtn  buttons={iMieiBottoni}/>
+       <div className= "max-w-5xl px-4"><h1 className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4`} style={{ borderColor: style.color || '#FFffFF' }}>
         <div className= "pb-4"><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover w-full sm:w-2/5 " />
         {/* <div><img src="/ReBestEcosystem.svg" alt="Early bird Preview" className="object-cover w-full sm:w-1/2" /> */}
-        </div>        {config.title}
+        </div><div className= "px-2"> {config.title}</div>
               </h1>       
       <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 ">
          
