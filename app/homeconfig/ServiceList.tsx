@@ -16,9 +16,9 @@ export default function ServiceList({ style }: ServiceListProps) {
 
         return (
           // Spostiamo il KEY sul div più esterno del ciclo per un corretto rendering di React
-          <div key={service.id} className="w-full">
+          <div key={service.id} className="w-full px-2">
             <div>
-              <span className={`${style.text} py-4 text-4xl font-bold tracking-wider uppercase block mb-2  border-b-8 border-t-8`} style={{ borderColor : style.color || '#FF00FF' }}>
+              <span className={`${style.text} py-4 text-4xl font-bold text-center block mb-2 px-2 border-b-8 border-t-8`} style={{ borderColor : style.color || '#FF00FF' }}>
                 {service.sottotitolo}
               </span>
             </div> 

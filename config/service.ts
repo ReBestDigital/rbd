@@ -50,7 +50,7 @@ export const servicesData: ServiceItem[] = [
   sottotitolo: "The Ultimate All-In-One Real Estate Newsletter Ecosystem (Canva Templates + Video Strategies)",
   descrizione1: "Stop buying $20 single-purpose templates that end up in SPAM. This massive 25-piece bundle combines our 12-Month Seasonal Nurture Suite and 13 Strategic Audience Segmentation Funnels into a high-converting dual-engine marketing system. Built on a technical block architecture designed to drastically improve mobile responsiveness, deliverability, and database activation 365 days a year.",
   descrizione2: "Includes 25 templates pre-written with real high-converting real estate copy (zero 'Lorem Ipsum' filler), tactical quick alerts for CRM database tagging, and dedicated step-by-step video tutorials covering technical export setups, deliverability strategies, and anti-spam protocols.",
-  immagine: "/NewsletterBundle25Piece4.jpg", // Sostituisci liberamente con il path della copertina del prodotto
+  immagine: "/25newsletterpack.webp", // Sostituisci liberamente con il path della copertina del prodotto
   posizioneImmagine: "destra", // Impostato a destra per mantenere l'alternanza visiva a scacchiera con il prodotto 3 (sinistra)
   jolly: "⚙️ DIGITAL DELIVERY & LICENSE NOTE: Instant digital download. Includes Standard Professional License for up to 3 local office branches. Due to the digital nature of this complete ecosystem, all sales are final.",
   link: "https://rebestdigital.gumroad.com/l/cqirzw?layout=profile" // Sostituisci liberamente con il tuo link di vendita o checkout dedicato
@@ -61,7 +61,7 @@ export const servicesData: ServiceItem[] = [
   sottotitolo: "Turnkey Annual Email Marketing Workflow for Deliverability & Nurture",
   descrizione1: "A full-year seasonal real estate email marketing system engineered for inbox deliverability, database nurture, and local market domination. Built on a 'Smart Block' hybrid architecture and single-column mobile-first designs, this suite ensures your emails bypass SPAM filters and render perfectly on every smartphone.",
   descrizione2: "Includes 12 monthly newsletters pre-written with real, high-converting real estate copy (zero 'Lorem Ipsum' filler) and exclusive step-by-step video training covering technical export setups, email software assembly, and anti-spam deliverability strategies.",
-  immagine: "/NewsletterSuite12Month5.jpg", // Sostituisci liberamente con il path della copertina del prodotto
+  immagine: "/Newsletterpersonalisation.webp", // Sostituisci liberamente con il path della copertina del prodotto
   posizioneImmagine: "sinistra", // Impostato a sinistra per continuare l'alternanza a scacchiera con il prodotto 4 (destra)
   jolly: "⚙️ DIGITAL DELIVERY & LICENSE NOTE: Instant digital download. 100% compatible with free Canva accounts. Includes Standard Professional License for up to 3 local office branches. Due to the digital nature of this product, all sales are final.",
   link: "https://rebestdigital.gumroad.com/l/ggfpz?layout=profile" // Sostituisci liberamente con il tuo link di vendita o checkout dedicato
@@ -72,7 +72,7 @@ export const servicesData: ServiceItem[] = [
   sottotitolo: "Psychologically Engineered Audience Segmentation Machine for Real Estate Professionals",
   descrizione1: "Stop blasting generic emails that get ignored or trigger unsubscribes. This 13-part strategic suite delivers hyper-focused conversion funnels designed to target specific audiences: Tactical Quick Alerts for fast CRM tagging, Smart Seller Funnels, First-Time Homebuyer Funnels, Investor & Commercial Suites, Fix & Flip alerts, and B2B Partnership outreach layouts.",
   descrizione2: "Includes 13 Canva templates pre-written with real high-converting copy (zero 'Lorem Ipsum' filler), dynamic CRM database tagging strategies, and dedicated step-by-step video training covering technical export setups, deliverability rules, and anti-spam blueprints.",
-  immagine: "/StrategicNewsletterSuite13Piece6.jpg", // Sostituisci liberamente con il path della copertina del prodotto
+  immagine: "/13newsletterpack.webp", // Sostituisci liberamente con il path della copertina del prodotto
   posizioneImmagine: "destra", // Impostato a destra per mantenere l'alternanza visiva a scacchiera con il prodotto 5 (sinistra)
   jolly: "⚙️ DIGITAL DELIVERY & LICENSE NOTE: Instant digital download. 100% compatible with free Canva accounts. Includes Standard Professional License for up to 3 local office branches. Due to the digital nature of this product, all sales are final.",
   link: "https://rebestdigital.gumroad.com/l/aqixvn?layout=profile" // Sostituisci liberamente con il tuo link di vendita o checkout dedicato
@@ -83,7 +83,7 @@ export const servicesData: ServiceItem[] = [
   sottotitolo: "Turnkey 24/7 Social Media Client Acquisition & Automated Segmentation Engine",
   descrizione1: "Turn your Instagram and Facebook profiles into a high-precision lead acquisition engine on SendPulse without recurring monthly software fees. This complete done-for-you bundle builds and deploys 4 dedicated automation funnels (Seller Acquisition, Buyer Qualification, Investor Deals, and Contractor B2B Partnerships) to qualify contacts and capture leads directly inside direct messages.",
   descrizione2: "Includes 4 high-value lead magnets: Trusted Vendor List (LM001), Neighborhood Guide (LM002), Homebuyer Checklist (LM003), and Home Seller Checklist (LM004). Features global comment-to-DM triggers, custom profile variable segmentation, and full end-to-end testing.",
-  immagine: "/Vip4FunnelsAutomation7.jpg", // Sostituisci liberamente con il path della copertina del prodotto
+  immagine: "/Vip4funnelautomation.webp", // Sostituisci liberamente con il path della copertina del prodotto
   posizioneImmagine: "sinistra", // Impostato a sinistra per continuare l'alternanza visiva a scacchiera con il prodotto 6 (destra)
   jolly: "⚙️ DONE-FOR-YOU SETUP & TECHNICAL NOTE: Fully optimized to run on SendPulse's free tier (up to 10,000 automated messages/mo). We build, integrate, and test all backend logic and variable connections for you.",
   link: "https://rebestdigital.gumroad.com/l/pvgawi?layout=profile" // Sostituisci liberamente con il tuo link di vendita o checkout dedicato
@@ -94,7 +94,7 @@ export const servicesData: ServiceItem[] = [
   sottotitolo: "Turnkey Automated Buyer & Seller Chat Qualification Engine with Zero Monthly Software Fees",
   descrizione1: "Turn your Instagram and Facebook profiles into a high-precision lead acquisition engine on SendPulse without recurring monthly software fees. The Pro Dual-Funnel Authority Bundle builds, integrates, and deploys two dedicated chat funnels (Seller Acquisition & Buyer Qualification) to automatically segment leads, ask qualification questions, and capture contact details inside direct messages.",
   descrizione2: "Includes 2 high-value lead magnets: Homebuyer Checklist (LM003) and Home Seller Checklist (LM004). Features global comment-to-DM triggers across posts and Reels, custom SendPulse profile variable segmentation for Buyers vs. Sellers, and complete end-to-end testing.",
-  immagine: "/ProDualFunnelAutomation8.jpg", // Sostituisci liberamente con il path della copertina del prodotto
+  immagine: "/Produalfunnellbundle.webp", // Sostituisci liberamente con il path della copertina del prodotto
   posizioneImmagine: "destra", // Impostato a destra per continuare l'alternanza visiva a scacchiera con il prodotto 7 (sinistra)
   jolly: "⚙️ DONE-FOR-YOU SETUP & TECHNICAL NOTE: Fully optimized to run on SendPulse's free tier (up to 10,000 automated messages/mo). We manage all backend logic rules, visual architecture, technical connections, and variable setups for you.",
   link: "https://rebestdigital.gumroad.com/l/ldroz?layout=profile" // Sostituisci liberamente con il tuo link di vendita o checkout dedicato
@@ -104,9 +104,11 @@ export const servicesData: ServiceItem[] = [
   sottotitolo: "Turnkey Automated Lead Capture Chat Engine with Zero Monthly Software Fees",
   descrizione1: "Turn your Instagram and Facebook profiles into a 24/7 lead collection system without paying recurring monthly software fees. The Starter Social Automation Engine builds and deploys a streamlined, automated messaging flow on SendPulse to automatically capture and qualify buyer and seller contacts while you focus on showings and closing deals.",
   descrizione2: "Includes 2 high-value lead magnets: Homebuyer Checklist (LM003) and Home Seller Checklist (LM004). Features 2 comment-to-DM keyword triggers on posts and Reels, a 4-step interactive lead capture chat flow (Name, Email, Phone, and Resource Delivery), a cold DM Welcome Bot, and full end-to-end testing.",
-  immagine: "/StarterAutomationEngine9.jpg", // Sostituisci liberamente con il path della copertina del prodotto
+  immagine: "/StarterAutomationpack.webp", // Sostituisci liberamente con il path della copertina del prodotto
   posizioneImmagine: "sinistra", // Impostato a sinistra per continuare l'alternanza visiva a scacchiera con il prodotto 8 (destra)
   jolly: "⚙️ DONE-FOR-YOU SETUP & TECHNICAL NOTE: Built on SendPulse's free tier infrastructure (supporting up to 10,000 automated messages/mo). We manage the visual design, logic rules, and technical integration for you.",
   link: "https://rebestdigital.gumroad.com/l/qedzp?layout=profile" // Sostituisci liberamente con il tuo link di vendita o checkout dedicato
 }
 ];
+ 
+
