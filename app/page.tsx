@@ -12,6 +12,7 @@ import StickyBtn from '../components/StickyButton'
 import AudiobookBonusSection from './homeconfig/AudiobookBonusSection';
 import { RBDLINKS } from '@/config/rbdlinks';
 import ServiceList from '@/app/homeconfig/ServiceList';
+import ServiceListAnteprime from './homeconfig/ServiceListAnteprime';
  const iMieiBottoni = [
     { text: "🔥 GET THE ECOSYSTEM NOW!", href: RBDLINKS["rebest-digital"].RBDbuyEcosystemGumroad, isPrimary: true },
     //{ text: "📦 SEE THE 80+ ASSETS", href: RBDLINKS["rebest-digital"].RBDEcosystemDetails },
@@ -229,9 +230,10 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
        <div className="font-bold text-3xl text-left text-slate-100 mb-4 mt-2 pb-8" style={{ borderColor: style.color || '#FFffFF' }}>
            Below you will find a list of our primary services and products, each with a direct link to its respective page.
        </div>
+<ServiceListAnteprime  style={style}  />
 <ServiceList  style={style}  />
-       <div className="font-bold text-lg text-slate-100 mb-4 border-t-8 mt-5 pt-5" style={{ borderColor: style.color || '#FFffFF' }}><p>Still undecided about ReBest Digital?
-Join our newsletter! We regularly send breakdown guides, case studies, exclusive commercial offers, and actionable strategies on how to dominate your local real estate market with our ecosystem. 
+       <div className="font-bold text-lg text-slate-100 mb-4 border-t-8 mt-5 pt-5" style={{ borderColor: style.color || '#FFffFF' }}><p className='"font-bold text-2xl border-b-2 mb-2'>Still undecided about ReBest Digital?</p><p>
+👇 Join our newsletter! 👇 We regularly send breakdown guides, case studies, exclusive commercial offers, and actionable strategies on how to dominate your local real estate market with our ecosystem. 
 Plus, as a welcome bonus, you will receive our Premium Homebuyer Checklist immediately after confirming your subscription.</p>
              </div>
       <form onSubmit={handleSubmit} className="space-y-5">

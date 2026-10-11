@@ -13,7 +13,7 @@ export interface ServiceItem {
 export const servicesData: ServiceItem[] = [
   {
   id: "1",
-  titolo: "🛑 STOP BEING INVISIBLE! (Why Veteran Real Estate Agents are failing in lead generation and Losing the Digital Battle.[The Strategic Protocol to Reclaim Your Local Market.])",
+  titolo: "📖 STOP BEING INVISIBLE! (Why Veteran Real Estate Agents are failing in lead generation and Losing the Digital Battle.[The Strategic Protocol to Reclaim Your Local Market.])",
   sottotitolo: "The Real Estate Strategy Book (PDF and Epub)",
   descrizione1: "Are you sick of buying leads from portals that use YOUR own money to hijack the attention that should belong to YOU? It's the ultimate industry irony: you pay a monthly subscription to a portal, and they use that capital to outbid you on Google and Social Media, capturing the homeowners in your neighborhood only to sell them back to you as 'premium leads.'",
   descrizione2: "Stop being a 'Digital Tenant' in your own territory. In this high-impact strategy book, you will learn the ReBest Strategic Protocol—the definitive blueprint to reclaim your local market, avoid the portal trap, and transition from an invisible salesperson to a recognized Local Authority. You will master pattern interrupts, data sovereignty, and get access to the 54-Script Authority Vault alongside 7 complete high-performance toolkits.",

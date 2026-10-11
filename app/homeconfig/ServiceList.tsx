@@ -1,7 +1,7 @@
 // components/ServiceList.tsx
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+
 import { servicesData } from '../../config/service';
 
 interface ServiceListProps {
@@ -11,6 +11,13 @@ interface ServiceListProps {
 export default function ServiceList({ style }: ServiceListProps) {
   return (
     <section className="max-w-4xl mx-auto py-2 px-0 space-y-32">
+
+    <div className="text-center mb-4 border-b-2 pb-6 border-t-8" style={{ borderColor : style.color || '#FF00FF' }}>
+        <h1 className={`${style.text} text-3xl md:text-4xl font-black mb-2 mt-4`}>
+          Products details:
+        </h1>
+      </div>
+
       {servicesData.map((service) => {
         const isRight = service.posizioneImmagine === 'destra';
 
@@ -48,13 +55,15 @@ export default function ServiceList({ style }: ServiceListProps) {
                   {/* Link / Bottone */}
                   {service.link && (
                     <div className="pt-4">
-                      <Link 
+                       <a
+                        
                         href={service.link}
+                        target='_blank'
                         className="inline-flex items-center justify-center px-6 py-2 border text-sm font-bold uppercase tracking-wider rounded-xl text-white bg-white/5 border-white/10 hover:bg-white/10 transition-colors"
                         style={{ borderColor: style.color ? `${style.color}40` : '#white/10' }} 
                       >
-                        Scopri di più
-                      </Link>
+                        Details!
+                      </a>
                     </div>
                   )}
                 </div>
@@ -68,7 +77,15 @@ export default function ServiceList({ style }: ServiceListProps) {
                 }`} 
                 style={{ overflow: 'hidden' }}
               >
-                <div className="relative w-full h-full min-h-[300px] md:min-h-full">
+               
+                <div className="relative w-full h-full min-h-[300px] md:min-h-full"> 
+                    <a
+                         
+                        href={service.link}
+                        target='_blank'
+                        className="inline-flex items-center justify-center px-6 py-2 border text-sm font-bold uppercase tracking-wider rounded-xl text-white bg-white/5 border-white/10 hover:bg-white/10 transition-colors"
+                        style={{ borderColor: style.color ? `${style.color}40` : '#white/10' }} 
+                      >
                   <Image
                     src={service.immagine}
                     alt={service.titolo}
@@ -76,7 +93,7 @@ export default function ServiceList({ style }: ServiceListProps) {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority={service.id === "1"}
-                  />
+                  /></a>
                 </div>
               </div>
             </div>
