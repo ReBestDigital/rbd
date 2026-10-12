@@ -5,14 +5,13 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { CAMPAIGNS } from '@/config/campaigns';
 import StrategySection from './homeconfig/strategySection'; 
-import EcosystemDetails from './homeconfig/EcosystemDetails';
 import EssentialFAQ from '@/app/homeconfig/FAQSection2';
 import OperationalSEOAdvantages from './homeconfig/DetailedSEOAdvantages';
 import StickyBtn from '../components/StickyButton'
-import AudiobookBonusSection from './homeconfig/AudiobookBonusSection';
 import { RBDLINKS } from '@/config/rbdlinks';
 import ServiceList from '@/app/homeconfig/ServiceList';
 import ServiceListAnteprime from './homeconfig/ServiceListAnteprime';
+import DropdownMenu from '../components/StickyMenuProps '; // Importiamo il nuovo componente
  const iMieiBottoni = [
     { text: "🔥 GET THE ECOSYSTEM NOW!", href: RBDLINKS["rebest-digital"].RBDbuyEcosystemGumroad, isPrimary: true },
     //{ text: "📦 SEE THE 80+ ASSETS", href: RBDLINKS["rebest-digital"].RBDEcosystemDetails },
@@ -92,7 +91,10 @@ const consentText = TextC + " Privacy Policy [https://www.rebestdigital.com/priv
     
     <main className={`min-h-screen ${style.bg} flex flex-col items-center justify-center overflow-x-hidden w-full p-2`}>
        <StickyBtn  buttons={iMieiBottoni}/>
-      
+       <div className="flex justify-start mb-2">
+        <DropdownMenu  />
+        
+      </div>
        <div className= " max-w-4xl ">
         <div className={`${style.text} text-4xl md:text-4xl font-bold text-slate-200 mb-10 mt-6 border-b-8 border-t-8 md:pb-6 pb-4 md:pt-6 pt-4 px-2 md:px-2`} style={{ borderColor: style.color || '#FFffFF' }}>
           <div className= "pb-0 w-full ">

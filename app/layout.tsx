@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import CookieReset from '../components/CookieReset';
 import CookieBanner from '../components/CookieBanner';
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -63,8 +64,9 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
         </main>
-        
+       
         {/* Componenti universali */}
+        
         <Footer />
        {/*  <CookieReset />  */}
        <CookieBanner />

@@ -36,21 +36,21 @@ export default function ServiceList({ style }: ServiceListProps) {
                   href={service.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-34 h-34 md:w-32 md:h-32 relative flex-shrink-0 bg-white/5 border rounded-xl overflow-hidden block"
+                  className="w-34 h-34 md:w-32 md:h-32 relative flex-shrink-0 bg-white/5 border rounded-xl " /* overflow-hidden block */
                   style={{ borderColor: style.color ? `${style.color}30` : 'rgba(255,255,255,0.1)' }}
                 >
                   <Image
                     src={service.immagine}
                     alt={service.titolo}
                     fill
-                    className="object-cover transition-transform duration-300 ease-out hover:scale-150"
+                    className="object-cover transition-transform duration-300 ease-out hover:scale-300 hover:z-30"
                     sizes="(max-width: 768px) 96px, 128px"
                     priority={service.id === "1"}
                   />
                 </a>
               ) : (
                 <div 
-                  className="w-24 h-24 md:w-32 md:h-32 relative flex-shrink-0 bg-white/5 border rounded-xl overflow-hidden"
+                  className="w-24 h-24 md:w-32 md:h-32 relative flex-shrink-0 bg-white/5 border rounded-xl " /*  overflow-hidden */
                   style={{ borderColor: style.color ? `${style.color}30` : 'rgba(255,255,255,0.1)' }}
                 >
                   <Image
@@ -80,7 +80,7 @@ export default function ServiceList({ style }: ServiceListProps) {
                 
                 {/* Sottotitolo piccolo */}
                 {service.sottotitolo && (
-                  <span className="mt-2 text-sm md:text-sm uppercase tracking-wider font-bold opacity-100 mt-0.5" style={{ color: style.color }}>
+                  <span className="mt-2 text-base md:text-base uppercase tracking-wider font-bold opacity-100 mt-0.5" style={{ color: style.color2 }}>
                     {service.sottotitolo}
                   </span>
                 )}

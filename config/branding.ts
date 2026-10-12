@@ -8,7 +8,8 @@ export const BRAND_STYLES = {
     mute: "text-slate-200",      // <--- NUOVO: Testo secondario grigio chiaro
     bg: "bg-slate-900",            // Sfondo quasi nero come la parte sinistra della copertina
     card: "rounded-2xl shadow-2xl border border-slate-800 bg-slate-900", // Card scura per far risaltare il testo bianco
-    color:"#ff00ff"
+    color:"#ff00ff",
+    color2:"#ff88ff"
  },
   "modern-blue": {
     primary: "bg-blue-600",

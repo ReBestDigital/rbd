@@ -59,7 +59,7 @@ export default function EssentialFAQ({ style }: FAQProps) {
           Have more questions about the assets?
         </p>
         <Link 
-          href="/earlybird-feature" 
+          href="/rbd-ecosystem-feature" 
           className="text-white/60 hover:text-white text-sm font-bold uppercase tracking-widest border-b border-white/20 pb-1 transition-all"
         >
           View Other FAQ & Feature List →
